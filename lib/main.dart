@@ -23,8 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final languageProvider = Provider.of<LanguageProvider>(context);
 
-    // ✅ Define router here so it gets updated if needed in future
-    final _router = GoRouter(
+    final router = GoRouter(
       routes: [
         GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
         GoRoute(
@@ -45,9 +44,18 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp.router(
-      routerConfig: _router,
+      routerConfig: router,
       title: 'Aweytak',
       theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'Cairo'),
+      locale: Locale(languageProvider.language.toLowerCase()),
+      builder: (context, child) {
+        return Directionality(
+          textDirection: languageProvider.isArabic
+              ? TextDirection.rtl
+              : TextDirection.ltr,
+          child: child!,
+        );
+      },
     );
   }
 }

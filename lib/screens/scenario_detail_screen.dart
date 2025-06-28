@@ -19,7 +19,7 @@ class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
   @override
   void initState() {
     super.initState();
-    print('🧪 Loading scenario: ${widget.scenarioId}');
+    ('🧪 Loading scenario: ${widget.scenarioId}');
     stepsFuture = loadScenarioSteps(widget.scenarioId);
   }
 
