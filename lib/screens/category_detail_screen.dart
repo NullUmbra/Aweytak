@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import '../providers/language_provider.dart';
 
 class CategoryDetailScreen extends StatelessWidget {
   final String categoryId;
 
   const CategoryDetailScreen({super.key, required this.categoryId});
 
-  // 🔍 Simulated data (can be replaced with JSON or API)
   List<Map<String, String>> getScenarios(String categoryId) {
     switch (categoryId) {
       case 'burns':
@@ -28,7 +29,7 @@ class CategoryDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isArabic = Directionality.of(context) == TextDirection.rtl;
+    final isArabic = Provider.of<LanguageProvider>(context).isArabic;
     final scenarios = getScenarios(categoryId);
 
     return Scaffold(

@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import '../providers/language_provider.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  String currentLanguage = 'AR';
-
-  final List<Map<String, dynamic>> categories = [
+  final List<Map<String, dynamic>> categories = const [
     {
       'id': 'cpr',
       'icon': '❤️',
@@ -63,19 +58,12 @@ class _HomeScreenState extends State<HomeScreen> {
     },
   ];
 
-  void toggleLanguage() {
-    setState(() {
-      currentLanguage = currentLanguage == 'AR' ? 'EN' : 'AR';
-    });
-  }
-
   Color urgencyColor(String urgency) {
     switch (urgency) {
       case 'high':
         return Colors.red[300]!;
       case 'medium':
         return Colors.orange[300]!;
-      case 'low':
       default:
         return Colors.green[300]!;
     }
@@ -83,7 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final isArabic = currentLanguage == 'AR';
+    final languageProvider = Provider.of<LanguageProvider>(context);
+    final isArabic = languageProvider.isArabic;
 
     return Directionality(
       textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
@@ -92,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text(isArabic ? 'أويتك' : 'Aweytak'),
           actions: [
             IconButton(
-              onPressed: toggleLanguage,
+              onPressed: () => languageProvider.toggleLanguage(),
               icon: const Icon(Icons.language),
               tooltip: 'Toggle Language',
             ),
@@ -134,11 +123,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: categories.map((category) {
                     return GestureDetector(
                       onTap: () {
-                        final id = category['id']; // must be present!
+                        final id = category['id'];
                         if (id != null) {
                           GoRouter.of(context).go('/category/$id');
                         } else {
-                          print('Category ID missing!');
+                          debugPrint('Category ID missing!');
                         }
                       },
                       child: Container(

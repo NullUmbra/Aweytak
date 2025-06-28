@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:aweytak/services/dart_loader.dart';
+import 'package:provider/provider.dart';
+import '../providers/language_provider.dart';
 
 class ScenarioDetailScreen extends StatefulWidget {
   final String scenarioId;
@@ -23,7 +25,7 @@ class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final isArabic = Directionality.of(context) == TextDirection.rtl;
+    final isArabic = Provider.of<LanguageProvider>(context).isArabic;
 
     return Scaffold(
       appBar: AppBar(
