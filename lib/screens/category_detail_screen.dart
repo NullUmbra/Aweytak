@@ -49,7 +49,7 @@ class CategoryDetailScreen extends StatelessWidget {
               onTap: () {
                 final id = scenario['id'];
                 ('Navigating to scenario: $id');
-                GoRouter.of(context).go('/scenario/${scenario['id']}');
+                GoRouter.of(context).push('/scenario/${scenario['id']}');
               },
             ),
           );

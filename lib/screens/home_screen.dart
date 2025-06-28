@@ -125,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                       onTap: () {
                         final id = category['id'];
                         if (id != null) {
-                          GoRouter.of(context).go('/category/$id');
+                          GoRouter.of(context).push('/category/$id');
                         } else {
                           debugPrint('Category ID missing!');
                         }
