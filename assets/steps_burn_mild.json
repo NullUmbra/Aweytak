@@ -1,0 +1,17 @@
+{
+  "scenarioId": "burn_mild",
+  "steps": [
+    {
+      "ar": "ضع المنطقة تحت ماء بارد لمدة 10 دقائق",
+      "en": "Cool the burn under cold water for 10 minutes"
+    },
+    {
+      "ar": "نظف المكان بلطف دون فرك",
+      "en": "Gently clean the area, do not rub"
+    },
+    {
+      "ar": "ضع شاش نظيف غير لاصق",
+      "en": "Apply clean non-stick bandage"
+    }
+  ]
+}

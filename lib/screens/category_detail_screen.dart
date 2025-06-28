@@ -46,6 +46,8 @@ class CategoryDetailScreen extends StatelessWidget {
               title: Text(isArabic ? scenario['ar']! : scenario['en']!),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: () {
+                final id = scenario['id'];
+                print('Navigating to scenario: $id');
                 GoRouter.of(context).go('/scenario/${scenario['id']}');
               },
             ),
