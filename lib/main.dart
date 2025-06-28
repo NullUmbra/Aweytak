@@ -44,6 +44,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       routerConfig: router,
       title: 'Aweytak',
       theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'Cairo'),

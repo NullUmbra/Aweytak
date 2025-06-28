@@ -14,13 +14,15 @@ class ScenarioDetailScreen extends StatefulWidget {
 
 class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
   late Future<List<Map<String, dynamic>>> stepsFuture;
-  List<bool> done = [];
 
   @override
   void initState() {
     super.initState();
-    ('🧪 Loading scenario: ${widget.scenarioId}');
     stepsFuture = loadScenarioSteps(widget.scenarioId);
+  }
+
+  String _stepLabel(int stepNumber, bool isArabic) {
+    return isArabic ? 'الخطوة $stepNumber' : 'Step $stepNumber';
   }
 
   @override
@@ -49,39 +51,35 @@ class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
           }
 
           final steps = snapshot.data!;
-          done = List.generate(steps.length, (index) => false);
 
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: steps.length,
             itemBuilder: (context, index) {
               final step = steps[index];
+              final stepNumber = index + 1;
 
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
-                child: CheckboxListTile(
-                  value: done[index],
-                  onChanged: (val) {
-                    setState(() {
-                      done[index] = val!;
-                    });
-                  },
-                  title: Row(
+                child: ListTile(
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(
-                        Icons.check_circle_outline,
-                        color: Colors.green,
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          isArabic ? step['ar'] ?? '' : step['en'] ?? '',
-                          style: const TextStyle(fontSize: 16),
+                      Text(
+                        _stepLabel(stepNumber, isArabic),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.green[700],
+                          fontSize: 14,
                         ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        isArabic ? step['ar'] ?? '' : step['en'] ?? '',
+                        style: const TextStyle(fontSize: 16),
                       ),
                     ],
                   ),
-                  controlAffinity: ListTileControlAffinity.leading,
                 ),
               );
             },
