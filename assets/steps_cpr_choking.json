@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cpr_choking",
+  "steps": [
+    {
+      "ar": "تحقق إذا كان الشخص يختنق ولا يستطيع التنفس",
+      "en": "Check if the person is choking and unable to breathe"
+    },
+    {
+      "ar": "ادعُ المساعدة فوراً",
+      "en": "Call for help immediately"
+    },
+    {
+      "ar": "ابدأ ضغوطات البطن (هبطة هيمليك) لإزالة الانسداد",
+      "en": "Perform abdominal thrusts (Heimlich maneuver) to clear the obstruction"
+    },
+    {
+      "ar": "إذا فقد الوعي، ابدأ الإنعاش القلبي الرئوي فوراً",
+      "en": "If unconscious, start CPR immediately"
+    },
+    {
+      "ar": "استمر حتى إزالة الانسداد أو وصول المساعدة",
+      "en": "Continue until the obstruction is cleared or help arrives"
+    }
+  ]
+}

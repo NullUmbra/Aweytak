@@ -1,0 +1,17 @@
+{
+  "scenarioId": "diabetes_emergency",
+  "steps": [
+    {
+      "ar": "قم بإعطاء المريض سكرًا سريع المفعول مثل عصير الفواكه أو أقراص الجلوكوز",
+      "en": "Administer fast-acting sugar such as fruit juice or glucose tablets"
+    },
+    {
+      "ar": "راقب حالة المريض لمدة 10 دقائق بحثًا عن تحسن",
+      "en": "Observe the person's condition for 10 minutes for signs of improvement"
+    },
+    {
+      "ar": "اتصل بالطوارئ إذا لم تتحسن الحالة أو فقد المريض الوعي",
+      "en": "Call emergency services if there’s no improvement or the person becomes unconscious"
+    }
+  ]
+}

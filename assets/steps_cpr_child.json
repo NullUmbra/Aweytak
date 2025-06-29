@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cpr_child",
+  "steps": [
+    {
+      "ar": "تحقق من وعي الطفل بحذر",
+      "en": "Check the child’s responsiveness carefully"
+    },
+    {
+      "ar": "اطلب المساعدة واستدعي الطوارئ فورًا",
+      "en": "Call for help and emergency services immediately"
+    },
+    {
+      "ar": "ابدأ الضغطات الصدرية بعمق حوالي 5 سم",
+      "en": "Begin chest compressions at a depth of about 5 cm"
+    },
+    {
+      "ar": "قم بإعطاء نفسين بالفم بعد 30 ضغطًا إذا كنت مدربًا",
+      "en": "Give 2 breaths by mouth after 30 compressions if trained"
+    },
+    {
+      "ar": "كرر الدورة حتى وصول المساعدة أو استعادة الوعي",
+      "en": "Repeat the cycle until help arrives or consciousness is restored"
+    }
+  ]
+}

@@ -10,6 +10,35 @@ class CategoryDetailScreen extends StatelessWidget {
 
   List<Map<String, String>> getScenarios(String categoryId) {
     switch (categoryId) {
+      case 'cpr':
+        return [
+          {
+            'id': 'cpr_adult',
+            'ar': 'الإسعاف القلبي الرئوي للكبار',
+            'en': 'Adult CPR',
+          },
+          {
+            'id': 'cpr_child',
+            'ar': 'الإسعاف القلبي الرئوي للأطفال',
+            'en': 'Child CPR',
+          },
+          {
+            'id': 'cpr_infant',
+            'ar': 'الإسعاف القلبي الرئوي للرضع',
+            'en': 'Infant CPR',
+          },
+          {
+            'id': 'cpr_choking',
+            'ar': 'الإسعاف القلبي الرئوي عند الاختناق',
+            'en': 'CPR for Choking',
+          },
+          {
+            'id': 'cpr_unconscious',
+            'ar': 'الإسعاف القلبي الرئوي للمصابين فاقدي الوعي',
+            'en': 'CPR for Unconscious Victims',
+          },
+        ];
+
       case 'burns':
         return [
           {'id': 'burn_mild', 'ar': 'حرق بسيط', 'en': 'Mild Burn'},
@@ -19,6 +48,15 @@ class CategoryDetailScreen extends StatelessWidget {
         return [
           {'id': 'bleed_nose', 'ar': 'نزيف الأنف', 'en': 'Nosebleed'},
           {'id': 'bleed_deepcut', 'ar': 'جرح عميق', 'en': 'Deep Cut'},
+        ];
+      case 'diseases':
+        return [
+          {
+            'id': 'diabetes_emergency',
+            'ar': 'حالة طارئة لمرض السكري',
+            'en': 'Diabetes Emergency',
+          },
+          {'id': 'asthma_attack', 'ar': 'نوبة ربو', 'en': 'Asthma Attack'},
         ];
       default:
         return [

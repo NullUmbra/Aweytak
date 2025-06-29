@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cpr_infant",
+  "steps": [
+    {
+      "ar": "افحص استجابة الرضيع بهدوء",
+      "en": "Check the infant’s responsiveness gently"
+    },
+    {
+      "ar": "اطلب المساعدة واطلب الإسعاف الطارئ",
+      "en": "Call for help and emergency services"
+    },
+    {
+      "ar": "استخدم إصبعي السبابة والوسطى للضغطات الصدرية",
+      "en": "Use your index and middle fingers to perform chest compressions"
+    },
+    {
+      "ar": "قم بالضغط بعمق حوالي 4 سم وبمعدل 100-120 ضغط في الدقيقة",
+      "en": "Compress the chest about 4 cm deep at a rate of 100-120 compressions per minute"
+    },
+    {
+      "ar": "أعطِ 2 نفس إنقاذي بعد 30 ضغطًا",
+      "en": "Give 2 rescue breaths after 30 compressions"
+    }
+  ]
+}

@@ -21,6 +21,14 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/steps_cpr_adult.json
+    - assets/steps_cpr_child.json
+    - assets/steps_cpr_infant.json
+    - assets/steps_cpr_choking.json
+    - assets/steps_cpr_unconscious.json
     - assets/steps_burn_mild.json
+    - assets/steps_diabetes_emergency.json
+    - assets/steps_asthma_attack.json
+
   uses-material-design: true
 

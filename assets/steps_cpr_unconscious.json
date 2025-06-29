@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cpr_unconscious",
+  "steps": [
+    {
+      "ar": "تحقق من استجابة الشخص واطلب المساعدة فوراً",
+      "en": "Check the person’s responsiveness and call for help immediately"
+    },
+    {
+      "ar": "افتح مجرى الهواء بإمالة الرأس ورفع الذقن",
+      "en": "Open the airway by tilting the head back and lifting the chin"
+    },
+    {
+      "ar": "تحقق من وجود تنفس لمدة 10 ثوانٍ",
+      "en": "Check for breathing for 10 seconds"
+    },
+    {
+      "ar": "ابدأ الإنعاش القلبي الرئوي إذا لم يكن هناك تنفس طبيعي",
+      "en": "Start CPR if there is no normal breathing"
+    },
+    {
+      "ar": "استمر في الضغطات والتنفس حتى وصول المساعدة",
+      "en": "Continue chest compressions and rescue breaths until help arrives"
+    }
+  ]
+}

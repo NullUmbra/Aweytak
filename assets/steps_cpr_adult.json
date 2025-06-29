@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cpr_adult",
+  "steps": [
+    {
+      "ar": "تأكد من سلامة المكان قبل الاقتراب من المريض",
+      "en": "Ensure the scene is safe before approaching the patient"
+    },
+    {
+      "ar": "تحقق من وعي المريض عن طريق الهز بلطف ومناداته باسمه",
+      "en": "Check the patient's responsiveness by gently shaking and calling their name"
+    },
+    {
+      "ar": "اطلب المساعدة واستدعي الطوارئ فوراً",
+      "en": "Call for help and emergency services immediately"
+    },
+    {
+      "ar": "ابدأ الضغطات الصدرية بعمق 5-6 سم وبمعدل 100-120 ضغط في الدقيقة",
+      "en": "Begin chest compressions at a depth of 5-6 cm and rate of 100-120 per minute"
+    },
+    {
+      "ar": "قم بالنفخ في فم المريض بعد 30 ضغطًا إذا كنت مدربًا",
+      "en": "Give rescue breaths (mouth-to-mouth) after 30 compressions if trained"
+    }
+  ]
+}

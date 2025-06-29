@@ -2,16 +2,16 @@
   "scenarioId": "burn_mild",
   "steps": [
     {
-      "ar": "ضع المنطقة تحت ماء بارد لمدة 10 دقائق",
-      "en": "Cool the burn under cold water for 10 minutes"
+      "ar": "برد منطقة الحرق بماء جاري بارد لمدة لا تقل عن 10 دقائق",
+      "en": "Cool the burn with running cold water for at least 10 minutes"
     },
     {
-      "ar": "نظف المكان بلطف دون فرك",
-      "en": "Gently clean the area, do not rub"
+      "ar": "نظف المنطقة بلطف دون فرك",
+      "en": "Gently clean the area without rubbing"
     },
     {
-      "ar": "ضع شاش نظيف غير لاصق",
-      "en": "Apply clean non-stick bandage"
+      "ar": "غطِّ الحرق بشاش نظيف غير لاصق",
+      "en": "Cover the burn with a clean, non-stick dressing"
     }
   ]
 }
