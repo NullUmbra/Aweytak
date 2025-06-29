@@ -1,15 +1,14 @@
-import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:hive/hive.dart';
+import '../models/scenario.dart';
 
-Future<List<Map<String, dynamic>>> loadScenarioSteps(String scenarioId) async {
-  try {
-    final path = 'assets/steps_$scenarioId.json';
-    ('📂 Attempting to load: $path');
-    final jsonString = await rootBundle.loadString(path);
-    final data = json.decode(jsonString);
-    return List<Map<String, dynamic>>.from(data['steps']);
-  } catch (e) {
-    ('Error loading steps for $scenarioId: $e');
+Future<List<Map<String, String>>> loadScenarioSteps(String scenarioId) async {
+  final box = Hive.box<Scenario>('scenarios');
+  final scenario = box.get(scenarioId);
+
+  if (scenario == null) {
+    // You can log or handle missing data gracefully here
     return [];
   }
+
+  return scenario.steps;
 }

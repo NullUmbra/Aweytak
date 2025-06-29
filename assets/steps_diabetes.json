@@ -2,24 +2,16 @@
   "scenarioId": "diabetes",
   "steps": [
     {
-      "ar": "راقب مستويات السكر في الدم بانتظام",
-      "en": "Monitor blood sugar levels regularly"
+      "ar": "قم بإعطاء المريض سكرًا سريع المفعول مثل عصير الفواكه أو أقراص الجلوكوز",
+      "en": "Administer fast-acting sugar such as fruit juice or glucose tablets"
     },
     {
-      "ar": "تناول الأدوية أو الأنسولين حسب وصف الطبيب",
-      "en": "Take medications or insulin as prescribed"
+      "ar": "راقب حالة المريض لمدة 10 دقائق بحثًا عن تحسن",
+      "en": "Observe the person's condition for 10 minutes for signs of improvement"
     },
     {
-      "ar": "اتباع نظام غذائي صحي ومتوازن",
-      "en": "Follow a healthy, balanced diet"
-    },
-    {
-      "ar": "مارس التمارين الرياضية بانتظام",
-      "en": "Exercise regularly"
-    },
-    {
-      "ar": "استشر الطبيب فورًا عند ظهور أعراض غير طبيعية",
-      "en": "Consult a doctor immediately if unusual symptoms appear"
+      "ar": "اتصل بالطوارئ إذا لم تتحسن الحالة أو فقد المريض الوعي",
+      "en": "Call emergency services if there’s no improvement or the person becomes unconscious"
     }
   ]
 }
