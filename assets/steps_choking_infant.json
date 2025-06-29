@@ -1,0 +1,25 @@
+{
+  "scenarioId": "choking_infant",
+  "steps": [
+    {
+      "ar": "تحقق إذا كان الرضيع يختنق ولا يستطيع التنفس أو البكاء",
+      "en": "Check if the infant is choking and unable to breathe or cry"
+    },
+    {
+      "ar": "اطلب المساعدة فوراً",
+      "en": "Call for help immediately"
+    },
+    {
+      "ar": "ضع الرضيع على ساعدك وادعم رأسه",
+      "en": "Place infant on your forearm supporting the head"
+    },
+    {
+      "ar": "اعطِ خمس ضربات خفيفة على ظهره بين لوحي الكتف",
+      "en": "Give five gentle back blows between shoulder blades"
+    },
+    {
+      "ar": "إذا لم تزُل الانسداد، قم بخمس ضغطات صدرية باستخدام إصبعين",
+      "en": "If obstruction persists, give five chest thrusts using two fingers"
+    }
+  ]
+}

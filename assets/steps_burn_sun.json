@@ -1,0 +1,21 @@
+{
+  "scenarioId": "burn_sun",
+  "steps": [
+    {
+      "ar": "ابتعد عن الشمس وابقَ في الظل",
+      "en": "Move out of the sun and stay in the shade"
+    },
+    {
+      "ar": "ضع كمادات باردة على الجلد",
+      "en": "Apply cool compresses to the skin"
+    },
+    {
+      "ar": "اشرب كميات كبيرة من الماء لترطيب الجسم",
+      "en": "Drink plenty of fluids to stay hydrated"
+    },
+    {
+      "ar": "إذا ظهرت بثور أو ألم شديد، استشر الطبيب",
+      "en": "If blisters or severe pain develop, seek medical advice"
+    }
+  ]
+}

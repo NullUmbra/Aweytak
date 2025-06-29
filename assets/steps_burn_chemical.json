@@ -1,0 +1,17 @@
+{
+  "scenarioId": "burn_chemical",
+  "steps": [
+    {
+      "ar": "اغسل الجلد فوراً بالماء الجاري لمدة 20 دقيقة",
+      "en": "Flush the skin immediately with running water for 20 minutes"
+    },
+    {
+      "ar": "قم بإزالة الملابس الملوثة بحذر",
+      "en": "Carefully remove contaminated clothing"
+    },
+    {
+      "ar": "اتصل بالطوارئ إذا كان الحرق واسعاً أو على الوجه",
+      "en": "Call emergency services if burn is extensive or on face"
+    }
+  ]
+}

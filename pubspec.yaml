@@ -32,6 +32,15 @@ flutter:
     - assets/steps_bleed_severe.json
     - assets/steps_bleed_internal.json
     - assets/steps_burn_mild.json
+    - assets/steps_burn_severe.json
+    - assets/steps_burn_chemical.json
+    - assets/steps_burn_electrical.json
+    - assets/steps_burn_sun.json
+    - assets/steps_choking_adult.json
+    - assets/steps_choking_child.json
+    - assets/steps_choking_infant.json
+    - assets/steps_choking_unconscious.json
+    - assets/steps_choking_severe.json
     - assets/steps_diabetes_emergency.json
     - assets/steps_asthma_attack.json
 

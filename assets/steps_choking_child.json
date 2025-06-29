@@ -1,0 +1,25 @@
+{
+  "scenarioId": "choking_child",
+  "steps": [
+    {
+      "ar": "تحقق إذا كان الطفل يختنق ولا يستطيع التنفس أو البكاء",
+      "en": "Check if the child is choking and unable to breathe or cry"
+    },
+    {
+      "ar": "ادعُ المساعدة فوراً",
+      "en": "Call for help immediately"
+    },
+    {
+      "ar": "اضرب ظهر الطفل بين لوحي الكتف بخمس ضربات قوية",
+      "en": "Give five strong back blows between the shoulder blades"
+    },
+    {
+      "ar": "إذا لم تزُل الانسداد، قم بضغوط صدرية أو هبطات بطنية",
+      "en": "If obstruction persists, perform chest thrusts or abdominal thrusts"
+    },
+    {
+      "ar": "إذا فقد الوعي، ابدأ الإنعاش القلبي الرئوي",
+      "en": "If unconscious, start CPR immediately"
+    }
+  ]
+}

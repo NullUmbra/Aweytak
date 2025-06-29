@@ -1,0 +1,21 @@
+{
+  "scenarioId": "burn_electrical",
+  "steps": [
+    {
+      "ar": "افصل مصدر الكهرباء قبل الاقتراب من المصاب",
+      "en": "Disconnect power source before approaching the victim"
+    },
+    {
+      "ar": "اتصل بالطوارئ فوراً",
+      "en": "Call emergency services immediately"
+    },
+    {
+      "ar": "تأكد من تنفس المصاب وإذا توقف ابدأ الإنعاش القلبي الرئوي",
+      "en": "Check breathing and start CPR if victim is unresponsive"
+    },
+    {
+      "ar": "غطِ الحروق بقطعة قماش نظيفة وفضفاضة",
+      "en": "Cover burns with clean, loose cloth"
+    }
+  ]
+}

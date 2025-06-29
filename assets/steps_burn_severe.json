@@ -1,0 +1,21 @@
+{
+  "scenarioId": "burn_severe",
+  "steps": [
+    {
+      "ar": "اتصل بالطوارئ فوراً",
+      "en": "Call emergency services immediately"
+    },
+    {
+      "ar": "لا تلمس الحروق أو تحاول إزالة الملابس الملتصقة",
+      "en": "Do not touch the burns or try to remove stuck clothing"
+    },
+    {
+      "ar": "غطِ الحروق بقطعة قماش نظيفة وفضفاضة",
+      "en": "Cover burns with clean, loose cloth"
+    },
+    {
+      "ar": "ارفع الجزء المصاب إذا أمكن",
+      "en": "Elevate the injured area if possible"
+    }
+  ]
+}

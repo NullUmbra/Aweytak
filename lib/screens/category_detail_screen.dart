@@ -39,11 +39,6 @@ class CategoryDetailScreen extends StatelessWidget {
           },
         ];
 
-      case 'burns':
-        return [
-          {'id': 'burn_mild', 'ar': 'حرق بسيط', 'en': 'Mild Burn'},
-          {'id': 'burn_severe', 'ar': 'حرق شديد', 'en': 'Severe Burn'},
-        ];
       case 'bleeding':
         return [
           {'id': 'bleed_nose', 'ar': 'نزيف الأنف', 'en': 'Nosebleed'},
@@ -56,6 +51,33 @@ class CategoryDetailScreen extends StatelessWidget {
             'en': 'Internal Bleeding',
           },
         ];
+
+      case 'burns':
+        return [
+          {'id': 'burn_mild', 'ar': 'حرق بسيط', 'en': 'Mild Burn'},
+          {'id': 'burn_severe', 'ar': 'حرق شديد', 'en': 'Severe Burn'},
+          {'id': 'burn_chemical', 'ar': 'حرق كيميائي', 'en': 'Chemical Burn'},
+          {
+            'id': 'burn_electrical',
+            'ar': 'حرق كهربائي',
+            'en': 'Electrical Burn',
+          },
+          {'id': 'burn_sun', 'ar': 'حرق الشمس', 'en': 'Sunburn'},
+        ];
+
+      case 'choking':
+        return [
+          {'id': 'choking_adult', 'ar': 'اختناق بالغ', 'en': 'Adult Choking'},
+          {'id': 'choking_child', 'ar': 'اختناق طفل', 'en': 'Child Choking'},
+          {'id': 'choking_infant', 'ar': 'اختناق رضيع', 'en': 'Infant Choking'},
+          {
+            'id': 'choking_unconscious',
+            'ar': 'اختناق وفقدان الوعي',
+            'en': 'Unconscious Choking',
+          },
+          {'id': 'choking_severe', 'ar': 'اختناق شديد', 'en': 'Severe Choking'},
+        ];
+
       case 'diseases':
         return [
           {

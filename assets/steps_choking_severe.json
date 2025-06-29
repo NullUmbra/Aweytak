@@ -1,0 +1,25 @@
+{
+  "scenarioId": "choking_severe",
+  "steps": [
+    {
+      "ar": "تحقق من علامات الاختناق الشديد مثل عدم القدرة على التنفس أو التحدث",
+      "en": "Check for signs of severe choking like inability to breathe or talk"
+    },
+    {
+      "ar": "اطلب المساعدة فوراً واستدعي الطوارئ",
+      "en": "Call for help and emergency services immediately"
+    },
+    {
+      "ar": "ابدأ ضغوطات البطن لإزالة الانسداد بسرعة",
+      "en": "Perform abdominal thrusts quickly to clear obstruction"
+    },
+    {
+      "ar": "إذا فقد الوعي، ابدأ الإنعاش القلبي الرئوي فوراً",
+      "en": "If unconscious, start CPR immediately"
+    },
+    {
+      "ar": "استمر حتى وصول المساعدة أو زوال الانسداد",
+      "en": "Continue until help arrives or obstruction is cleared"
+    }
+  ]
+}

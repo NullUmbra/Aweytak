@@ -1,0 +1,25 @@
+{
+  "scenarioId": "choking_unconscious",
+  "steps": [
+    {
+      "ar": "تحقق من وعي المصاب واطلب المساعدة فوراً",
+      "en": "Check victim’s responsiveness and call for help immediately"
+    },
+    {
+      "ar": "افتح مجرى الهواء باستخدام رأس المريض للخلف ورفع الذقن",
+      "en": "Open airway by tilting head back and lifting chin"
+    },
+    {
+      "ar": "ابدأ الإنعاش القلبي الرئوي فوراً",
+      "en": "Start CPR immediately"
+    },
+    {
+      "ar": "ابحث عن جسم غريب في الفم وأخرجه إذا كان مرئياً",
+      "en": "Look for foreign object in mouth and remove if visible"
+    },
+    {
+      "ar": "استمر في الإنعاش حتى وصول المساعدة",
+      "en": "Continue CPR until help arrives"
+    }
+  ]
+}
