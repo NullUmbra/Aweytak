@@ -46,6 +46,11 @@ flutter:
     - assets/steps_seizure_generalized.json
     - assets/steps_seizure_febrile.json
     - assets/steps_seizure_status_epilepticus.json
+    - assets/steps_snake_bite.json
+    - assets/steps_insect_sting.json
+    - assets/steps_scorpion_sting.json
+    - assets/steps_spider_bite.json
+    - assets/steps_bee_sting.json
     - assets/steps_diabetes_emergency.json
     - assets/steps_asthma_attack.json
 

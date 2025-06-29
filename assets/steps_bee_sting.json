@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bee_sting",
+  "steps": [
+    {
+      "ar": "قم بإزالة الإبرة برفق باستخدام بطاقة أو أظافر",
+      "en": "Carefully remove the sting with a card or fingernail"
+    },
+    {
+      "ar": "اغسل مكان اللدغة بالماء والصابون",
+      "en": "Wash the sting area with soap and water"
+    },
+    {
+      "ar": "ضع كمادات باردة لتخفيف الألم والتورم",
+      "en": "Apply cold compresses to reduce pain and swelling"
+    },
+    {
+      "ar": "تجنب الحك أو فرك المنطقة",
+      "en": "Avoid scratching or rubbing the area"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا حدثت أعراض حساسية شديدة",
+      "en": "Seek medical help if severe allergic reactions occur"
+    }
+  ]
+}

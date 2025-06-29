@@ -1,0 +1,25 @@
+{
+  "scenarioId": "insect_sting",
+  "steps": [
+    {
+      "ar": "أزل الشوكة إذا كانت ظاهرة برفق",
+      "en": "Carefully remove the stinger if visible"
+    },
+    {
+      "ar": "اغسل مكان اللدغة بالماء والصابون",
+      "en": "Wash the sting area with soap and water"
+    },
+    {
+      "ar": "ضع كمادات باردة لتقليل الألم والتورم",
+      "en": "Apply cold compresses to reduce pain and swelling"
+    },
+    {
+      "ar": "تجنب الحك لتقليل التهيج",
+      "en": "Avoid scratching to reduce irritation"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا حدثت أعراض حساسية شديدة",
+      "en": "Seek medical help if severe allergic symptoms occur"
+    }
+  ]
+}

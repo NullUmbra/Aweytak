@@ -1,0 +1,25 @@
+{
+  "scenarioId": "spider_bite",
+  "steps": [
+    {
+      "ar": "اغسل اللدغة جيدًا بالماء والصابون",
+      "en": "Wash the bite thoroughly with soap and water"
+    },
+    {
+      "ar": "ضع كمادات باردة لتقليل الألم والتورم",
+      "en": "Apply cold compresses to reduce pain and swelling"
+    },
+    {
+      "ar": "راقب العلامات غير العادية مثل الحمى أو الطفح الجلدي",
+      "en": "Watch for unusual signs like fever or rash"
+    },
+    {
+      "ar": "لا تحاول عصر أو خدش اللدغة",
+      "en": "Do not squeeze or scratch the bite"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا ازدادت الأعراض سوءًا",
+      "en": "Seek medical help if symptoms worsen"
+    }
+  ]
+}

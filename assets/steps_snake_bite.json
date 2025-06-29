@@ -1,0 +1,25 @@
+{
+  "scenarioId": "snake_bite",
+  "steps": [
+    {
+      "ar": "ابقَ هادئاً وابتعد عن الثعبان",
+      "en": "Stay calm and move away from the snake"
+    },
+    {
+      "ar": "اغسل مكان اللدغة بالماء والصابون بلطف",
+      "en": "Gently wash the bite area with soap and water"
+    },
+    {
+      "ar": "ثبت الطرف المصاب وابقه منخفضًا قليلاً",
+      "en": "Immobilize the bitten limb and keep it slightly lower"
+    },
+    {
+      "ar": "لا تقطع أو تمتص السم",
+      "en": "Do not cut or suck the venom"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية فورًا",
+      "en": "Seek immediate medical help"
+    }
+  ]
+}

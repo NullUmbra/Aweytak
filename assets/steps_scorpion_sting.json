@@ -1,0 +1,25 @@
+{
+  "scenarioId": "scorpion_sting",
+  "steps": [
+    {
+      "ar": "ابقَ هادئاً وحاول تحديد مكان اللدغة",
+      "en": "Stay calm and try to locate the sting site"
+    },
+    {
+      "ar": "نظف المنطقة بالماء والصابون",
+      "en": "Clean the area with soap and water"
+    },
+    {
+      "ar": "ضع كمادات باردة لتخفيف الألم",
+      "en": "Apply cold packs to ease pain"
+    },
+    {
+      "ar": "راقب علامات التسمم أو الحساسية",
+      "en": "Monitor for signs of poisoning or allergic reaction"
+    },
+    {
+      "ar": "اطلب الرعاية الطبية فوراً",
+      "en": "Seek medical care immediately"
+    }
+  ]
+}

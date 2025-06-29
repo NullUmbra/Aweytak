@@ -99,6 +99,15 @@ class CategoryDetailScreen extends StatelessWidget {
           },
         ];
 
+      case 'bites_stings':
+        return [
+          {'id': 'snake_bite', 'ar': 'لدغة ثعبان', 'en': 'Snake Bite'},
+          {'id': 'insect_sting', 'ar': 'لدغة حشرة', 'en': 'Insect Sting'},
+          {'id': 'scorpion_sting', 'ar': 'لدغة عقرب', 'en': 'Scorpion Sting'},
+          {'id': 'spider_bite', 'ar': 'لدغة عنكبوت', 'en': 'Spider Bite'},
+          {'id': 'bee_sting', 'ar': 'لدغة نحلة', 'en': 'Bee Sting'},
+        ];
+
       case 'diseases':
         return [
           {
