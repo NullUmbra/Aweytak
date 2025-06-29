@@ -1,0 +1,25 @@
+{
+  "scenarioId": "malaria",
+  "steps": [
+    {
+      "ar": "تعرف على أعراض الملاريا مثل الحمى والقشعريرة",
+      "en": "Recognize malaria symptoms like fever and chills"
+    },
+    {
+      "ar": "احصل على تشخيص طبي سريع",
+      "en": "Get a prompt medical diagnosis"
+    },
+    {
+      "ar": "تناول الأدوية الموصوفة بانتظام",
+      "en": "Take prescribed medications regularly"
+    },
+    {
+      "ar": "اشرب الكثير من السوائل لتجنب الجفاف",
+      "en": "Drink plenty of fluids to avoid dehydration"
+    },
+    {
+      "ar": "تجنب لدغات البعوض باستخدام الناموسيات والمبيدات",
+      "en": "Prevent mosquito bites with nets and repellents"
+    }
+  ]
+}

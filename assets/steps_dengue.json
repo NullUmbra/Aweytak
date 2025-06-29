@@ -1,0 +1,25 @@
+{
+  "scenarioId": "dengue",
+  "steps": [
+    {
+      "ar": "استخدم الناموسيات والمبيدات لتجنب لدغات البعوض",
+      "en": "Use mosquito nets and repellents to avoid bites"
+    },
+    {
+      "ar": "شرب كميات كبيرة من السوائل",
+      "en": "Drink plenty of fluids"
+    },
+    {
+      "ar": "تخفيف الألم والحمى بالأدوية المناسبة",
+      "en": "Relieve pain and fever with appropriate medications"
+    },
+    {
+      "ar": "الراحة التامة لتسريع الشفاء",
+      "en": "Get complete rest to speed recovery"
+    },
+    {
+      "ar": "استشارة الطبيب فوراً في حال ظهور أعراض شديدة",
+      "en": "Consult a doctor immediately if severe symptoms appear"
+    }
+  ]
+}

@@ -131,13 +131,18 @@ class CategoryDetailScreen extends StatelessWidget {
 
       case 'diseases':
         return [
-          {
-            'id': 'diabetes_emergency',
-            'ar': 'حالة طارئة لمرض السكري',
-            'en': 'Diabetes Emergency',
-          },
-          {'id': 'asthma_attack', 'ar': 'نوبة ربو', 'en': 'Asthma Attack'},
+          {'id': 'diabetes', 'ar': 'السكري', 'en': 'Diabetes'},
+          {'id': 'asthma', 'ar': 'نوبة الربو', 'en': 'Asthma Attack'},
+          {'id': 'malaria', 'ar': 'الملاريا', 'en': 'Malaria'},
+          {'id': 'cholera', 'ar': 'الكوليرا', 'en': 'Cholera'},
+          {'id': 'hepatitis', 'ar': 'التهاب الكبد', 'en': 'Hepatitis'},
+          {'id': 'tb', 'ar': 'السل', 'en': 'Tuberculosis'},
+          {'id': 'diarrhea', 'ar': 'الإسهال', 'en': 'Diarrhea'},
+          {'id': 'typhoid', 'ar': 'تايفود', 'en': 'Typhoid'},
+          {'id': 'measles', 'ar': 'الحصبة', 'en': 'Measles'},
+          {'id': 'dengue', 'ar': 'حمى الضنك', 'en': 'Dengue Fever'},
         ];
+
       default:
         return [
           {'id': 'default', 'ar': 'لا توجد حالات', 'en': 'No scenarios found'},

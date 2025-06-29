@@ -1,0 +1,25 @@
+{
+  "scenarioId": "typhoid",
+  "steps": [
+    {
+      "ar": "شرب ماء نظيف ومعقم فقط",
+      "en": "Drink clean and purified water only"
+    },
+    {
+      "ar": "غسل اليدين جيداً قبل الأكل وبعده",
+      "en": "Wash hands thoroughly before and after eating"
+    },
+    {
+      "ar": "تناول الأدوية الموصوفة بدقة",
+      "en": "Take prescribed medications accurately"
+    },
+    {
+      "ar": "تجنب تناول الطعام في الشوارع غير النظيفة",
+      "en": "Avoid eating food from unhygienic street vendors"
+    },
+    {
+      "ar": "استشر الطبيب فور ظهور الأعراض",
+      "en": "Consult a doctor as soon as symptoms appear"
+    }
+  ]
+}

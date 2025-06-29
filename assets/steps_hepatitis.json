@@ -1,0 +1,25 @@
+{
+  "scenarioId": "hepatitis",
+  "steps": [
+    {
+      "ar": "تجنب مشاركة الأدوات الشخصية مثل الإبر وفرش الأسنان",
+      "en": "Avoid sharing personal items like needles and toothbrushes"
+    },
+    {
+      "ar": "احصل على اللقاحات المتاحة ضد التهاب الكبد",
+      "en": "Get available vaccines against hepatitis"
+    },
+    {
+      "ar": "راقب الأعراض مثل اليرقان والتعب المستمر",
+      "en": "Monitor symptoms like jaundice and persistent fatigue"
+    },
+    {
+      "ar": "اتبع تعليمات الطبيب بدقة للعلاج",
+      "en": "Follow medical instructions carefully for treatment"
+    },
+    {
+      "ar": "تناول غذاء صحي وابتعد عن الكحول",
+      "en": "Eat healthy food and avoid alcohol"
+    }
+  ]
+}

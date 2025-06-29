@@ -1,0 +1,25 @@
+{
+  "scenarioId": "measles",
+  "steps": [
+    {
+      "ar": "الحصول على اللقاح المناسب للحصبة",
+      "en": "Get the appropriate measles vaccination"
+    },
+    {
+      "ar": "عزل المريض لمنع انتشار العدوى",
+      "en": "Isolate the patient to prevent spread"
+    },
+    {
+      "ar": "تخفيف الأعراض باستخدام الأدوية حسب التعليمات",
+      "en": "Relieve symptoms with medications as directed"
+    },
+    {
+      "ar": "شرب الكثير من السوائل للوقاية من الجفاف",
+      "en": "Drink plenty of fluids to prevent dehydration"
+    },
+    {
+      "ar": "استشارة الطبيب عند تفاقم الحالة",
+      "en": "Consult a doctor if condition worsens"
+    }
+  ]
+}

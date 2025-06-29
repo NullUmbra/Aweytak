@@ -1,0 +1,25 @@
+{
+  "scenarioId": "diabetes",
+  "steps": [
+    {
+      "ar": "راقب مستويات السكر في الدم بانتظام",
+      "en": "Monitor blood sugar levels regularly"
+    },
+    {
+      "ar": "تناول الأدوية أو الأنسولين حسب وصف الطبيب",
+      "en": "Take medications or insulin as prescribed"
+    },
+    {
+      "ar": "اتباع نظام غذائي صحي ومتوازن",
+      "en": "Follow a healthy, balanced diet"
+    },
+    {
+      "ar": "مارس التمارين الرياضية بانتظام",
+      "en": "Exercise regularly"
+    },
+    {
+      "ar": "استشر الطبيب فورًا عند ظهور أعراض غير طبيعية",
+      "en": "Consult a doctor immediately if unusual symptoms appear"
+    }
+  ]
+}

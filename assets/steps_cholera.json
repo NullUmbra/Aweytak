@@ -1,0 +1,25 @@
+{
+  "scenarioId": "cholera",
+  "steps": [
+    {
+      "ar": "احرص على شرب الماء النظيف والمعقم فقط",
+      "en": "Ensure to drink clean and purified water only"
+    },
+    {
+      "ar": "تعرف على علامات الجفاف الشديد مثل جفاف الفم والدوار",
+      "en": "Recognize severe dehydration signs like dry mouth and dizziness"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية فوراً عند ظهور الأعراض",
+      "en": "Seek immediate medical help when symptoms appear"
+    },
+    {
+      "ar": "اشرب محاليل معالجة الجفاف الفموي حسب التعليمات",
+      "en": "Drink oral rehydration solutions as directed"
+    },
+    {
+      "ar": "اغسل اليدين جيدًا قبل الأكل وبعده",
+      "en": "Wash hands thoroughly before and after eating"
+    }
+  ]
+}

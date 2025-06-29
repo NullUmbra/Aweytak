@@ -56,8 +56,16 @@ flutter:
     - assets/steps_heat_exhaustion.json
     - assets/steps_hypovolemic_shock.json
     - assets/steps_anaphylactic_shock.json
-    - assets/steps_diabetes_emergency.json
-    - assets/steps_asthma_attack.json
+    - assets/steps_malaria.json
+    - assets/steps_cholera.json
+    - assets/steps_hepatitis.json
+    - assets/steps_tb.json
+    - assets/steps_diarrhea.json
+    - assets/steps_typhoid.json
+    - assets/steps_measles.json
+    - assets/steps_dengue.json
+    - assets/steps_diabetes.json
+    - assets/steps_asthma.json
 
   uses-material-design: true
 

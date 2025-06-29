@@ -1,0 +1,25 @@
+{
+  "scenarioId": "diarrhea",
+  "steps": [
+    {
+      "ar": "احرص على شرب محاليل معالجة الجفاف الفموي",
+      "en": "Drink oral rehydration solutions"
+    },
+    {
+      "ar": "تناول وجبات خفيفة وسهلة الهضم",
+      "en": "Eat light and easily digestible meals"
+    },
+    {
+      "ar": "اغسل اليدين جيدًا قبل الأكل وبعده",
+      "en": "Wash hands thoroughly before and after meals"
+    },
+    {
+      "ar": "تجنب الأطعمة والمشروبات الملوثة",
+      "en": "Avoid contaminated food and drinks"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا استمرت الأعراض",
+      "en": "Seek medical help if symptoms persist"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "scenarioId": "tb",
+  "steps": [
+    {
+      "ar": "تعرف على أعراض السل مثل السعال المزمن وفقدان الوزن",
+      "en": "Recognize TB symptoms such as persistent cough and weight loss"
+    },
+    {
+      "ar": "اطلب فحص طبي وتشخيص دقيق",
+      "en": "Seek medical testing and accurate diagnosis"
+    },
+    {
+      "ar": "تناول العلاج الكامل للسل بدون توقف",
+      "en": "Complete full TB treatment without interruption"
+    },
+    {
+      "ar": "تجنب الاتصال المباشر مع المصابين في الأماكن المغلقة",
+      "en": "Avoid close contact with infected individuals indoors"
+    },
+    {
+      "ar": "تابع الفحوصات الدورية مع الطبيب",
+      "en": "Attend regular follow-ups with your doctor"
+    }
+  ]
+}

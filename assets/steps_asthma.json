@@ -1,0 +1,25 @@
+{
+  "scenarioId": "asthma",
+  "steps": [
+    {
+      "ar": "حاول تهدئة المريض وجعله يجلس بوضع مريح",
+      "en": "Help the patient stay calm and sit comfortably"
+    },
+    {
+      "ar": "استخدام جهاز الاستنشاق المخصص (البخاخ) حسب التعليمات",
+      "en": "Use the prescribed inhaler as directed"
+    },
+    {
+      "ar": "راقب التنفس وحاول تسجيل عدد الأنفاس في الدقيقة",
+      "en": "Monitor breathing and count breaths per minute"
+    },
+    {
+      "ar": "إذا لم تتحسن الحالة خلال دقائق، اطلب المساعدة الطبية فورًا",
+      "en": "If no improvement within minutes, seek immediate medical help"
+    },
+    {
+      "ar": "تجنب المثيرات التي قد تزيد الحالة سوءًا",
+      "en": "Avoid triggers that may worsen the condition"
+    }
+  ]
+}
