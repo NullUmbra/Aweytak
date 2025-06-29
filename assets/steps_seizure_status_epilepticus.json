@@ -1,0 +1,25 @@
+{
+  "scenarioId": "seizure_status_epilepticus",
+  "steps": [
+    {
+      "ar": "اتصل بالطوارئ فوراً برقم الطوارئ المحلي)",
+      "en": "Call emergency services immediately"
+    },
+    {
+      "ar": "ابقَ مع المصاب وراقب التنفس",
+      "en": "Stay with the person and monitor breathing"
+    },
+    {
+      "ar": "قم بوضع المصاب على جانبه لتجنب الاختناق",
+      "en": "Place the person on their side to prevent choking"
+    },
+    {
+      "ar": "لا توقف التشنجات بالقوة أو تدخل في الفم",
+      "en": "Do not restrain seizures or put anything in the mouth"
+    },
+    {
+      "ar": "انتظر وصول المساعدة الطبية المتخصصة",
+      "en": "Wait for professional medical help to arrive"
+    }
+  ]
+}

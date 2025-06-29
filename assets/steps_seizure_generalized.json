@@ -1,0 +1,25 @@
+{
+  "scenarioId": "seizure_generalized",
+  "steps": [
+    {
+      "ar": "ابقَ هادئاً وابقَ مع المصاب",
+      "en": "Stay calm and stay with the person"
+    },
+    {
+      "ar": "احمِ الرأس وابتعد عن الأشياء الحادة",
+      "en": "Protect the head and move sharp objects away"
+    },
+    {
+      "ar": "لا تحاول وضع شيء في فم المصاب",
+      "en": "Do not put anything in the person’s mouth"
+    },
+    {
+      "ar": "راقب وقت النوبة ومدة التشنجات",
+      "en": "Note the duration of the seizure"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا استمرت النوبة أكثر من 5 دقائق",
+      "en": "Seek medical help if seizure lasts more than 5 minutes"
+    }
+  ]
+}

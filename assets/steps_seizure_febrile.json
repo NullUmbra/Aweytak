@@ -1,0 +1,25 @@
+{
+  "scenarioId": "seizure_febrile",
+  "steps": [
+    {
+      "ar": "قم بتبريد المصاب بلطف باستخدام ماء دافئ",
+      "en": "Gently cool the person with lukewarm water"
+    },
+    {
+      "ar": "قم بإزالة الملابس الزائدة",
+      "en": "Remove excess clothing"
+    },
+    {
+      "ar": "راقب التنفس والوعي",
+      "en": "Monitor breathing and consciousness"
+    },
+    {
+      "ar": "لا تحاول إيقاف التشنجات بالقوة",
+      "en": "Do not try to stop seizures forcibly"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية فوراً إذا استمرت التشنجات",
+      "en": "Seek immediate medical help if seizures persist"
+    }
+  ]
+}

@@ -78,6 +78,27 @@ class CategoryDetailScreen extends StatelessWidget {
           {'id': 'choking_severe', 'ar': 'اختناق شديد', 'en': 'Severe Choking'},
         ];
 
+      case 'fever_seizures':
+        return [
+          {'id': 'fever_high', 'ar': 'حمى شديدة', 'en': 'High Fever'},
+          {'id': 'fever_low', 'ar': 'حمى منخفضة', 'en': 'Low-Grade Fever'},
+          {
+            'id': 'seizure_generalized',
+            'ar': 'تشنجات معممة',
+            'en': 'Generalized Seizures',
+          },
+          {
+            'id': 'seizure_febrile',
+            'ar': 'تشنجات الحمى',
+            'en': 'Febrile Seizures',
+          },
+          {
+            'id': 'seizure_status_epilepticus',
+            'ar': 'تشنجات مستمرة',
+            'en': 'Status Epilepticus',
+          },
+        ];
+
       case 'diseases':
         return [
           {

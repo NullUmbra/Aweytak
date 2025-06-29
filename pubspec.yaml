@@ -41,6 +41,11 @@ flutter:
     - assets/steps_choking_infant.json
     - assets/steps_choking_unconscious.json
     - assets/steps_choking_severe.json
+    - assets/steps_fever_high.json
+    - assets/steps_fever_low.json
+    - assets/steps_seizure_generalized.json
+    - assets/steps_seizure_febrile.json
+    - assets/steps_seizure_status_epilepticus.json
     - assets/steps_diabetes_emergency.json
     - assets/steps_asthma_attack.json
 

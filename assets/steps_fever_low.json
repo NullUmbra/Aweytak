@@ -1,0 +1,25 @@
+{
+  "scenarioId": "fever_low",
+  "steps": [
+    {
+      "ar": "راقب الأعراض ودرجة الحرارة بانتظام",
+      "en": "Monitor symptoms and temperature regularly"
+    },
+    {
+      "ar": "قدم سوائل دافئة وشجع الراحة",
+      "en": "Provide warm fluids and encourage rest"
+    },
+    {
+      "ar": "تجنب خافضات الحرارة إذا كانت الحمى منخفضة",
+      "en": "Avoid fever reducers if the fever is low-grade"
+    },
+    {
+      "ar": "راقب العلامات التي قد تدل على تفاقم الحالة",
+      "en": "Watch for signs of worsening condition"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية عند الحاجة",
+      "en": "Seek medical help if needed"
+    }
+  ]
+}
