@@ -1,0 +1,25 @@
+{
+  "scenarioId": "hypovolemic_shock",
+  "steps": [
+    {
+      "ar": "ضع المصاب مستلقياً وارفع قدميه قليلاً",
+      "en": "Lay the person down and raise their legs slightly"
+    },
+    {
+      "ar": "أوقف النزيف إن وجد بأسرع وقت ممكن",
+      "en": "Stop any bleeding as quickly as possible"
+    },
+    {
+      "ar": "ابق المصاب دافئًا ومسترخيًا",
+      "en": "Keep the person warm and comfortable"
+    },
+    {
+      "ar": "راقب التنفس والنبض باستمرار",
+      "en": "Continuously monitor breathing and pulse"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية فوراً",
+      "en": "Seek immediate medical assistance"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "scenarioId": "anaphylactic_shock",
+  "steps": [
+    {
+      "ar": "اتصل بالطوارئ فوراً",
+      "en": "Call emergency services immediately"
+    },
+    {
+      "ar": "إذا كان لديه حقنة أدرينالين، ساعده في استخدامها",
+      "en": "Assist in using epinephrine injector if available"
+    },
+    {
+      "ar": "ضع المصاب مستلقياً وارفع رجليه إذا كان ذلك ممكنًا",
+      "en": "Lay the person down and elevate legs if possible"
+    },
+    {
+      "ar": "راقب التنفس والوعي حتى وصول المساعدة",
+      "en": "Monitor breathing and consciousness until help arrives"
+    },
+    {
+      "ar": "لا تعطه أي طعام أو شراب",
+      "en": "Do not give food or drink"
+    }
+  ]
+}

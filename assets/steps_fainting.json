@@ -1,0 +1,25 @@
+{
+  "scenarioId": "fainting",
+  "steps": [
+    {
+      "ar": "ضع المصاب في وضع الاستلقاء وارفع قدميه قليلاً",
+      "en": "Lay the person down and raise their legs slightly"
+    },
+    {
+      "ar": "تأكد من أن مجرى الهواء مفتوح والتنفس طبيعي",
+      "en": "Ensure airway is open and breathing is normal"
+    },
+    {
+      "ar": "ابقَ هادئًا وراقب الحالة حتى يستعيد الوعي",
+      "en": "Stay calm and monitor until consciousness returns"
+    },
+    {
+      "ar": "لا تعطه شيئًا عن طريق الفم حتى يستعيد وعيه تمامًا",
+      "en": "Do not give anything by mouth until fully conscious"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا لم يستعد الوعي بسرعة",
+      "en": "Seek medical help if consciousness is not regained quickly"
+    }
+  ]
+}

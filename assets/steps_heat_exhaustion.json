@@ -1,0 +1,25 @@
+{
+  "scenarioId": "heat_exhaustion",
+  "steps": [
+    {
+      "ar": "انقل المصاب إلى مكان بارد ومظلل",
+      "en": "Move the person to a cool, shaded area"
+    },
+    {
+      "ar": "أزل الملابس الزائدة وأبرد الجسم بالماء",
+      "en": "Remove excess clothing and cool the body with water"
+    },
+    {
+      "ar": "أعطه رشفات صغيرة من الماء إذا كان واعياً",
+      "en": "Give small sips of water if conscious"
+    },
+    {
+      "ar": "راقب الحالة واطلب المساعدة إذا لم تتحسن",
+      "en": "Monitor condition and seek help if no improvement"
+    },
+    {
+      "ar": "اتصل بالطوارئ إذا ظهرت أعراض شديدة",
+      "en": "Call emergency services if severe symptoms appear"
+    }
+  ]
+}

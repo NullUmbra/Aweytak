@@ -1,0 +1,25 @@
+{
+  "scenarioId": "shock",
+  "steps": [
+    {
+      "ar": "ضع المصاب مستلقياً وارفع قدميه حوالي 30 سم",
+      "en": "Lay the person down and elevate their legs about 30 cm"
+    },
+    {
+      "ar": "حافظ على دفء المصاب بتغطية الجسم ببطانية",
+      "en": "Keep the person warm by covering with a blanket"
+    },
+    {
+      "ar": "تأكد من أن مجرى الهواء مفتوح والتنفس طبيعي",
+      "en": "Ensure airway is open and breathing is normal"
+    },
+    {
+      "ar": "لا تعطه أي طعام أو شراب",
+      "en": "Do not give food or drink"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية فوراً",
+      "en": "Seek immediate medical help"
+    }
+  ]
+}

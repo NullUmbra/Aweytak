@@ -108,6 +108,27 @@ class CategoryDetailScreen extends StatelessWidget {
           {'id': 'bee_sting', 'ar': 'لدغة نحلة', 'en': 'Bee Sting'},
         ];
 
+      case 'fainting_shock':
+        return [
+          {'id': 'fainting', 'ar': 'الإغماء', 'en': 'Fainting'},
+          {'id': 'shock', 'ar': 'الصدمة', 'en': 'Shock'},
+          {
+            'id': 'heat_exhaustion',
+            'ar': 'الإرهاق الحراري',
+            'en': 'Heat Exhaustion',
+          },
+          {
+            'id': 'hypovolemic_shock',
+            'ar': 'الصدمة نقص حجم الدم',
+            'en': 'Hypovolemic Shock',
+          },
+          {
+            'id': 'anaphylactic_shock',
+            'ar': 'الصدمة التحسسية',
+            'en': 'Anaphylactic Shock',
+          },
+        ];
+
       case 'diseases':
         return [
           {
