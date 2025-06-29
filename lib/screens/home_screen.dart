@@ -56,6 +56,13 @@ class HomeScreen extends StatelessWidget {
       'en': 'Fainting & Shock',
       'urgency': 'low',
     },
+    {
+      'id': 'diseases',
+      'icon': '🦠',
+      'ar': 'الأمراض الشائعة',
+      'en': 'Common Diseases',
+      'urgency': 'low',
+    },
   ];
 
   Color urgencyColor(String urgency) {
