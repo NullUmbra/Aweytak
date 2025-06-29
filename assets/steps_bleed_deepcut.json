@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bleed_deepcut",
+  "steps": [
+    {
+      "ar": "اضغط مباشرة على الجرح باستخدام قطعة قماش نظيفة أو شاش",
+      "en": "Apply direct pressure to the wound using a clean cloth or gauze"
+    },
+    {
+      "ar": "ارفع المنطقة المصابة فوق مستوى القلب إن أمكن",
+      "en": "Elevate the injured area above heart level if possible"
+    },
+    {
+      "ar": "استمر بالضغط حتى يتوقف النزيف أو تصل المساعدة",
+      "en": "Maintain pressure until bleeding stops or help arrives"
+    },
+    {
+      "ar": "لا تحاول إزالة الأجسام الغريبة المغروسة داخل الجرح",
+      "en": "Do not attempt to remove any embedded objects in the wound"
+    },
+    {
+      "ar": "غَطِّ الجرح بشاش نظيف بمجرد توقف النزيف",
+      "en": "Cover the wound with clean gauze once bleeding has stopped"
+    }
+  ]
+}

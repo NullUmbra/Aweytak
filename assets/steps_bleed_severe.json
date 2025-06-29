@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bleed_severe",
+  "steps": [
+    {
+      "ar": "اطلب المساعدة الطبية فوراً",
+      "en": "Call emergency services immediately"
+    },
+    {
+      "ar": "اضغط بقوة على مكان النزيف باستخدام قطعة قماش نظيفة",
+      "en": "Apply firm pressure on the wound with a clean cloth"
+    },
+    {
+      "ar": "إن أمكن، ارفع الطرف المصاب فوق مستوى القلب",
+      "en": "If possible, raise the injured limb above heart level"
+    },
+    {
+      "ar": "لا تقم بإزالة القماش إذا تشرب بالدم، أضف طبقة أخرى فوقه",
+      "en": "Do not remove soaked cloth—add another layer on top"
+    },
+    {
+      "ar": "ابقَ مع المصاب وراقب وعيه وتنفسه حتى تصل المساعدة",
+      "en": "Stay with the person and monitor breathing until help arrives"
+    }
+  ]
+}

@@ -48,6 +48,13 @@ class CategoryDetailScreen extends StatelessWidget {
         return [
           {'id': 'bleed_nose', 'ar': 'نزيف الأنف', 'en': 'Nosebleed'},
           {'id': 'bleed_deepcut', 'ar': 'جرح عميق', 'en': 'Deep Cut'},
+          {'id': 'bleed_minor', 'ar': 'نزيف بسيط', 'en': 'Minor Bleeding'},
+          {'id': 'bleed_severe', 'ar': 'نزيف شديد', 'en': 'Severe Bleeding'},
+          {
+            'id': 'bleed_internal',
+            'ar': 'نزيف داخلي',
+            'en': 'Internal Bleeding',
+          },
         ];
       case 'diseases':
         return [

@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bleed_minor",
+  "steps": [
+    {
+      "ar": "اغسل يديك جيداً أو استخدم قفازات إن توفرت",
+      "en": "Wash your hands thoroughly or use gloves if available"
+    },
+    {
+      "ar": "نظف الجرح بلطف باستخدام ماء نظيف فقط",
+      "en": "Clean the wound gently using clean water only"
+    },
+    {
+      "ar": "اضغط على الجرح باستخدام شاش معقم أو قطعة قماش نظيفة",
+      "en": "Apply gentle pressure with sterile gauze or clean cloth"
+    },
+    {
+      "ar": "غطِ الجرح بضمادة لاصقة أو شاش طبي",
+      "en": "Cover the wound with an adhesive bandage or sterile dressing"
+    },
+    {
+      "ar": "راقب علامات العدوى مثل الاحمرار أو التورم",
+      "en": "Watch for signs of infection such as redness or swelling"
+    }
+  ]
+}

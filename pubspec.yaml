@@ -26,6 +26,11 @@ flutter:
     - assets/steps_cpr_infant.json
     - assets/steps_cpr_choking.json
     - assets/steps_cpr_unconscious.json
+    - assets/steps_bleed_nose.json
+    - assets/steps_bleed_deepcut.json
+    - assets/steps_bleed_minor.json
+    - assets/steps_bleed_severe.json
+    - assets/steps_bleed_internal.json
     - assets/steps_burn_mild.json
     - assets/steps_diabetes_emergency.json
     - assets/steps_asthma_attack.json

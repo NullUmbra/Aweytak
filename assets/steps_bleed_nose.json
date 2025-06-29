@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bleed_nose",
+  "steps": [
+    {
+      "ar": "اجعل المصاب يجلس وينحني للأمام قليلاً",
+      "en": "Have the person sit down and lean slightly forward"
+    },
+    {
+      "ar": "اطلب منه أن يضغط على الأنف من الجزء اللين باستخدام الإبهام والسبابة",
+      "en": "Instruct them to pinch the soft part of the nose using thumb and index finger"
+    },
+    {
+      "ar": "استمر بالضغط لمدة 10 دقائق دون توقف",
+      "en": "Maintain pressure continuously for 10 minutes"
+    },
+    {
+      "ar": "تجنب الاستلقاء أو رفع الرأس للخلف",
+      "en": "Avoid lying down or tilting the head backward"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا استمر النزيف بعد 20 دقيقة",
+      "en": "Seek medical help if bleeding continues after 20 minutes"
+    }
+  ]
+}

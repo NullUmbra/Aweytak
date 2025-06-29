@@ -1,0 +1,25 @@
+{
+  "scenarioId": "bleed_internal",
+  "steps": [
+    {
+      "ar": "اطلب الطوارئ فوراً، النزيف الداخلي حالة خطيرة",
+      "en": "Call emergency services immediately—internal bleeding is serious"
+    },
+    {
+      "ar": "لا تقدم طعاماً أو شراباً للمصاب",
+      "en": "Do not give the person anything to eat or drink"
+    },
+    {
+      "ar": "ساعد المصاب على الاستلقاء في وضع مريح مع رفع الساقين إذا أمكن",
+      "en": "Help the person lie down in a comfortable position, raise legs if possible"
+    },
+    {
+      "ar": "غطِ المصاب للحفاظ على دفء الجسم",
+      "en": "Cover the person to maintain body warmth"
+    },
+    {
+      "ar": "راقب العلامات الحيوية بانتظام حتى تصل المساعدة",
+      "en": "Monitor vital signs until medical help arrives"
+    }
+  ]
+}
