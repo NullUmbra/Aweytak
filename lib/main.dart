@@ -92,6 +92,22 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
             primarySwatch: Colors.green,
             fontFamily: 'Cairo',
+            scaffoldBackgroundColor: const Color(
+              0xFF121212,
+            ), // Dark gray, not pitch black
+            colorScheme: ColorScheme.dark(
+              surface: const Color(0xFF121212),
+              primary: Colors.green,
+              secondary: Colors.orange,
+            ),
+            cardColor: const Color(0xFF1E1E1E), // Slightly lighter cards
+            textTheme: const TextTheme(
+              bodyLarge: TextStyle(color: Colors.white70), // Softer white text
+              bodyMedium: TextStyle(color: Colors.white70),
+            ),
+            highlightColor: Colors.orange.withAlpha(
+              77,
+            ), // ~30% opacity (255 * 0.3 = 76.5)
           ),
           themeMode: themeProvider.isDarkMode
               ? ThemeMode.dark
