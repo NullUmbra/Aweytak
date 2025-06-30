@@ -17,8 +17,22 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
   List<Scenario> _filteredScenarios = [];
 
-  List<TextSpan> _highlightMatch(String text, String query) {
+  List<TextSpan> _highlightMatch(
+    String text,
+    String query,
+    BuildContext context,
+  ) {
     if (query.isEmpty) return [TextSpan(text: text)];
+    final brightness = Theme.of(context).brightness;
+    final highlightColor = brightness == Brightness.dark
+        ? Colors.orange.withOpacity(0.5) // softer orange for dark mode
+        : const Color.fromARGB(
+            255,
+            241,
+            241,
+            104,
+          ); // bright yellow for light mode
+
     final lowercaseText = text.toLowerCase();
     final lowercaseQuery = query.toLowerCase();
 
@@ -29,8 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
       TextSpan(text: text.substring(0, matchIndex)),
       TextSpan(
         text: text.substring(matchIndex, matchIndex + query.length),
-        style: const TextStyle(
-          backgroundColor: Color.fromARGB(255, 241, 241, 104),
+        style: TextStyle(
+          backgroundColor: highlightColor,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -189,6 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: _highlightMatch(
                               isArabic ? scenario.titleAr : scenario.titleEn,
                               _searchController.text,
+                              context,
                             ),
                           ),
                         ),
