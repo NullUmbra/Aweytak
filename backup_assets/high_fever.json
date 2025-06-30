@@ -1,0 +1,25 @@
+{
+  "scenarioId": "isease_fever_high",
+  "steps": [
+    {
+      "ar": "قم بقياس درجة الحرارة باستخدام ميزان حرارة دقيق",
+      "en": "Measure temperature using an accurate thermometer"
+    },
+    {
+      "ar": "قم بإزالة الملابس الزائدة لتبريد الجسم",
+      "en": "Remove excess clothing to cool the body"
+    },
+    {
+      "ar": "قدم سوائل باردة بكميات صغيرة ومتكررة",
+      "en": "Offer cool fluids in small, frequent sips"
+    },
+    {
+      "ar": "استخدم خافض حرارة حسب تعليمات الطبيب",
+      "en": "Use fever reducers as per medical advice"
+    },
+    {
+      "ar": "اطلب المساعدة الطبية إذا استمرت الحمى أكثر من 3 أيام",
+      "en": "Seek medical help if fever persists more than 3 days"
+    }
+  ]
+}

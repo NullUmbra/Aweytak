@@ -22,6 +22,7 @@ void main() async {
   Hive.registerAdapter(ScenarioAdapter());
 
   await Hive.openBox<Scenario>('scenarios');
+
   //await importScenariosToHive();
 
   // Load theme preference before running app
