@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:aweytak/services/dart_loader.dart';
 import 'package:provider/provider.dart';
+import 'package:hive/hive.dart';
+
 import '../providers/language_provider.dart';
+import '../models/scenario.dart';
+import '../services/dart_loader.dart';
 
 class ScenarioDetailScreen extends StatefulWidget {
   final String scenarioId;
@@ -14,11 +17,33 @@ class ScenarioDetailScreen extends StatefulWidget {
 
 class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
   late Future<List<Map<String, dynamic>>> stepsFuture;
+  Scenario? scenario;
+
+  final List<Map<String, dynamic>> categories = const [
+    {'id': 'cpr', 'icon': '❤️'},
+    {'id': 'bleeding', 'icon': '🩸'},
+    {'id': 'burns', 'icon': '🔥'},
+    {'id': 'choking', 'icon': '😮‍💨'},
+    {'id': 'fever_seizures', 'icon': '🌡️'},
+    {'id': 'bites_stings', 'icon': '🐍'},
+    {'id': 'fainting_shock', 'icon': '😵'},
+    {'id': 'diseases', 'icon': '🦠'},
+  ];
+
+  String _getCategoryEmoji(String categoryId) {
+    final match = categories.firstWhere(
+      (cat) => cat['id'] == categoryId,
+      orElse: () => {},
+    );
+    return match['icon'] ?? '';
+  }
 
   @override
   void initState() {
     super.initState();
     stepsFuture = loadScenarioSteps(widget.scenarioId);
+    final box = Hive.box<Scenario>('scenarios');
+    scenario = box.get(widget.scenarioId);
   }
 
   String _stepLabel(int stepNumber, bool isArabic) {
@@ -54,10 +79,30 @@ class _ScenarioDetailScreenState extends State<ScenarioDetailScreen> {
 
           return ListView.builder(
             padding: const EdgeInsets.all(16),
-            itemCount: steps.length,
+            itemCount: steps.length + 1,
             itemBuilder: (context, index) {
-              final step = steps[index];
-              final stepNumber = index + 1;
+              if (index == 0) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '${_getCategoryEmoji(scenario?.categoryId ?? '')} '
+                        '${isArabic ? scenario?.titleAr ?? '...' : scenario?.titleEn ?? '...'}',
+                        style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const Divider(thickness: 1.5),
+                    ],
+                  ),
+                );
+              }
+
+              final step = steps[index - 1];
+              final stepNumber = index;
 
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
