@@ -3,13 +3,16 @@ import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:hive/hive.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'models/scenario.dart';
 import 'providers/language_provider.dart';
+import 'providers/theme_provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
-import 'services/import_scenarios.dart';
+import 'screens/settings_screen.dart';
+//import 'services/import_scenarios.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,23 +22,27 @@ void main() async {
   Hive.registerAdapter(ScenarioAdapter());
 
   await Hive.openBox<Scenario>('scenarios');
+  //await importScenariosToHive();
 
-  try {
-    final stopwatch = Stopwatch()..start();
-    await importScenariosToHive();
-    print('✅ Scenarios imported in ${stopwatch.elapsed}');
-  } catch (e) {
-    print('❌ Error during import: $e');
-  }
+  // Load theme preference before running app
+  final prefs = await SharedPreferences.getInstance();
+  final isDarkMode = prefs.getBool('isDarkMode') ?? false;
 
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => LanguageProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => LanguageProvider()),
+        ChangeNotifierProvider(
+          create: (_) {
+            final themeProvider = ThemeProvider();
+            themeProvider.setTheme(isDarkMode);
+            return themeProvider;
+          },
+        ),
+      ],
       child: const MyApp(),
     ),
   );
-
-  print('🚀 App started successfully');
 }
 
 class MyApp extends StatelessWidget {
@@ -43,40 +50,61 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final languageProvider = Provider.of<LanguageProvider>(context);
+    return Builder(
+      builder: (context) {
+        final languageProvider = Provider.of<LanguageProvider>(context);
+        final themeProvider = Provider.of<ThemeProvider>(context);
 
-    final router = GoRouter(
-      routes: [
-        GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
-        GoRoute(
-          path: '/category/:id',
-          builder: (context, state) {
-            final categoryId = state.pathParameters['id']!;
-            return CategoryDetailScreen(categoryId: categoryId);
-          },
-        ),
-        GoRoute(
-          path: '/scenario/:id',
-          builder: (context, state) {
-            final scenarioId = state.pathParameters['id']!;
-            return ScenarioDetailScreen(scenarioId: scenarioId);
-          },
-        ),
-      ],
-    );
+        final router = GoRouter(
+          routes: [
+            GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+            GoRoute(
+              path: '/category/:id',
+              builder: (context, state) {
+                final categoryId = state.pathParameters['id']!;
+                return CategoryDetailScreen(categoryId: categoryId);
+              },
+            ),
+            GoRoute(
+              path: '/scenario/:id',
+              builder: (context, state) {
+                final scenarioId = state.pathParameters['id']!;
+                return ScenarioDetailScreen(scenarioId: scenarioId);
+              },
+            ),
+            GoRoute(
+              path: '/settings',
+              builder: (context, state) => const SettingsScreen(),
+            ),
+          ],
+        );
 
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      routerConfig: router,
-      title: 'Aweytak',
-      theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'Cairo'),
-      locale: Locale(languageProvider.language.toLowerCase()),
-      builder: (context, child) {
-        return Directionality(
-          textDirection: languageProvider.isArabic
-              ? TextDirection.rtl
-              : TextDirection.ltr,
-          child: child!,
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          routerConfig: router,
+          title: 'Aweytak',
+          theme: ThemeData(
+            brightness: Brightness.light,
+            primarySwatch: Colors.green,
+            fontFamily: 'Cairo',
+          ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            primarySwatch: Colors.green,
+            fontFamily: 'Cairo',
+          ),
+          themeMode: themeProvider.isDarkMode
+              ? ThemeMode.dark
+              : ThemeMode.light,
+          locale: Locale(languageProvider.language.toLowerCase()),
+          builder: (context, child) {
+            return Directionality(
+              textDirection: languageProvider.isArabic
+                  ? TextDirection.rtl
+                  : TextDirection.ltr,
+              child: child!,
+            );
+          },
         );
       },
     );

@@ -136,6 +136,13 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.language),
               tooltip: 'Toggle Language',
             ),
+            IconButton(
+              onPressed: () {
+                GoRouter.of(context).push('/settings');
+              },
+              icon: const Icon(Icons.settings),
+              tooltip: isArabic ? 'الإعدادات' : 'Settings',
+            ),
           ],
         ),
         body: Padding(
