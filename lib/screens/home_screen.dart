@@ -5,6 +5,7 @@ import 'package:hive/hive.dart';
 
 import '../models/scenario.dart';
 import '../providers/language_provider.dart';
+import '../providers/theme_provider.dart'; // <-- Add this
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -25,18 +26,13 @@ class _HomeScreenState extends State<HomeScreen> {
     if (query.isEmpty) return [TextSpan(text: text)];
     final brightness = Theme.of(context).brightness;
     final highlightColor = brightness == Brightness.dark
-        ? Colors.orange.withOpacity(0.5) // softer orange for dark mode
-        : const Color.fromARGB(
-            255,
-            241,
-            241,
-            104,
-          ); // bright yellow for light mode
+        ? Colors.orange.withOpacity(0.5)
+        : const Color.fromARGB(255, 241, 241, 104);
 
     final lowercaseText = text.toLowerCase();
     final lowercaseQuery = query.toLowerCase();
-
     final matchIndex = lowercaseText.indexOf(lowercaseQuery);
+
     if (matchIndex == -1) return [TextSpan(text: text)];
 
     return [
@@ -137,6 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final languageProvider = Provider.of<LanguageProvider>(context);
+    final themeProvider = Provider.of<ThemeProvider>(context);
     final isArabic = languageProvider.isArabic;
 
     return Directionality(
@@ -152,8 +149,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             IconButton(
               onPressed: () {
-                GoRouter.of(context).push('/settings');
+                themeProvider.toggleTheme();
               },
+              icon: Icon(
+                themeProvider.isDarkMode ? Icons.light_mode : Icons.dark_mode,
+              ),
+              tooltip: isArabic ? 'الوضع الليلي' : 'Toggle Theme',
+            ),
+            IconButton(
+              onPressed: () => GoRouter.of(context).push('/settings'),
               icon: const Icon(Icons.settings),
               tooltip: isArabic ? 'الإعدادات' : 'Settings',
             ),
@@ -237,10 +241,8 @@ class _HomeScreenState extends State<HomeScreen> {
         childAspectRatio: 1.2,
         children: categories.map((category) {
           return GestureDetector(
-            onTap: () {
-              final id = category['id'];
-              GoRouter.of(context).push('/category/$id');
-            },
+            onTap: () =>
+                GoRouter.of(context).push('/category/${category['id']}'),
             child: Container(
               decoration: BoxDecoration(
                 color: urgencyColor(category['urgency']),
