@@ -3,24 +3,30 @@ import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:hive/hive.dart';
-import 'models/scenario.dart';
 
+import 'models/scenario.dart';
 import 'providers/language_provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
-import 'package:aweytak/services/import_scenarios.dart';
+import 'services/import_scenarios.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final dir = await getApplicationDocumentsDirectory();
 
+  final dir = await getApplicationDocumentsDirectory();
   Hive.init(dir.path);
   Hive.registerAdapter(ScenarioAdapter());
 
   await Hive.openBox<Scenario>('scenarios');
 
-  await importScenariosToHive();
+  try {
+    final stopwatch = Stopwatch()..start();
+    await importScenariosToHive();
+    print('✅ Scenarios imported in ${stopwatch.elapsed}');
+  } catch (e) {
+    print('❌ Error during import: $e');
+  }
 
   runApp(
     ChangeNotifierProvider(
@@ -28,6 +34,8 @@ void main() async {
       child: const MyApp(),
     ),
   );
+
+  print('🚀 App started successfully');
 }
 
 class MyApp extends StatelessWidget {
