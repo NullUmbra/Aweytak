@@ -17,6 +17,27 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
   List<Scenario> _filteredScenarios = [];
 
+  List<TextSpan> _highlightMatch(String text, String query) {
+    if (query.isEmpty) return [TextSpan(text: text)];
+    final lowercaseText = text.toLowerCase();
+    final lowercaseQuery = query.toLowerCase();
+
+    final matchIndex = lowercaseText.indexOf(lowercaseQuery);
+    if (matchIndex == -1) return [TextSpan(text: text)];
+
+    return [
+      TextSpan(text: text.substring(0, matchIndex)),
+      TextSpan(
+        text: text.substring(matchIndex, matchIndex + query.length),
+        style: const TextStyle(
+          backgroundColor: Color.fromARGB(255, 241, 241, 104),
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      TextSpan(text: text.substring(matchIndex + query.length)),
+    ];
+  }
+
   final List<Map<String, dynamic>> categories = const [
     {
       'id': 'cpr',
@@ -156,8 +177,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       final scenario = _filteredScenarios[index];
                       return ListTile(
                         leading: const Icon(Icons.medical_services),
-                        title: Text(
-                          isArabic ? scenario.titleAr : scenario.titleEn,
+                        title: Text.rich(
+                          TextSpan(
+                            children: _highlightMatch(
+                              isArabic ? scenario.titleAr : scenario.titleEn,
+                              _searchController.text,
+                            ),
+                          ),
                         ),
                         subtitle: Text(
                           isArabic
