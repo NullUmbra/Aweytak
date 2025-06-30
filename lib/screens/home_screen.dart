@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:hive/hive.dart';
+
+import '../models/scenario.dart';
 import '../providers/language_provider.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final TextEditingController _searchController = TextEditingController();
+  List<Scenario> _filteredScenarios = [];
 
   final List<Map<String, dynamic>> categories = const [
     {
@@ -76,6 +87,18 @@ class HomeScreen extends StatelessWidget {
     }
   }
 
+  void _onSearchChanged(String query, bool isArabic) {
+    final box = Hive.box<Scenario>('scenarios');
+    final all = box.values.toList();
+
+    setState(() {
+      _filteredScenarios = all.where((s) {
+        final title = isArabic ? s.titleAr : s.titleEn;
+        return title.toLowerCase().contains(query.toLowerCase());
+      }).toList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final languageProvider = Provider.of<LanguageProvider>(context);
@@ -110,6 +133,8 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               TextField(
+                controller: _searchController,
+                onChanged: (val) => _onSearchChanged(val, isArabic),
                 decoration: InputDecoration(
                   hintText: isArabic
                       ? 'ابحث عن حالة'
@@ -121,55 +146,86 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              Expanded(
-                child: GridView.count(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16,
-                  childAspectRatio: 1.2,
-                  children: categories.map((category) {
-                    return GestureDetector(
-                      onTap: () {
-                        final id = category['id'];
-                        if (id != null) {
-                          GoRouter.of(context).push('/category/$id');
-                        } else {
-                          debugPrint('Category ID missing!');
-                        }
-                      },
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: urgencyColor(category['urgency']),
-                          borderRadius: BorderRadius.circular(16),
+              if (_searchController.text.isEmpty)
+                _buildCategoryGrid(isArabic)
+              else if (_filteredScenarios.isNotEmpty)
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: _filteredScenarios.length,
+                    itemBuilder: (context, index) {
+                      final scenario = _filteredScenarios[index];
+                      return ListTile(
+                        leading: const Icon(Icons.medical_services),
+                        title: Text(
+                          isArabic ? scenario.titleAr : scenario.titleEn,
                         ),
-                        padding: const EdgeInsets.all(12),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              category['icon'],
-                              style: const TextStyle(fontSize: 40),
-                            ),
-                            const SizedBox(height: 10),
-                            Text(
-                              category[isArabic ? 'ar' : 'en'],
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
+                        subtitle: Text(
+                          isArabic
+                              ? 'ضمن: ${_getCategoryTitle(scenario.categoryId, isArabic)}'
+                              : 'In: ${_getCategoryTitle(scenario.categoryId, isArabic)}',
                         ),
-                      ),
-                    );
-                  }).toList(),
-                ),
-              ),
+                        onTap: () => GoRouter.of(
+                          context,
+                        ).push('/scenario/${scenario.id}'),
+                      );
+                    },
+                  ),
+                )
+              else
+                const Text("No matching scenarios found."),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Widget _buildCategoryGrid(bool isArabic) {
+    return Expanded(
+      child: GridView.count(
+        crossAxisCount: 2,
+        mainAxisSpacing: 16,
+        crossAxisSpacing: 16,
+        childAspectRatio: 1.2,
+        children: categories.map((category) {
+          return GestureDetector(
+            onTap: () {
+              final id = category['id'];
+              GoRouter.of(context).push('/category/$id');
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: urgencyColor(category['urgency']),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(category['icon'], style: const TextStyle(fontSize: 40)),
+                  const SizedBox(height: 10),
+                  Text(
+                    category[isArabic ? 'ar' : 'en'],
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }).toList(),
+      ),
+    );
+  }
+
+  String _getCategoryTitle(String categoryId, bool isArabic) {
+    final match = categories.firstWhere(
+      (cat) => cat['id'] == categoryId,
+      orElse: () => {},
+    );
+    return match[isArabic ? 'ar' : 'en'] ?? categoryId;
   }
 }
