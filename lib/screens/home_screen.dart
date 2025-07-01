@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (query.isEmpty) return [TextSpan(text: text)];
     final brightness = Theme.of(context).brightness;
     final highlightColor = brightness == Brightness.dark
-        ? Colors.orange.withOpacity(0.5)
+        ? Colors.orange.withValues(alpha: 77)
         : const Color.fromARGB(255, 241, 241, 104);
 
     final lowercaseText = text.toLowerCase();

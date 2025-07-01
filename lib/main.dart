@@ -12,6 +12,7 @@ import 'screens/home_screen.dart';
 import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/splash_screen.dart';
 //import 'services/import_scenarios.dart';
 
 void main() async {
@@ -58,7 +59,14 @@ class MyApp extends StatelessWidget {
 
         final router = GoRouter(
           routes: [
-            GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+            GoRoute(
+              path: '/',
+              builder: (context, state) => const SplashScreen(),
+            ),
+            GoRoute(
+              path: '/home',
+              builder: (context, state) => const HomeScreen(),
+            ),
             GoRoute(
               path: '/category/:id',
               builder: (context, state) {
