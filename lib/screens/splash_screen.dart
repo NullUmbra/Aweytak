@@ -13,46 +13,63 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-
     Timer(const Duration(seconds: 2), () {
-      if (mounted) {
-        context.go('/home');
-      }
+      if (mounted) context.go('/home');
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 13, 167, 10),
+      backgroundColor: const Color(0xFF0DA70A), // Clean green
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset('assets/splash.png', width: 180),
-            const SizedBox(height: 20),
-            const Text(
-              'أويتك\nAweytak',
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Cairo', // assuming you use this font
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset('assets/splash.png', width: 160),
+              const SizedBox(height: 32),
+              const Text(
+                'أويتك',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: 'Cairo',
+                ),
               ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 8),
-            const Text(
-              'دليلك الطبي السريع\nYour Quick Medical Guide',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white70,
-                fontStyle: FontStyle.italic,
-                fontFamily: 'Cairo',
+              const Text(
+                'Aweytak',
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Cairo',
+                ),
               ),
-              textAlign: TextAlign.center,
-            ),
-          ],
+              const SizedBox(height: 20),
+              const Text(
+                'دليلك الطبي السريع',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white70,
+                  fontFamily: 'Cairo',
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text(
+                'Your Quick Medical Guide',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.white60,
+                  fontStyle: FontStyle.italic,
+                  fontFamily: 'Cairo',
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
       ),
     );

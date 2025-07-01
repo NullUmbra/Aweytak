@@ -13,7 +13,7 @@ import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/splash_screen.dart';
-//import 'services/import_scenarios.dart';
+// import 'services/import_scenarios.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,10 +23,8 @@ void main() async {
   Hive.registerAdapter(ScenarioAdapter());
 
   await Hive.openBox<Scenario>('scenarios');
+  // await importScenariosToHive();
 
-  //await importScenariosToHive();
-
-  // Load theme preference before running app
   final prefs = await SharedPreferences.getInstance();
   final isDarkMode = prefs.getBool('isDarkMode') ?? false;
 
@@ -35,11 +33,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider(create: (_) => LanguageProvider()),
         ChangeNotifierProvider(
-          create: (_) {
-            final themeProvider = ThemeProvider();
-            themeProvider.setTheme(isDarkMode);
-            return themeProvider;
-          },
+          create: (_) => ThemeProvider()..setTheme(isDarkMode),
         ),
       ],
       child: const MyApp(),
@@ -47,50 +41,44 @@ void main() async {
   );
 }
 
+// --------------------
+// Move router outside the widget
+final _router = GoRouter(
+  initialLocation: '/',
+  routes: [
+    GoRoute(path: '/', builder: (context, state) => const SplashScreen()),
+    GoRoute(path: '/home', builder: (context, state) => const HomeScreen()),
+    GoRoute(
+      path: '/category/:id',
+      builder: (context, state) {
+        final categoryId = state.pathParameters['id']!;
+        return CategoryDetailScreen(categoryId: categoryId);
+      },
+    ),
+    GoRoute(
+      path: '/scenario/:id',
+      builder: (context, state) {
+        final scenarioId = state.pathParameters['id']!;
+        return ScenarioDetailScreen(scenarioId: scenarioId);
+      },
+    ),
+    GoRoute(
+      path: '/settings',
+      builder: (context, state) => const SettingsScreen(),
+    ),
+  ],
+);
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Builder(
-      builder: (context) {
-        final languageProvider = Provider.of<LanguageProvider>(context);
-        final themeProvider = Provider.of<ThemeProvider>(context);
-
-        final router = GoRouter(
-          routes: [
-            GoRoute(
-              path: '/',
-              builder: (context, state) => const SplashScreen(),
-            ),
-            GoRoute(
-              path: '/home',
-              builder: (context, state) => const HomeScreen(),
-            ),
-            GoRoute(
-              path: '/category/:id',
-              builder: (context, state) {
-                final categoryId = state.pathParameters['id']!;
-                return CategoryDetailScreen(categoryId: categoryId);
-              },
-            ),
-            GoRoute(
-              path: '/scenario/:id',
-              builder: (context, state) {
-                final scenarioId = state.pathParameters['id']!;
-                return ScenarioDetailScreen(scenarioId: scenarioId);
-              },
-            ),
-            GoRoute(
-              path: '/settings',
-              builder: (context, state) => const SettingsScreen(),
-            ),
-          ],
-        );
-
+    return Consumer2<LanguageProvider, ThemeProvider>(
+      builder: (context, languageProvider, themeProvider, _) {
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
-          routerConfig: router,
+          routerConfig: _router,
           title: 'Aweytak',
           theme: ThemeData(
             brightness: Brightness.light,
@@ -101,22 +89,18 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
             primarySwatch: Colors.green,
             fontFamily: 'Cairo',
-            scaffoldBackgroundColor: const Color(
-              0xFF121212,
-            ), // Dark gray, not pitch black
+            scaffoldBackgroundColor: const Color(0xFF121212),
             colorScheme: ColorScheme.dark(
               surface: const Color(0xFF121212),
               primary: Colors.green,
               secondary: Colors.orange,
             ),
-            cardColor: const Color(0xFF1E1E1E), // Slightly lighter cards
+            cardColor: const Color(0xFF1E1E1E),
             textTheme: const TextTheme(
-              bodyLarge: TextStyle(color: Colors.white70), // Softer white text
+              bodyLarge: TextStyle(color: Colors.white70),
               bodyMedium: TextStyle(color: Colors.white70),
             ),
-            highlightColor: Colors.orange.withAlpha(
-              77,
-            ), // ~30% opacity (255 * 0.3 = 76.5)
+            highlightColor: Colors.orange.withAlpha(77),
           ),
           themeMode: themeProvider.isDarkMode
               ? ThemeMode.dark
