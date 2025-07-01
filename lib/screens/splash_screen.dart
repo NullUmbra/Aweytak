@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen>
     );
     _fadeOutController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 600),
+      duration: const Duration(milliseconds: 1000),
     );
 
     _fadeIn = CurvedAnimation(parent: _fadeInController, curve: Curves.easeIn);
@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen>
     _fadeInController.forward();
 
     // Wait, then play fade-out and navigate
-    Timer(const Duration(seconds: 3), () async {
+    Timer(const Duration(seconds: 2), () async {
       await _fadeOutController.forward();
       if (mounted) context.go('/home');
     });

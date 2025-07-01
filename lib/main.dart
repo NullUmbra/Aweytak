@@ -42,7 +42,7 @@ void main() async {
 }
 
 // --------------------
-// Move router outside the widget
+// Router declared outside widget to avoid rebuilds
 final _router = GoRouter(
   initialLocation: '/',
   routes: [
