@@ -5,7 +5,7 @@ import 'package:hive/hive.dart';
 
 import '../models/scenario.dart';
 import '../providers/language_provider.dart';
-import '../providers/theme_provider.dart'; // <-- Add this
+import '../providers/theme_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,9 +14,36 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen>
+    with SingleTickerProviderStateMixin {
   final TextEditingController _searchController = TextEditingController();
   List<Scenario> _filteredScenarios = [];
+  late AnimationController _fadeController;
+  late Animation<double> _fadeAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _fadeController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1700),
+    );
+
+    _fadeAnimation = Tween<double>(
+      begin: 0.0,
+      end: 1.0,
+    ).animate(_fadeController);
+
+    _fadeController.forward();
+  }
+
+  @override
+  void dispose() {
+    _fadeController.dispose();
+    _searchController.dispose();
+    super.dispose();
+  }
 
   List<TextSpan> _highlightMatch(
     String text,
@@ -26,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (query.isEmpty) return [TextSpan(text: text)];
     final brightness = Theme.of(context).brightness;
     final highlightColor = brightness == Brightness.dark
-        ? Colors.orange.withValues(alpha: 77)
+        ? Colors.orange.withAlpha(77)
         : const Color.fromARGB(255, 241, 241, 104);
 
     final lowercaseText = text.toLowerCase();
@@ -136,99 +163,111 @@ class _HomeScreenState extends State<HomeScreen> {
     final themeProvider = Provider.of<ThemeProvider>(context);
     final isArabic = languageProvider.isArabic;
 
-    return Directionality(
-      textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text(isArabic ? 'أويتك' : 'Aweytak'),
-          actions: [
-            IconButton(
-              onPressed: () => languageProvider.toggleLanguage(),
-              icon: const Icon(Icons.language),
-              tooltip: 'Toggle Language',
-            ),
-            IconButton(
-              onPressed: () {
-                themeProvider.toggleTheme();
-              },
-              icon: Icon(
-                themeProvider.isDarkMode ? Icons.light_mode : Icons.dark_mode,
-              ),
-              tooltip: isArabic ? 'الوضع الليلي' : 'Toggle Theme',
-            ),
-            IconButton(
-              onPressed: () => GoRouter.of(context).push('/settings'),
-              icon: const Icon(Icons.settings),
-              tooltip: isArabic ? 'الإعدادات' : 'Settings',
-            ),
-          ],
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  isArabic ? 'ما هي حالة الطوارئ؟' : 'What is the emergency?',
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+    return AnimatedBuilder(
+      animation: _fadeAnimation,
+      builder: (context, child) {
+        return FadeTransition(
+          opacity: _fadeAnimation,
+          child: Directionality(
+            textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text(isArabic ? 'أويتك' : 'Aweytak'),
+                actions: [
+                  IconButton(
+                    onPressed: () => languageProvider.toggleLanguage(),
+                    icon: const Icon(Icons.language),
+                    tooltip: 'Toggle Language',
                   ),
+                  IconButton(
+                    onPressed: () => themeProvider.toggleTheme(),
+                    icon: Icon(
+                      themeProvider.isDarkMode
+                          ? Icons.light_mode
+                          : Icons.dark_mode,
+                    ),
+                    tooltip: isArabic ? 'الوضع الليلي' : 'Toggle Theme',
+                  ),
+                  IconButton(
+                    onPressed: () => GoRouter.of(context).push('/settings'),
+                    icon: const Icon(Icons.settings),
+                    tooltip: isArabic ? 'الإعدادات' : 'Settings',
+                  ),
+                ],
+              ),
+              body: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(
+                        isArabic
+                            ? 'ما هي حالة الطوارئ؟'
+                            : 'What is the emergency?',
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    TextField(
+                      controller: _searchController,
+                      onChanged: (val) => _onSearchChanged(val, isArabic),
+                      decoration: InputDecoration(
+                        hintText: isArabic
+                            ? 'ابحث عن حالة'
+                            : 'Search for a condition',
+                        prefixIcon: const Icon(Icons.search),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    if (_searchController.text.isEmpty)
+                      _buildCategoryGrid(isArabic)
+                    else if (_filteredScenarios.isNotEmpty)
+                      Expanded(
+                        child: ListView.builder(
+                          itemCount: _filteredScenarios.length,
+                          itemBuilder: (context, index) {
+                            final scenario = _filteredScenarios[index];
+                            return ListTile(
+                              leading: const Icon(Icons.medical_services),
+                              title: Text.rich(
+                                TextSpan(
+                                  children: _highlightMatch(
+                                    isArabic
+                                        ? scenario.titleAr
+                                        : scenario.titleEn,
+                                    _searchController.text,
+                                    context,
+                                  ),
+                                ),
+                              ),
+                              subtitle: Text(
+                                isArabic
+                                    ? 'ضمن: ${_getCategoryTitle(scenario.categoryId, isArabic)}'
+                                    : 'In: ${_getCategoryTitle(scenario.categoryId, isArabic)}',
+                              ),
+                              onTap: () => GoRouter.of(
+                                context,
+                              ).push('/scenario/${scenario.id}'),
+                            );
+                          },
+                        ),
+                      )
+                    else
+                      const Text("No matching scenarios found."),
+                  ],
                 ),
               ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _searchController,
-                onChanged: (val) => _onSearchChanged(val, isArabic),
-                decoration: InputDecoration(
-                  hintText: isArabic
-                      ? 'ابحث عن حالة'
-                      : 'Search for a condition',
-                  prefixIcon: const Icon(Icons.search),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              if (_searchController.text.isEmpty)
-                _buildCategoryGrid(isArabic)
-              else if (_filteredScenarios.isNotEmpty)
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: _filteredScenarios.length,
-                    itemBuilder: (context, index) {
-                      final scenario = _filteredScenarios[index];
-                      return ListTile(
-                        leading: const Icon(Icons.medical_services),
-                        title: Text.rich(
-                          TextSpan(
-                            children: _highlightMatch(
-                              isArabic ? scenario.titleAr : scenario.titleEn,
-                              _searchController.text,
-                              context,
-                            ),
-                          ),
-                        ),
-                        subtitle: Text(
-                          isArabic
-                              ? 'ضمن: ${_getCategoryTitle(scenario.categoryId, isArabic)}'
-                              : 'In: ${_getCategoryTitle(scenario.categoryId, isArabic)}',
-                        ),
-                        onTap: () => GoRouter.of(
-                          context,
-                        ).push('/scenario/${scenario.id}'),
-                      );
-                    },
-                  ),
-                )
-              else
-                const Text("No matching scenarios found."),
-            ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 
