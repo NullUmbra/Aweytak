@@ -11,10 +11,7 @@ class ScenarioImporter {
     try {
       final box = await Hive.openBox<Scenario>('scenarios');
       await box.clear();
-      print('All existing scenarios cleared from Hive.');
-    } catch (e) {
-      print('Error clearing scenarios: $e');
-    }
+    } catch (e) {}
   }
 
   // Method to save a single scenario object to Hive
@@ -22,10 +19,7 @@ class ScenarioImporter {
     try {
       final box = await Hive.openBox<Scenario>('scenarios');
       await box.put(scenario.id, scenario); // Use put to add or overwrite by ID
-      print('Scenario "${scenario.titleEn}" saved successfully to Hive.');
-    } catch (e) {
-      print('Error saving scenario "${scenario.titleEn}": $e');
-    }
+    } catch (e) {}
   }
 
   // Method to save multiple scenarios to Hive
@@ -34,12 +28,8 @@ class ScenarioImporter {
       final box = await Hive.openBox<Scenario>('scenarios');
       for (var scenario in scenarios) {
         await box.put(scenario.id, scenario);
-        print('Scenario "${scenario.titleEn}" saved.');
       }
-      print('All provided scenarios saved successfully to Hive.');
-    } catch (e) {
-      print('Error saving multiple scenarios: $e');
-    }
+    } catch (e) {}
   }
 
   // This method will import all initial scenarios from JSON files and mark the import as done
@@ -48,7 +38,6 @@ class ScenarioImporter {
     final hasInitialDataLoaded = prefs.getBool('hasInitialDataLoaded') ?? false;
 
     if (!hasInitialDataLoaded) {
-      print('Initial data import starting from JSON assets...');
       await clearAllScenarios(); // Clear existing data
 
       List<Scenario> scenariosToImport = [];
@@ -152,16 +141,12 @@ class ScenarioImporter {
 
         // Mark that initial data has been loaded
         await prefs.setBool('hasInitialDataLoaded', true);
-        print('Initial data import completed from JSON assets and flag set.');
       } catch (e) {
-        print('Error importing scenarios from JSON assets: $e');
         await prefs.setBool(
           'hasInitialDataLoaded',
           false,
         ); // Reset flag on error
       }
-    } else {
-      print('Initial data already loaded. Skipping import from JSON assets.');
-    }
+    } else {}
   }
 }
