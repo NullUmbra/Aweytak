@@ -140,7 +140,7 @@ class ScenarioImporter {
         await saveMultipleScenarios(scenariosToImport);
 
         // Mark that initial data has been loaded
-        await prefs.setBool('hasInitialDataLoaded', true);
+        //await prefs.setBool('hasInitialDataLoaded', true);
       } catch (e) {
         await prefs.setBool(
           'hasInitialDataLoaded',
