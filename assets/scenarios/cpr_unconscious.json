@@ -1,0 +1,37 @@
+{
+  "id": "cpr_unconscious",
+  "categoryId": "cpr",
+  "titleEn": "Unconscious with No Breathing",
+  "titleAr": "فاقد الوعي بدون تنفس",
+  "steps": [
+    {
+      "en": "Ensure scene safety and check for responsiveness. If unresponsive and not breathing, immediately call EMS.",
+      "ar": "تأكد من سلامة المكان وتحقق من الاستجابة. إذا كان غير مستجيب ولا يتنفس، اتصل بخدمات الطوارئ فوراً."
+    },
+    {
+      "en": "For adults, call EMS immediately. For children/infants, perform 2 minutes of CPR (5 cycles) before calling EMS if you are alone.",
+      "ar": "بالنسبة للبالغين، اتصل بخدمات الطوارئ فوراً. بالنسبة للأطفال/الرضع، قم بإجراء دقيقتين من الإنعاش القلبي الرئوي (5 دورات) قبل الاتصال بخدمات الطوارئ إذا كنت بمفردك."
+    },
+    {
+      "en": "Begin CPR following the appropriate guidelines for adult, child, or infant.",
+      "ar": "ابدأ الإنعاش القلبي الرئوي باتباع الإرشادات المناسبة للبالغين أو الأطفال أو الرضع."
+    },
+    {
+      "en": "Continue CPR until qualified help arrives, the victim starts breathing spontaneously, or you are too exhausted to continue.",
+      "ar": "استمر في الإنعاش القلبي الرئوي حتى تصل المساعدة المؤهلة، أو يبدأ المصاب في التنفس تلقائياً، أو تصبح مرهقاً جداً للاستمرار."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "This scenario is a trigger for starting CPR. The specific CPR steps are detailed in the \"CPR for Adults,\" \"CPR for Children,\" and \"CPR for Infants\" scenarios.",
+      "ar": "هذا السيناريو هو محفز لبدء الإنعاش القلبي الرئوي. يتم تفصيل خطوات الإنعاش القلبي الرئوي المحددة في سيناريوهات \"الإنعاش القلبي الرئوي للبالغين\"، و\"الإنعاش القلبي الرئوي للأطفال\"، و\"الإنعاش القلبي الرئوي للرضع\"."
+    },
+    {
+      "type": "best_practice",
+      "en": "If a bystander is available, have them call EMS immediately while you begin CPR.",
+      "ar": "إذا كان هناك شاهد متاح، اطلب منه الاتصال بخدمات الطوارئ فوراً بينما تبدأ الإنعاش القلبي الرئوي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/CPR_summary"
+}

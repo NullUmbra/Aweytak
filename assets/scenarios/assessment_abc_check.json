@@ -1,0 +1,37 @@
+{
+  "id": "abc_check",
+  "categoryId": "assessment",
+  "titleEn": "Airway, Breathing, Circulation (ABC)",
+  "titleAr": "فتح مجرى الهواء والتنفس والدورة الدموية",
+  "steps": [
+    {
+      "en": "Airway: Open the airway using the head-tilt, chin-lift maneuver (unless spinal injury is suspected, then use jaw-thrust).",
+      "ar": "مجرى الهواء: افتح مجرى الهواء باستخدام مناورة إمالة الرأس ورفع الذقن (ما لم يشتبه في إصابة في العمود الفقري، ثم استخدم دفع الفك)."
+    },
+    {
+      "en": "Breathing: Look, Listen, and Feel for breathing for no more than 10 seconds. Look for chest rise, listen for breath sounds, feel for air on your cheek.",
+      "ar": "التنفس: انظر، استمع، واشعر بالتنفس لمدة لا تزيد عن 10 ثوانٍ. ابحث عن ارتفاع الصدر، استمع لأصوات التنفس، اشعر بالهواء على خدك."
+    },
+    {
+      "en": "Circulation: Check for signs of circulation (e.g., normal breathing, coughing, movement). For adults/children, check carotid pulse. For infants, check brachial pulse.",
+      "ar": "الدورة الدموية: تحقق من علامات الدورة الدموية (مثل التنفس الطبيعي، السعال، الحركة). للبالغين/الأطفال، تحقق من نبض الشريان السباتي. للرضع، تحقق من نبض الشريان العضدي."
+    },
+    {
+      "en": "If the victim is not breathing normally or has no signs of circulation, begin CPR immediately.",
+      "ar": "إذا لم يكن المصاب يتنفس بشكل طبيعي أو لا توجد لديه علامات على الدورة الدموية، ابدأ الإنعاش القلبي الرئوي فوراً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Agonal gasps (infrequent, noisy gasps) are not normal breathing and indicate the need for CPR.",
+      "ar": "اللهاث الاحتضاري (لهاثات نادرة وصاخبة) ليس تنفساً طبيعياً ويشير إلى الحاجة إلى الإنعاش القلبي الرئوي."
+    },
+    {
+      "type": "info",
+      "en": "The ABCs are the foundation of primary assessment and address immediate life threats.",
+      "ar": "مبادئ مجاري الهواء والتنفس والدورة الدموية هي أساس التقييم الأولي وتعالج التهديدات الفورية للحياة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

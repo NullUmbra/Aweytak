@@ -1,0 +1,37 @@
+{
+  "id": "call_ems",
+  "categoryId": "emergency_action",
+  "titleEn": "Call Emergency Services",
+  "titleAr": "اتصل بخدمات الطوارئ",
+  "steps": [
+    {
+      "en": "If the situation is serious (unresponsive victim, severe bleeding, difficulty breathing, major trauma), call your local emergency number immediately.",
+      "ar": "إذا كان الوضع خطيراً (مصاب غير مستجيب، نزيف حاد، صعوبة في التنفس، صدمة كبيرة)، اتصل برقم الطوارئ المحلي الخاص بك فوراً."
+    },
+    {
+      "en": "If possible, send a bystander to call and instruct them to return and confirm the call.",
+      "ar": "إذا أمكن، أرسل شخصاً ماراً للاتصال ووجهه بالعودة لتأكيد الاتصال."
+    },
+    {
+      "en": "Be prepared to provide your exact location, the nature of the emergency, the number of victims, and any other relevant details.",
+      "ar": "كن مستعداً لتقديم موقعك الدقيق، طبيعة الطوارئ، عدد المصابين، وأي تفاصيل أخرى ذات صلة."
+    },
+    {
+      "en": "Do not hang up until the dispatcher tells you to. They may provide instructions or ask further questions.",
+      "ar": "لا تغلق الخط حتى يطلب منك المرسل ذلك. قد يقدمون تعليمات أو يطرحون أسئلة إضافية."
+    }
+  ],
+  "notes": [
+    {
+      "type": "best_practice",
+      "en": "Early access to emergency medical services significantly improves patient outcomes.",
+      "ar": "الوصول المبكر إلى خدمات الطوارئ الطبية يحسن بشكل كبير نتائج المرضى."
+    },
+    {
+      "type": "info",
+      "en": "Know your local emergency number (e.g., 911 in North America, 112 in Europe, 999 in UK).",
+      "ar": "اعرف رقم الطوارئ المحلي الخاص بك (مثل 911 في أمريكا الشمالية، 112 في أوروبا، 999 في المملكة المتحدة)."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

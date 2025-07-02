@@ -1,0 +1,46 @@
+{
+  "id": "internal_bleeding",
+  "categoryId": "bleeding",
+  "titleEn": "Internal Bleeding",
+  "titleAr": "النزيف الداخلي",
+  "steps": [
+    {
+      "en": "Call an ambulance immediately. Internal bleeding is a life-threatening emergency.",
+      "ar": "اتصل بسيارة الإسعاف فوراً. النزيف الداخلي هو حالة طارئة تهدد الحياة."
+    },
+    {
+      "en": "Check the victim's ABCs (Airway, Breathing, Circulation) and treat any immediate complications first.",
+      "ar": "تحقق من مجاري الهواء والتنفس والدورة الدموية للمصاب وعالج أي مضاعفات فورية أولاً."
+    },
+    {
+      "en": "Treat for shock: Lay the victim flat on their back and elevate their legs about 6-12 inches (15-30cm) to maintain blood flow to vital organs.",
+      "ar": "عالج من الصدمة: اجعل المصاب يستلقي على ظهره وارفع ساقيه حوالي 6-12 بوصة (15-30 سم) للحفاظ على تدفق الدم إلى الأعضاء الحيوية."
+    },
+    {
+      "en": "Assist the victim into the most comfortable position, while keeping them warm with blankets.",
+      "ar": "ساعد المصاب على اتخاذ الوضع الأكثر راحة، مع إبقائه دافئاً بالبطانيات."
+    },
+    {
+      "en": "Monitor ABCs and vital signs (e.g., pulse, skin color, consciousness) continuously until the ambulance arrives.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية (مثل النبض، لون الجلد، الوعي) باستمرار حتى وصول سيارة الإسعاف."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Internal bleeding may not be visible. Always suspect internal bleeding if signs of shock are present with no apparent external injuries.",
+      "ar": "قد لا يكون النزيف الداخلي مرئياً. اشتبه دائماً في النزيف الداخلي إذا كانت علامات الصدمة موجودة بدون إصابات خارجية واضحة."
+    },
+    {
+      "type": "info",
+      "en": "Signs of internal bleeding can include blood from nose/mouth/ears, blood in stool/urine, blood in vomit (like 'coffee-grounds'), bruising over abdomen/chest, pain over vital organs, or fractured femur.",
+      "ar": "يمكن أن تشمل علامات النزيف الداخلي: خروج الدم من الأنف/الفم/الأذنين، وجود دم في البراز/البول، دم في القيء (مثل 'تفل القهوة')، كدمات فوق منطقة البطن/الصدر، ألم فوق الأعضاء الحيوية، أو كسر في عظم الفخذ."
+    },
+    {
+      "type": "best_practice",
+      "en": "Any time there is the possibility of internal bleeding, treat as if it exists. Not treating can lead to death.",
+      "ar": "في أي وقت يكون هناك احتمال للنزيف الداخلي، عالج كما لو كان موجوداً. عدم العلاج يمكن أن يؤدي إلى الوفاة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Internal_Bleeding"
+}

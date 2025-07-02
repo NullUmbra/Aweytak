@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen>
       'urgency': 'medium',
     },
     {
-      'id': 'other',
+      'id': 'other_first_aid',
       'icon': '📚',
       'en': 'Other First Aid Topics',
       'ar': 'مواضيع إسعافية أخرى',

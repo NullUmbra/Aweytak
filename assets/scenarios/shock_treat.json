@@ -1,0 +1,53 @@
+{
+  "id": "treat_shock",
+  "categoryId": "shock",
+  "titleEn": "Treating Shock",
+  "titleAr": "علاج الصدمة",
+  "steps": [
+    {
+      "en": "Call EMS immediately. Shock is a medical emergency.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. الصدمة هي حالة طبية طارئة."
+    },
+    {
+      "en": "Ensure the victim's airway is open and they are breathing. Be prepared to perform CPR if necessary.",
+      "ar": "تأكد من أن مجرى الهواء للمصاب مفتوح وأنه يتنفس. كن مستعداً لإجراء الإنعاش القلبي الرئوي إذا لزم الأمر."
+    },
+    {
+      "en": "Lay the victim flat on their back. If no head or spinal injury is suspected, elevate their legs 6-12 inches (15-30cm) to improve blood flow to the brain.",
+      "ar": "اجعل المصاب يستلقي على ظهره. إذا لم يشتبه في إصابة في الرأس أو العمود الفقري، ارفع ساقيه 6-12 بوصة (15-30 سم) لتحسين تدفق الدم إلى الدماغ."
+    },
+    {
+      "en": "Control any external bleeding.",
+      "ar": "تحكم في أي نزيف خارجي."
+    },
+    {
+      "en": "Maintain normal body temperature: Cover the victim with blankets or coats to prevent heat loss, even in warm weather.",
+      "ar": "حافظ على درجة حرارة الجسم الطبيعية: غطِ المصاب بالبطانيات أو المعاطف لمنع فقدان الحرارة، حتى في الطقس الدافئ."
+    },
+    {
+      "en": "Do NOT give the victim anything to eat or drink.",
+      "ar": "لا تعطِ المصاب أي شيء للأكل أو الشرب."
+    },
+    {
+      "en": "Reassure the victim and keep them calm.",
+      "ar": "طمئن المصاب واجعله هادئاً."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously until EMS arrives.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Treating the underlying cause of shock is essential, but immediate first aid for shock itself is critical.",
+      "ar": "علاج السبب الكامن وراء الصدمة أمر ضروري، ولكن الإسعافات الأولية الفورية للصدمة نفسها أمر بالغ الأهمية."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not elevate the legs if head trauma, spinal injury, or severe lower limb fractures are suspected.",
+      "ar": "لا ترفع الساقين إذا اشتبه في صدمة في الرأس، أو إصابة في العمود الفقري، أو كسور شديدة في الأطراف السفلية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Shock"
+}

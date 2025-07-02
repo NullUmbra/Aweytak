@@ -1,0 +1,41 @@
+{
+  "id": "bite_dog",
+  "categoryId": "bites_stings",
+  "titleEn": "Dog Bite",
+  "titleAr": "عضة كلب",
+  "steps": [
+    {
+      "en": "Control bleeding by applying direct pressure with a clean cloth.",
+      "ar": "تحكم في النزيف عن طريق تطبيق ضغط مباشر بقطعة قماش نظيفة."
+    },
+    {
+      "en": "Wash the wound thoroughly with soap and plenty of running water for at least 5-10 minutes.",
+      "ar": "اغسل الجرح جيداً بالماء والصابون وكمية وفيرة من الماء الجاري لمدة 5-10 دقائق على الأقل."
+    },
+    {
+      "en": "Apply an antiseptic solution (if available and legally permitted) and cover the wound with a sterile dressing.",
+      "ar": "ضع محلولاً مطهراً (إذا كان متاحاً ومسموحاً به قانونياً) وغطِ الجرح بضمادة معقمة."
+    },
+    {
+      "en": "Seek medical attention immediately for all dog bites, especially if the bite is deep, bleeding heavily, on the face/hands/feet, or if rabies is a concern.",
+      "ar": "اطلب العناية الطبية فوراً لجميع عضات الكلاب، خاصة إذا كانت العضة عميقة، أو تنزف بغزارة، أو على الوجه/اليدين/القدمين، أو إذا كان داء الكلب مصدر قلق."
+    },
+    {
+      "en": "Obtain information about the dog and its owner for rabies risk assessment.",
+      "ar": "احصل على معلومات حول الكلب ومالكه لتقييم خطر داء الكلب."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Dog bites carry a risk of infection (e.g., rabies, tetanus). Prompt medical evaluation is crucial.",
+      "ar": "تحمل عضات الكلاب خطر العدوى (مثل داء الكلب، الكزاز). التقييم الطبي الفوري أمر بالغ الأهمية."
+    },
+    {
+      "type": "info",
+      "en": "Even minor dog bites should be cleaned thoroughly and assessed by a healthcare professional.",
+      "ar": "حتى عضات الكلاب الطفيفة يجب تنظيفها جيداً وتقييمها من قبل أخصائي رعاية صحية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bites_%26_Stings"
+}

@@ -37,4 +37,5 @@ flutter_icons:
 flutter:
   assets:
     - assets/splash.png
+    - assets/scenarios/
   uses-material-design: true

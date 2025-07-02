@@ -1,0 +1,45 @@
+{
+  "id": "fracture_sprain_general",
+  "categoryId": "fractures",
+  "titleEn": "Musculoskeletal Injuries (Fractures, Sprains, Strains, Dislocations)",
+  "titleAr": "إصابات الجهاز العضلي الهيكلي (الكسور، الالتواءات، الإجهاد، الخلع)",
+  "steps": [
+    {
+      "en": "If the injury appears severe (deformity, crepitus, no pulse below injury, inability to use part), activate EMS as soon as possible.",
+      "ar": "إذا بدت الإصابة شديدة (تشوه، فرقعة، لا يوجد نبض أسفل مكان الإصابة، عدم القدرة على استخدام الجزء المصاب)، اتصل بخدمات الطوارئ في أقرب وقت ممكن."
+    },
+    {
+      "en": "Apply the RICE principle: Rest the injured part.",
+      "ar": "طبق مبدأ RICE: أرح الجزء المصاب."
+    },
+    {
+      "en": "Immobilize the injured area: Use a sling for sprains, strains, and dislocations. Splint and sling fractures.",
+      "ar": "ثبت المنطقة المصابة: استخدم حمالة للالتواءات والإجهاد والخلع. جبّر وعلّق الكسور."
+    },
+    {
+      "en": "Apply Cold: Use ice packs periodically (10-20 minutes on, same time off), always with a fabric barrier between ice and skin.",
+      "ar": "طبق البرودة: استخدم كمادات الثلج بشكل دوري (10-20 دقيقة ثم إزالة لنفس المدة)، دائماً مع وضع حاجز قماشي بين الثلج والجلد."
+    },
+    {
+      "en": "Elevate the injured part where appropriate to help reduce swelling, but do not elevate if it causes more pain.",
+      "ar": "ارفع الجزء المصاب حيثما كان ذلك مناسباً للمساعدة في تقليل التورم، ولكن لا ترفعه إذا تسبب في المزيد من الألم."
+    },
+    {
+      "en": "Monitor the victim's ABCs and vital signs, and treat for shock if necessary.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية للمصاب وعلاماته الحيوية، وعالج من الصدمة إذا لزم الأمر."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "It is often difficult to distinguish between a sprain, strain, dislocation, or fracture without an X-ray; the treatment is generally the same.",
+      "ar": "غالباً ما يكون من الصعب التمييز بين الالتواء أو الإجهاد أو الخلع أو الكسر بدون أشعة سينية؛ العلاج هو نفسه بشكل عام."
+    },
+    {
+      "type": "warning",
+      "en": "Do NOT test for crepitus (grinding/cracking sound) as it can cause extreme pain and further injury.",
+      "ar": "لا تختبر وجود الفرقعة (صوت الطحن/الكسر) فقد يسبب ألماً شديداً ومزيداً من الإصابة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Musculoskeletal_Injuries"
+}

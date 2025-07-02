@@ -13,19 +13,35 @@ import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/splash_screen.dart';
-// import 'services/import_scenarios.dart';
+import 'services/scenario_importer.dart'; // Import your new service
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final dir = await getApplicationDocumentsDirectory();
   Hive.init(dir.path);
+
+  // IMPORTANT: Register the adapter BEFORE opening the box or putting/getting data
   Hive.registerAdapter(ScenarioAdapter());
 
   await Hive.openBox<Scenario>('scenarios');
-  // await importScenariosToHive();
 
+  // Initialize and run the scenario importer
+  final scenarioImporter = ScenarioImporter();
+  // TEMPORARY: Force re-import by resetting the flag for one run
   final prefs = await SharedPreferences.getInstance();
+  await prefs.setBool(
+    'hasInitialDataLoaded',
+    false,
+  ); // UNCOMMENT FOR ONE RUN, THEN REMOVE!
+
+  await scenarioImporter
+      .importInitialData(); // This will now handle the one-time import
+
+  // The SharedPreferences instance for isDarkMode should be obtained AFTER
+  // the scenarioImporter.importInitialData() if you uncommented the temporary line above,
+  // to avoid conflicts with the temporary flag reset.
+  //final prefs = await SharedPreferences.getInstance();
   final isDarkMode = prefs.getBool('isDarkMode') ?? false;
 
   runApp(

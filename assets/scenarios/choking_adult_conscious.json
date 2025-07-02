@@ -1,0 +1,46 @@
+{
+  "id": "choking_adult_conscious",
+  "categoryId": "choking",
+  "titleEn": "Conscious Adult Choking",
+  "titleAr": "اختناق بالغ واعٍ",
+  "steps": [
+    {
+      "en": "Ask \"Are you choking?\" If they can speak, cough, or breathe, do not interfere; encourage them to cough.",
+      "ar": "اسأل \"هل تختنق؟\" إذا كان بإمكانه التحدث أو السعال أو التنفس، فلا تتدخل؛ شجعه على السعال."
+    },
+    {
+      "en": "If they cannot speak, cough, or breathe, perform abdominal thrusts (Heimlich maneuver).",
+      "ar": "إذا لم يتمكن من التحدث أو السعال أو التنفس، قم بإجراء دفعات البطن (مناورة هيمليك)."
+    },
+    {
+      "en": "Stand behind the victim and wrap your arms around their waist. Make a fist with one hand and place it just above the navel.",
+      "ar": "قف خلف المصاب ولف ذراعيك حول خصره. اصنع قبضة بإحدى يديك وضعها فوق السرة مباشرة."
+    },
+    {
+      "en": "Grasp your fist with your other hand and deliver quick, upward thrusts into the abdomen until the object is expelled or the victim becomes unconscious.",
+      "ar": "امسك قبضتك باليد الأخرى وادفع دفعات سريعة ومتجهة للأعلى في البطن حتى يتم طرد الجسم أو يفقد المصاب الوعي."
+    },
+    {
+      "en": "If the victim becomes unconscious, call for an ambulance immediately and begin CPR (refer to CPR for Adults scenario).",
+      "ar": "إذا فقد المصاب الوعي، اتصل بسيارة الإسعاف فوراً وابدأ الإنعاش القلبي الرئوي (ارجع إلى سيناريو الإنعاش القلبي الرئوي للبالغين)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Abdominal thrusts can cause injury even when performed correctly. Only perform if severe airway obstruction is present.",
+      "ar": "يمكن أن تسبب دفعات البطن إصابة حتى عند إجرائها بشكل صحيح. قم بإجرائها فقط في حال وجود انسداد شديد في مجرى الهواء."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not attempt to remove an object with your fingers unless you can clearly see it and easily reach it.",
+      "ar": "لا تحاول إزالة جسم بأصابعك إلا إذا كنت تستطيع رؤيته بوضوح والوصول إليه بسهولة."
+    },
+    {
+      "type": "info",
+      "en": "For pregnant or very large victims, perform chest thrusts instead of abdominal thrusts.",
+      "ar": "بالنسبة للحوامل أو المصابين ذوي الحجم الكبير جداً، قم بإجراء دفعات الصدر بدلاً من دفعات البطن."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Obstructed_Airway"
+}

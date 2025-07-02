@@ -1,0 +1,50 @@
+{
+  "id": "illness_seizure",
+  "categoryId": "illnesses",
+  "titleEn": "Seizure",
+  "titleAr": "نوبة تشنج",
+  "steps": [
+    {
+      "en": "Call EMS or have someone call for you, especially if it's the first seizure, lasts longer than 5 minutes, or if the victim is injured or pregnant.",
+      "ar": "اتصل بخدمات الطوارئ أو اطلب من شخص ما الاتصال نيابة عنك، خاصة إذا كانت النوبة الأولى، أو استمرت لأكثر من 5 دقائق، أو إذا كان المصاب مصاباً أو حاملاً."
+    },
+    {
+      "en": "Move anything away from the victim that they could injure themselves with (e.g., chairs, sharp objects).",
+      "ar": "أبعد أي شيء يمكن أن يصيب المصاب نفسه به (مثل الكراسي، الأجسام الحادة)."
+    },
+    {
+      "en": "Gently support the victim's head to prevent it from hitting the ground or other hard surfaces.",
+      "ar": "ادعم رأس المصاب بلطف لمنعه من الارتطام بالأرض أو الأسطح الصلبة الأخرى."
+    },
+    {
+      "en": "Request that all bystanders move away to provide privacy and space.",
+      "ar": "اطلب من جميع المارة الابتعاد لتوفير الخصوصية والمساحة."
+    },
+    {
+      "en": "After the seizure has ended, roll the victim into the recovery position, but only if you do not suspect a spinal injury.",
+      "ar": "بعد انتهاء النوبة، اقلب المصاب إلى وضع الإفاقة، ولكن فقط إذا لم تشتبه في إصابة في العمود الفقري."
+    },
+    {
+      "en": "Once the victim slowly 'awakens', offer reassurance and stay with them until they are fully aware of their surroundings or EMS arrives.",
+      "ar": "بمجرد أن 'يستيقظ' المصاب ببطء، قدم له الطمأنينة وابقَ معه حتى يصبح واعياً تماماً بمحيطه أو حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "do_not",
+      "en": "Never try to restrain the victim during a seizure.",
+      "ar": "لا تحاول أبداً تقييد المصاب أثناء النوبة."
+    },
+    {
+      "type": "do_not",
+      "en": "Never put anything in the victim's mouth; they will not swallow their tongue, and attempting to insert something can cause injury.",
+      "ar": "لا تضع أبداً أي شيء في فم المصاب؛ لن يبتلع لسانه، ومحاولة إدخال شيء يمكن أن تسبب إصابة."
+    },
+    {
+      "type": "info",
+      "en": "Seizures typically last no more than three minutes. Irregular breathing, body rigidity, and convulsing are common during a seizure.",
+      "ar": "عادة ما تستمر النوبات لمدة لا تزيد عن ثلاث دقائق. التنفس غير المنتظم، وتصلب الجسم، والتشنجات شائعة أثناء النوبة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Seizures"
+}

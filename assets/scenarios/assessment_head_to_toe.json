@@ -1,0 +1,49 @@
+{
+  "id": "head_to_toe",
+  "categoryId": "assessment",
+  "titleEn": "Head-to-Toe Examination",
+  "titleAr": "الفحص من الرأس للقدمين",
+  "steps": [
+    {
+      "en": "Once life-threatening conditions are managed and EMS is en route, perform a systematic head-to-toe examination.",
+      "ar": "بمجرد إدارة الحالات المهددة للحياة وكون خدمات الطوارئ في طريقها، قم بإجراء فحص منهجي من الرأس إلى القدمين."
+    },
+    {
+      "en": "Look for signs of injury, bleeding, swelling, deformity, or medical alert tags.",
+      "ar": "ابحث عن علامات الإصابة، النزيف، التورم، التشوه، أو بطاقات التنبيه الطبي."
+    },
+    {
+      "en": "Gently feel for tenderness or abnormalities, starting from the head and moving down the body.",
+      "ar": "المس بلطف بحثاً عن الألم أو التشوهات، بدءاً من الرأس ونزولاً إلى الجسم."
+    },
+    {
+      "en": "Check the scalp, face, ears, nose, mouth, and neck.",
+      "ar": "افحص فروة الرأس، الوجه، الأذنين، الأنف، الفم، والرقبة."
+    },
+    {
+      "en": "Examine the chest, abdomen, pelvis, and back (log roll if spinal injury is not suspected).",
+      "ar": "افحص الصدر، البطن، الحوض، والظهر (قلب المصاب ببطء إذا لم يشتبه في إصابة في العمود الفقري)."
+    },
+    {
+      "en": "Check all four limbs for injury, and assess circulation (pulse, capillary refill), sensation, and movement.",
+      "ar": "افحص جميع الأطراف الأربعة بحثاً عن الإصابة، وقم بتقييم الدورة الدموية (النبض، إعادة تعبئة الشعيرات الدموية)، الإحساس، والحركة."
+    },
+    {
+      "en": "Note any findings and report them to EMS personnel upon their arrival.",
+      "ar": "دون أي نتائج وبلغ بها موظفي خدمات الطوارئ عند وصولهم."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "This secondary assessment helps identify non-life-threatening injuries that still require medical attention.",
+      "ar": "يساعد هذا التقييم الثانوي في تحديد الإصابات غير المهددة للحياة والتي لا تزال تتطلب عناية طبية."
+    },
+    {
+      "type": "best_practice",
+      "en": "Always maintain the victim's privacy and dignity during the examination.",
+      "ar": "حافظ دائماً على خصوصية المصاب وكرامته أثناء الفحص."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Secondary_survey"
+}

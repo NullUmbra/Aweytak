@@ -1,0 +1,45 @@
+{
+  "id": "illness_fainting",
+  "categoryId": "illnesses",
+  "titleEn": "Fainting",
+  "titleAr": "الإغماء",
+  "steps": [
+    {
+      "en": "If the victim feels faint, have them lie down or sit with their head between their knees to increase blood flow to the brain.",
+      "ar": "إذا شعر المصاب بالإغماء، اجعله يستلقي أو يجلس ورأسه بين ركبتيه لزيادة تدفق الدم إلى الدماغ."
+    },
+    {
+      "en": "If the victim has fainted, lay them flat on their back. Elevate their legs about 6-12 inches (15-30cm) to improve blood flow to the brain.",
+      "ar": "إذا أغمي على المصاب، اجعله يستلقي على ظهره. ارفع ساقيه حوالي 6-12 بوصة (15-30 سم) لتحسين تدفق الدم إلى الدماغ."
+    },
+    {
+      "en": "Loosen any tight clothing around the neck or waist.",
+      "ar": "قم بتخفيف أي ملابس ضيقة حول الرقبة أو الخصر."
+    },
+    {
+      "en": "Ensure they have fresh air; open windows or fan them gently.",
+      "ar": "تأكد من حصولهم على هواء نقي؛ افتح النوافذ أو قم بتهويتهم بلطف."
+    },
+    {
+      "en": "Once conscious, keep them lying down for a few minutes. Do not allow them to stand up too quickly.",
+      "ar": "بمجرد استعادة الوعي، اجعلهم يستلقون لبضع دقائق. لا تسمح لهم بالوقوف بسرعة كبيرة."
+    },
+    {
+      "en": "If fainting is recurrent, prolonged, or accompanied by other symptoms (e.g., chest pain, difficulty breathing), call EMS.",
+      "ar": "إذا كان الإغماء متكرراً، أو طويلاً، أو مصحوباً بأعراض أخرى (مثل ألم الصدر، صعوبة التنفس)، اتصل بخدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Fainting (syncope) is a temporary loss of consciousness usually due to a temporary reduction in blood flow to the brain.",
+      "ar": "الإغماء (الغشي) هو فقدان مؤقت للوعي عادة بسبب انخفاض مؤقت في تدفق الدم إلى الدماغ."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not splash water on their face or use smelling salts, as these are generally not recommended.",
+      "ar": "لا ترش الماء على وجههم أو تستخدم أملاح النشادر، حيث لا يوصى بهذه الإجراءات بشكل عام."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Medical_conditions_%26_poisoning"
+}

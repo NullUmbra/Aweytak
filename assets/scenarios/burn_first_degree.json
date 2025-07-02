@@ -1,0 +1,37 @@
+{
+  "id": "burn_first_degree",
+  "categoryId": "burns",
+  "titleEn": "First-Degree Burns",
+  "titleAr": "الحروق من الدرجة الأولى",
+  "steps": [
+    {
+      "en": "Cool the burn immediately with cool (not cold or iced) running water for at least 10-20 minutes, or until the pain subsides.",
+      "ar": "برد الحرق فوراً بماء بارد (وليس مثلجاً) جارٍ لمدة 10-20 دقيقة على الأقل، أو حتى يزول الألم."
+    },
+    {
+      "en": "Remove any jewelry or tight clothing from the burned area before swelling begins.",
+      "ar": "أزل أي مجوهرات أو ملابس ضيقة من المنطقة المحروقة قبل بدء التورم."
+    },
+    {
+      "en": "Cover the burn loosely with a clean, non-adhesive dressing to protect it from infection.",
+      "ar": "غطِ الحرق بشكل فضفاض بضمادة نظيفة وغير لاصقة لحمايته من العدوى."
+    },
+    {
+      "en": "Consider over-the-counter pain relievers if needed.",
+      "ar": "فكر في استخدام مسكنات الألم المتاحة دون وصفة طبية إذا لزم الأمر."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "First-degree burns affect only the outer layer of skin (epidermis), causing redness, pain, and minor swelling. There are no blisters.",
+      "ar": "حروق الدرجة الأولى تؤثر فقط على الطبقة الخارجية من الجلد (البشرة)، مما يسبب احمراراً وألماً وتورماً بسيطاً. لا توجد بثور."
+    },
+    {
+      "type": "do_not",
+      "en": "Do NOT apply butter, oils, ice, or any other home remedies to the burn, as these can worsen the injury or cause infection.",
+      "ar": "لا تضع الزبدة، أو الزيوت، أو الثلج، أو أي علاجات منزلية أخرى على الحرق، فقد يؤدي ذلك إلى تفاقم الإصابة أو التسبب في العدوى."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

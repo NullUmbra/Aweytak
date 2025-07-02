@@ -1,0 +1,50 @@
+{
+  "id": "poisoning_non_bite",
+  "categoryId": "other_first_aid",
+  "titleEn": "General Poisoning (Ingestion, Inhalation, Absorption)",
+  "titleAr": "التسمم العام (الابتلاع، الاستنشاق، الامتصاص)",
+  "steps": [
+    {
+      "en": "Call EMS immediately and, if possible, a poison control center. Provide information about the suspected poison.",
+      "ar": "اتصل بخدمات الطوارئ فوراً، وإذا أمكن، بمركز مكافحة السموم. قدم معلومات حول السم المشتبه به."
+    },
+    {
+      "en": "For absorbed poisons (skin contact): Wearing gloves, brush off powders, then flush with plenty of water for at least 20 minutes. For liquids, flush with water for at least 20 minutes.",
+      "ar": "للسُموم الممتصة (ملامسة الجلد): مع ارتداء القفازات، امسح المساحيق، ثم اغسل بكمية كبيرة من الماء لمدة 20 دقيقة على الأقل. للسوائل، اغسل بالماء لمدة 20 دقيقة على الأقل."
+    },
+    {
+      "en": "For inhaled poisons: Move the victim to fresh air immediately. Use caution if giving rescue breathing to avoid contamination.",
+      "ar": "للسُموم المستنشقة: انقل المصاب إلى الهواء النقي فوراً. توخ الحذر عند إعطاء التنفس الإنقاذي لتجنب التلوث."
+    },
+    {
+      "en": "For ingested poisons: Do NOT induce vomiting unless specifically advised by poison control. Check the label for first aid instructions.",
+      "ar": "للسُموم المبتلعة: لا تحفز القيء إلا إذا نصح مركز مكافحة السموم بذلك تحديداً. تحقق من الملصق للحصول على تعليمات الإسعافات الأولية."
+    },
+    {
+      "en": "Monitor the victim's ABCs continuously and treat any life-threatening problems first.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية للمصاب باستمرار وعالج أي مشاكل مهددة للحياة أولاً."
+    },
+    {
+      "en": "Treat for shock and assist the victim into the most comfortable position.",
+      "ar": "عالج من الصدمة وساعد المصاب على اتخاذ الوضع الأكثر راحة."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do not give any food or drink to an unconscious victim.",
+      "ar": "لا تعطِ أي طعام أو شراب لمصاب فاقد الوعي."
+    },
+    {
+      "type": "do_not",
+      "en": "Never induce vomiting without expert advice, as it can cause further harm or airway obstruction.",
+      "ar": "لا تحفز القيء أبداً بدون استشارة خبير، فقد يسبب ذلك المزيد من الضرر أو انسداد مجرى الهواء."
+    },
+    {
+      "type": "info",
+      "en": "The best indication of internal poisoning may be the presence of an open container of medication or toxic household chemicals.",
+      "ar": "أفضل مؤشر على التسمم الداخلي قد يكون وجود عبوة مفتوحة من الدواء أو المواد الكيميائية المنزلية السامة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Poisoning"
+}

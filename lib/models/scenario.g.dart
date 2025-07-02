@@ -19,28 +19,36 @@ class ScenarioAdapter extends TypeAdapter<Scenario> {
     return Scenario(
       id: fields[0] as String,
       categoryId: fields[1] as String,
-      titleAr: fields[2] as String,
-      titleEn: fields[3] as String,
+      titleEn: fields[2] as String,
+      titleAr: fields[3] as String,
       steps: (fields[4] as List)
           .map((dynamic e) => (e as Map).cast<String, String>())
           .toList(),
+      notes: (fields[5] as List)
+          .map((dynamic e) => (e as Map).cast<String, String>())
+          .toList(),
+      sourceUrl: fields[6] as String?,
     );
   }
 
   @override
   void write(BinaryWriter writer, Scenario obj) {
     writer
-      ..writeByte(5)
+      ..writeByte(7)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
       ..write(obj.categoryId)
       ..writeByte(2)
-      ..write(obj.titleAr)
-      ..writeByte(3)
       ..write(obj.titleEn)
+      ..writeByte(3)
+      ..write(obj.titleAr)
       ..writeByte(4)
-      ..write(obj.steps);
+      ..write(obj.steps)
+      ..writeByte(5)
+      ..write(obj.notes)
+      ..writeByte(6)
+      ..write(obj.sourceUrl);
   }
 
   @override

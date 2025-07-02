@@ -1,0 +1,46 @@
+{
+  "id": "rescue_breathing_child",
+  "categoryId": "cpr",
+  "titleEn": "Rescue Breathing (Child/Infant)",
+  "titleAr": "التنفس الإنقاذي (طفل/رضيع)",
+  "steps": [
+    {
+      "en": "Ensure scene safety and check for responsiveness. Call EMS if unresponsive after 2 minutes of CPR.",
+      "ar": "تأكد من سلامة المكان وتحقق من الاستجابة. اتصل بخدمات الطوارئ إذا كان غير مستجيب بعد دقيقتين من الإنعاش القلبي الرئوي."
+    },
+    {
+      "en": "Open the airway using the head-tilt chin-lift technique.",
+      "ar": "افتح مجرى الهواء باستخدام تقنية إمالة الرأس ورفع الذقن."
+    },
+    {
+      "en": "Pinch the victim's nose shut (for child) or cover both mouth and nose (for infant) with your mouth.",
+      "ar": "أغلق أنف المصاب بإحكام (للطفل) أو غطِ الفم والأنف معاً (للرضيع) بفمك."
+    },
+    {
+      "en": "Give a breath over 1 second, just enough to make the chest rise. Let the air exit.",
+      "ar": "أعطِ نفساً لمدة ثانية واحدة، يكفي فقط لارتفاع الصدر. اسمح للهواء بالخروج."
+    },
+    {
+      "en": "Give a second breath. Continue with CPR compressions (30 compressions : 2 breaths).",
+      "ar": "أعطِ نفساً ثانياً. استمر بضغطات الإنعاش القلبي الرئوي (30 ضغطة : نفسين)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do not blow forcefully, as this may cause air to enter the stomach and lead to vomiting.",
+      "ar": "لا تنفخ بقوة، فقد يتسبب ذلك في دخول الهواء إلى المعدة ويؤدي إلى القيء."
+    },
+    {
+      "type": "info",
+      "en": "Use a CPR mask if available to protect yourself from bodily fluid contact.",
+      "ar": "استخدم قناع الإنعاش القلبي الرئوي إذا كان متاحاً لحماية نفسك من ملامسة سوائل الجسم."
+    },
+    {
+      "type": "info",
+      "en": "For infants, your mouth should cover both their nose and mouth for rescue breaths.",
+      "ar": "بالنسبة للرضع، يجب أن يغطي فمك أنفهم وفمهم معاً لأجل أنفاس الإنقاذ."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/B_for_Breathing"
+}

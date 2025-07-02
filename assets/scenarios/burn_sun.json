@@ -1,0 +1,49 @@
+{
+  "id": "burn_sun",
+  "categoryId": "burns",
+  "titleEn": "Sunburn",
+  "titleAr": "حروق الشمس",
+  "steps": [
+    {
+      "en": "Move the victim out of the sun and into a shaded or indoor area.",
+      "ar": "انقل المصاب من الشمس إلى منطقة مظللة أو داخلية."
+    },
+    {
+      "en": "Cool the affected skin with cool (not cold) water compresses or by taking a cool shower/bath.",
+      "ar": "برد الجلد المصاب بكمادات ماء بارد (وليس مثلج) أو عن طريق أخذ دش/حمام بارد."
+    },
+    {
+      "en": "Apply a soothing lotion containing aloe vera or a moisturizer to keep the skin hydrated.",
+      "ar": "ضع لوشن مهدئ يحتوي على الألوفيرا أو مرطباً للحفاظ على ترطيب البشرة."
+    },
+    {
+      "en": "Consider over-the-counter pain relievers like ibuprofen or acetaminophen for pain and inflammation.",
+      "ar": "فكر في استخدام مسكنات الألم المتاحة دون وصفة طبية مثل الإيبوبروفين أو الأسيتامينوفين للألم والالتهاب."
+    },
+    {
+      "en": "Encourage the victim to drink plenty of fluids to prevent dehydration.",
+      "ar": "شجع المصاب على شرب الكثير من السوائل لمنع الجفاف."
+    },
+    {
+      "en": "Do NOT break any blisters that form.",
+      "ar": "لا تفجر أي بثور تتكون."
+    },
+    {
+      "en": "Seek medical attention if sunburn is severe (large blisters, extreme pain, signs of heatstroke), or if it affects an infant or young child.",
+      "ar": "اطلب العناية الطبية إذا كانت حروق الشمس شديدة (بثور كبيرة، ألم شديد، علامات ضربة شمس)، أو إذا كانت تؤثر على رضيع أو طفل صغير."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Severe sunburn can lead to dehydration and heat-related illnesses. Protect skin from further sun exposure.",
+      "ar": "يمكن أن تؤدي حروق الشمس الشديدة إلى الجفاف والأمراض المرتبطة بالحرارة. احمِ الجلد من التعرض الإضافي للشمس."
+    },
+    {
+      "type": "do_not",
+      "en": "Avoid products containing petroleum jelly or benzocaine, as they can trap heat or cause allergic reactions.",
+      "ar": "تجنب المنتجات التي تحتوي على الفازلين أو البنزوكائين، فقد تحبس الحرارة أو تسبب ردود فعل تحسسية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "psychological_shock",
+  "categoryId": "shock",
+  "titleEn": "Psychological Shock",
+  "titleAr": "الصدمة النفسية",
+  "steps": [
+    {
+      "en": "Ensure the victim is in a safe and quiet environment, away from the source of distress.",
+      "ar": "تأكد من أن المصاب في بيئة آمنة وهادئة، بعيداً عن مصدر الضيق."
+    },
+    {
+      "en": "Speak to the victim in a calm, reassuring, and empathetic voice. Introduce yourself and explain that you are there to help.",
+      "ar": "تحدث إلى المصاب بصوت هادئ، مطمئن، ومتعاطف. عرف بنفسك واشرح أنك هنا للمساعدة."
+    },
+    {
+      "en": "Listen actively to what they are saying and acknowledge their feelings without judgment.",
+      "ar": "استمع بنشاط لما يقولونه واعترف بمشاعرهم دون إصدار أحكام."
+    },
+    {
+      "en": "Provide practical comfort: offer a blanket if they are cold, or a glass of water if they are thirsty (if conscious and able to swallow).",
+      "ar": "قدم راحة عملية: قدم بطانية إذا كانوا يشعرون بالبرد، أو كوب ماء إذا كانوا عطشى (إذا كانوا واعين وقادرين على البلع)."
+    },
+    {
+      "en": "Help them connect with loved ones or professional support if appropriate and they desire it.",
+      "ar": "ساعدهم على التواصل مع أحبائهم أو الدعم المهني إذا كان ذلك مناسباً ورغبوا فيه."
+    },
+    {
+      "en": "Do not force them to talk or relive the traumatic event if they are not ready.",
+      "ar": "لا تجبرهم على التحدث أو استعادة الحدث الصادم إذا لم يكونوا مستعدين."
+    },
+    {
+      "en": "Monitor for signs of worsening distress or suicidal thoughts, and seek professional mental health support if needed.",
+      "ar": "راقب علامات تفاقم الضيق أو الأفكار الانتحارية، واطلب الدعم المهني للصحة العقلية إذا لزم الأمر."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Psychological shock (or acute stress reaction) can occur after a traumatic event. It's a normal human response.",
+      "ar": "يمكن أن تحدث الصدمة النفسية (أو رد الفعل الإجهادي الحاد) بعد حدث مؤلم. إنه استجابة بشرية طبيعية."
+    },
+    {
+      "type": "best_practice",
+      "en": "Your calm presence and active listening are key components of psychological first aid.",
+      "ar": "وجودك الهادئ والاستماع النشط هما مكونان أساسيان للإسعافات الأولية النفسية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Psychological_first_aid"
+}

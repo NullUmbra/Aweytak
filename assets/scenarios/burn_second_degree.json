@@ -1,0 +1,41 @@
+{
+  "id": "burn_second_degree",
+  "categoryId": "burns",
+  "titleEn": "Second-Degree Burns",
+  "titleAr": "الحروق من الدرجة الثانية",
+  "steps": [
+    {
+      "en": "Cool the burn immediately with cool (not cold or iced) running water for at least 10-20 minutes. Do not break any blisters.",
+      "ar": "برد الحرق فوراً بماء بارد (وليس مثلجاً) جارٍ لمدة 10-20 دقيقة على الأقل. لا تفجر أي بثور."
+    },
+    {
+      "en": "Remove any jewelry or tight clothing from the burned area before swelling becomes severe.",
+      "ar": "أزل أي مجوهرات أو ملابس ضيقة من المنطقة المحروقة قبل أن يصبح التورم شديداً."
+    },
+    {
+      "en": "Cover the burn loosely with a sterile, non-adhesive dressing. Do not apply any ointments or creams.",
+      "ar": "غطِ الحرق بشكل فضفاض بضمادة معقمة وغير لاصقة. لا تضع أي مراهم أو كريمات."
+    },
+    {
+      "en": "Elevate the burned body part if possible to reduce swelling.",
+      "ar": "ارفع الجزء المحروق من الجسم إن أمكن لتقليل التورم."
+    },
+    {
+      "en": "Seek medical attention if the burn is larger than the size of the victim's palm, on the face, hands, feet, genitals, or if pain is severe.",
+      "ar": "اطلب العناية الطبية إذا كان الحرق أكبر من حجم كف المصاب، أو على الوجه، أو اليدين، أو القدمين، أو الأعضاء التناسلية، أو إذا كان الألم شديداً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Second-degree burns affect the epidermis and part of the dermis, causing redness, pain, swelling, and blisters. The skin may appear wet or weeping.",
+      "ar": "حروق الدرجة الثانية تؤثر على البشرة وجزء من الأدمة، مما يسبب احمراراً، وألماً، وتورماً، وبثوراً. قد يبدو الجلد رطباً أو نازفاً."
+    },
+    {
+      "type": "warning",
+      "en": "Breaking blisters increases the risk of infection. Keep them intact.",
+      "ar": "تفجير البثور يزيد من خطر العدوى. حافظ عليها سليمة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

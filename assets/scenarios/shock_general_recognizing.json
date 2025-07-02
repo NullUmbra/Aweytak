@@ -1,0 +1,49 @@
+{
+  "id": "general_shock",
+  "categoryId": "shock",
+  "titleEn": "Recognizing Shock",
+  "titleAr": "التعرف على الصدمة",
+  "steps": [
+    {
+      "en": "Look for pale, cold, clammy skin.",
+      "ar": "ابحث عن جلد شاحب، بارد، ورطب."
+    },
+    {
+      "en": "Observe for rapid, weak pulse.",
+      "ar": "راقب النبض السريع والضعيف."
+    },
+    {
+      "en": "Note rapid, shallow breathing.",
+      "ar": "لاحظ التنفس السريع والسطحي."
+    },
+    {
+      "en": "Check for restlessness, anxiety, or confusion.",
+      "ar": "تحقق من القلق، أو التوتر، أو الارتباك."
+    },
+    {
+      "en": "Look for dilated pupils.",
+      "ar": "ابحث عن اتساع حدقة العين."
+    },
+    {
+      "en": "Note a feeling of weakness or dizziness.",
+      "ar": "لاحظ شعوراً بالضعف أو الدوخة."
+    },
+    {
+      "en": "Be aware of a possible decrease in consciousness or unresponsiveness in later stages.",
+      "ar": "كن على دراية باحتمال انخفاض الوعي أو عدم الاستجابة في المراحل المتأخرة."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Shock is a life-threatening condition where the body is not getting enough blood flow. It can result from severe injury, illness, or allergic reaction.",
+      "ar": "الصدمة هي حالة مهددة للحياة لا يحصل فيها الجسم على تدفق دم كافٍ. يمكن أن تنتج عن إصابة شديدة، أو مرض، أو رد فعل تحسسي."
+    },
+    {
+      "type": "warning",
+      "en": "Even if the cause is unclear, treating for shock is crucial if these signs are present.",
+      "ar": "حتى لو كان السبب غير واضح، فإن علاج الصدمة أمر بالغ الأهمية إذا كانت هذه العلامات موجودة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Shock"
+}

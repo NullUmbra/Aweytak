@@ -1,0 +1,49 @@
+{
+  "id": "bite_snake",
+  "categoryId": "bites_stings",
+  "titleEn": "Snake Bite",
+  "titleAr": "لدغة ثعبان",
+  "steps": [
+    {
+      "en": "Call EMS immediately. All snake bites should be treated as medical emergencies.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. يجب التعامل مع جميع لدغات الثعابين كحالات طبية طارئة."
+    },
+    {
+      "en": "Keep the victim calm and still. Movement can spread venom.",
+      "ar": "اجعل المصاب هادئاً وثابتاً. الحركة يمكن أن تنشر السم."
+    },
+    {
+      "en": "Immobilize the bitten limb (if on a limb) and keep it at or below the level of the heart.",
+      "ar": "ثبت الطرف الملدوغ (إذا كان على طرف) واجعله في مستوى القلب أو أدنى منه."
+    },
+    {
+      "en": "Remove any tight clothing or jewelry from the bitten area before swelling begins.",
+      "ar": "أزل أي ملابس ضيقة أو مجوهرات من المنطقة الملدوغة قبل بدء التورم."
+    },
+    {
+      "en": "Clean the wound gently with soap and water if available, but do not flush it with water.",
+      "ar": "نظف الجرح بلطف بالماء والصابون إذا كان متاحاً، ولكن لا تغسله بالماء."
+    },
+    {
+      "en": "Cover the bite with a clean, dry dressing.",
+      "ar": "غطِ اللدغة بضمادة نظيفة وجافة."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously until professional help arrives.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار حتى وصول المساعدة المهنية."
+    }
+  ],
+  "notes": [
+    {
+      "type": "do_not",
+      "en": "Do NOT cut the wound, suck out venom, apply ice, or use a tourniquet. These actions are harmful.",
+      "ar": "لا تقطع الجرح، أو تمتص السم، أو تضع الثلج، أو تستخدم رباطاً ضاغطاً. هذه الإجراءات ضارة."
+    },
+    {
+      "type": "info",
+      "en": "Try to remember the color and shape of the snake, but do not risk further bites trying to identify it.",
+      "ar": "حاول تذكر لون وشكل الثعبان، ولكن لا تخاطر بالتعرض للمزيد من اللدغات في محاولة التعرف عليه."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bites_%26_Stings"
+}

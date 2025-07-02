@@ -1,0 +1,71 @@
+{
+  "id": "aed_operation",
+  "categoryId": "other_first_aid",
+  "titleEn": "Automated External Defibrillation (AED) Operation",
+  "titleAr": "تشغيل جهاز إزالة الرجفان الخارجي الآلي (AED)",
+  "steps": [
+    {
+      "en": "Call EMS immediately if a victim is in cardiac arrest and requires defibrillation.",
+      "ar": "اتصل بخدمات الطوارئ فوراً إذا كان المصاب في حالة سكتة قلبية ويتطلب إزالة الرجفان."
+    },
+    {
+      "en": "Ensure scene safety: victim is not in contact with live electricity or wet surfaces. Remove cell phones and other electronic devices to a distance of 6 feet or more.",
+      "ar": "تأكد من سلامة المكان: المصاب ليس على اتصال بالكهرباء الحية أو الأسطح المبللة. أبعد الهواتف المحمولة والأجهزة الإلكترونية الأخرى لمسافة 6 أقدام أو أكثر."
+    },
+    {
+      "en": "Expose the victim's chest, removing all metallic items (jewelry, piercings). Shave chest if exceptionally hairy and a razor is readily available and will not delay defibrillation.",
+      "ar": "اكشف صدر المصاب، وأزل جميع الأشياء المعدنية (المجوهرات، الأقراط). احلق الصدر إذا كان كثيف الشعر وكان الشفرة متاحة بسهولة ولن تؤخر إزالة الرجفان."
+    },
+    {
+      "en": "Remove any medicine patches from the chest while wearing gloves.",
+      "ar": "أزل أي لصقات طبية من الصدر أثناء ارتداء القفازات."
+    },
+    {
+      "en": "Turn on the AED (most will give clear voice instructions).",
+      "ar": "شغل جهاز AED (معظمها سيعطي تعليمات صوتية واضحة)."
+    },
+    {
+      "en": "Place electrodes as depicted on each pad: one on the left side under the arm, and the other over the right breast.",
+      "ar": "ضع الأقطاب الكهربائية كما هو موضح على كل وسادة: واحدة على الجانب الأيسر تحت الذراع، والأخرى فوق الثدي الأيمن."
+    },
+    {
+      "en": "Allow the AED to analyze the heart rhythm. Do not touch the victim or the AED during analysis.",
+      "ar": "اسمح لجهاز AED بتحليل إيقاع القلب. لا تلمس المصاب أو جهاز AED أثناء التحليل."
+    },
+    {
+      "en": "If the AED advises a shock, ensure everyone is clear by saying 'I'm Clear, you're clear, we're all clear'. Remove oxygen equipment if present.",
+      "ar": "إذا نصح جهاز AED بصدمة، تأكد من أن الجميع بعيدون بقول 'أنا واضح، أنت واضح، كلنا واضحون'. أزل معدات الأكسجين إذا كانت موجودة."
+    },
+    {
+      "en": "Press the shock button if required by the AED. Do NOT touch the victim during the shock.",
+      "ar": "اضغط على زر الصدمة إذا طلب جهاز AED ذلك. لا تلمس المصاب أثناء الصدمة."
+    },
+    {
+      "en": "After the shock, follow AED instructions, usually to begin chest compressions and rescue breaths again.",
+      "ar": "بعد الصدمة، اتبع تعليمات جهاز AED، وعادة ما تكون لبدء ضغطات الصدر وأنفاس الإنقاذ مرة أخرى."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Survival chances decrease by 10% every minute without defibrillation.",
+      "ar": "تنخفض فرص البقاء على قيد الحياة بنسبة 10% كل دقيقة بدون إزالة الرجفان."
+    },
+    {
+      "type": "warning",
+      "en": "Failure to remove nicotine patches can result in a fire during defibrillation.",
+      "ar": "قد يؤدي عدم إزالة لصقات النيكوتين إلى نشوب حريق أثناء إزالة الرجفان."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not shock if the victim is close to explosive/flammable material, is wet (dry them first), or is touching an object that could conduct the charge to others.",
+      "ar": "لا تصدم إذا كان المصاب قريباً من مواد متفجرة/قابلة للاشتعال، أو كان مبللاً (جففه أولاً)، أو كان يلمس جسماً يمكن أن ينقل الشحنة للآخرين."
+    },
+    {
+      "type": "best_practice",
+      "en": "Continue CPR until the AED operator asks you to stop. AED has priority over CPR.",
+      "ar": "استمر في الإنعاش القلبي الرئوي حتى يطلب منك مشغل AED التوقف. جهاز AED له الأولوية على الإنعاش القلبي الرئوي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Automated_External_Defibrillation"
+}

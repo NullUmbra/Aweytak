@@ -1,0 +1,37 @@
+{
+  "id": "scene_safety",
+  "categoryId": "assessment",
+  "titleEn": "Check Scene Safety",
+  "titleAr": "تأكد من سلامة المكان",
+  "steps": [
+    {
+      "en": "Before approaching, scan the area for any immediate dangers to yourself, the victim, or bystanders (e.g., traffic, fire, electricity, unstable structures, aggressive animals).",
+      "ar": "قبل الاقتراب، افحص المنطقة بحثاً عن أي مخاطر فورية عليك، أو على المصاب، أو على المارة (مثل حركة المرور، الحريق، الكهرباء، الهياكل غير المستقرة، الحيوانات العدوانية)."
+    },
+    {
+      "en": "If the scene is unsafe, do not enter. Call for professional help (e.g., fire department, police) and wait for them to secure the scene.",
+      "ar": "إذا كان المكان غير آمن، لا تدخل. اتصل بالمساعدة المهنية (مثل قسم الإطفاء، الشرطة) وانتظر حتى يقوموا بتأمين المكان."
+    },
+    {
+      "en": "If possible and safe, make the scene safe (e.g., turn off electricity, move a small obstacle).",
+      "ar": "إذا كان ذلك ممكناً وآمناً، اجعل المكان آمناً (على سبيل المثال، أوقف الكهرباء، أزل عائقاً صغيراً)."
+    },
+    {
+      "en": "Always prioritize your own safety.",
+      "ar": "امنح الأولوية لسلامتك الشخصية دائماً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "You cannot help others if you become a victim yourself.",
+      "ar": "لا يمكنك مساعدة الآخرين إذا أصبحت ضحية بنفسك."
+    },
+    {
+      "type": "info",
+      "en": "A quick scene assessment should take only a few seconds.",
+      "ar": "يجب أن يستغرق تقييم سريع للمكان بضع ثوانٍ فقط."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

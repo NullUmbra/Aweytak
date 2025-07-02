@@ -1,0 +1,49 @@
+{
+  "id": "env_hypothermia",
+  "categoryId": "environmental",
+  "titleEn": "Hypothermia",
+  "titleAr": "انخفاض حرارة الجسم",
+  "steps": [
+    {
+      "en": "Remove the victim from the cold environment immediately.",
+      "ar": "انقل المصاب من البيئة الباردة فوراً."
+    },
+    {
+      "en": "For extreme hypothermia (confusion, slurred speech, fumbling hands, unconsciousness): Notify EMS.",
+      "ar": "لحالات انخفاض حرارة الجسم الشديدة (الارتباك، تلعثم الكلام، عدم القدرة على التحكم باليدين، فقدان الوعي): أبلغ خدمات الطوارئ."
+    },
+    {
+      "en": "Remove wet clothing from the victim and replace with dry clothing. A dry hat is recommended.",
+      "ar": "أزل الملابس المبللة من المصاب واستبدلها بملابس جافة. يوصى بارتداء قبعة جافة."
+    },
+    {
+      "en": "Wrap the victim in blankets.",
+      "ar": "لف المصاب بالبطانيات."
+    },
+    {
+      "en": "Use heat packs to warm the patient, but do not allow packs to touch naked skin.",
+      "ar": "استخدم كمادات حرارية لتدفئة المصاب، ولكن لا تدع الكمادات تلامس الجلد العاري."
+    },
+    {
+      "en": "If the victim is alert, they may drink warm liquids (no alcohol or caffeine, not too hot).",
+      "ar": "إذا كان المصاب واعياً، يمكنه شرب سوائل دافئة (بدون كحول أو كافيين، وليست ساخنة جداً)."
+    },
+    {
+      "en": "If the patient goes unconscious, check their ABCs and notify EMS.",
+      "ar": "إذا فقد المصاب الوعي، تحقق من مجاري الهواء والتنفس والدورة الدموية وأبلغ خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Never jostle a victim of extreme hypothermia as this may cause cardiac arrest.",
+      "ar": "لا تهز أبداً مصاباً بانخفاض حرارة الجسم الشديد فقد يسبب ذلك سكتة قلبية!"
+    },
+    {
+      "type": "info",
+      "en": "Victims of hypothermia may become worse as they warm (cold blood moving to core). Continue first aid until professional help is available.",
+      "ar": "قد تسوء حالة المصابين بانخفاض حرارة الجسم أثناء تدفئتهم (بسبب انتقال الدم البارد نحو مركز الجسم). استمر في الإسعافات الأولية حتى تتوفر المساعدة المهنية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Cold-Related_Illness_%26_Injury"
+}

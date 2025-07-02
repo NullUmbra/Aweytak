@@ -1,0 +1,45 @@
+{
+  "id": "sting_jellyfish",
+  "categoryId": "bites_stings",
+  "titleEn": "Jellyfish Sting",
+  "titleAr": "لسعة قنديل البحر",
+  "steps": [
+    {
+      "en": "Rinse the affected area immediately and thoroughly with vinegar for at least 30 seconds to neutralize the stinging cells. If vinegar is not available, use seawater.",
+      "ar": "اشطف المنطقة المصابة فوراً وبشكل كامل بالخل لمدة 30 ثانية على الأقل لتحييد الخلايا اللاسعة. إذا لم يكن الخل متاحاً، استخدم ماء البحر."
+    },
+    {
+      "en": "Do NOT rinse with fresh water, rub the sting, or apply ice directly, as this can cause more venom release.",
+      "ar": "لا تشطف بالماء العذب، أو تفرك اللسعة، أو تضع الثلج مباشرة، فقد يؤدي ذلك إلى إطلاق المزيد من السم."
+    },
+    {
+      "en": "Carefully remove any visible tentacles using tweezers or a gloved hand (do not use bare hands).",
+      "ar": "أزل أي مجسات مرئية بعناية باستخدام الملقط أو يد مرتدية قفازاً (لا تستخدم اليدين العاريتين)."
+    },
+    {
+      "en": "Apply a hot pack or immerse the affected area in hot water (as hot as tolerable, around 104-113°F or 40-45°C) for 20-45 minutes to denature the venom.",
+      "ar": "ضع كمادة ساخنة أو اغمر المنطقة المصابة في ماء ساخن (بقدر ما يمكن تحمله، حوالي 104-113 درجة فهرنهايت أو 40-45 درجة مئوية) لمدة 20-45 دقيقة لتغيير طبيعة السم."
+    },
+    {
+      "en": "Treat pain with over-the-counter pain relievers if needed.",
+      "ar": "عالج الألم بمسكنات الألم المتاحة دون وصفة طبية إذا لزم الأمر."
+    },
+    {
+      "en": "Seek medical attention if the sting is severe, covers a large area, is on the face/genitals, or if the victim shows signs of a severe allergic reaction (difficulty breathing, swelling, weakness).",
+      "ar": "اطلب العناية الطبية إذا كانت اللسعة شديدة، أو تغطي منطقة كبيرة، أو كانت على الوجه/الأعضاء التناسلية، أو إذا أظهر المصاب علامات رد فعل تحسسي شديد (صعوبة التنفس، تورم، ضعف)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Some jellyfish stings can be life-threatening. Always monitor for severe allergic reactions.",
+      "ar": "يمكن أن تكون بعض لسعات قنديل البحر مهددة للحياة. راقب دائماً ردود الفعل التحسسية الشديدة."
+    },
+    {
+      "type": "do_not",
+      "en": "Do NOT use fresh water, alcohol, or urine on jellyfish stings, as these can trigger more stinging cells.",
+      "ar": "لا تستخدم الماء العذب، أو الكحول، أو البول على لسعات قنديل البحر، فقد يؤدي ذلك إلى إطلاق المزيد من الخلايا اللاسعة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bites_%26_Stings"
+}

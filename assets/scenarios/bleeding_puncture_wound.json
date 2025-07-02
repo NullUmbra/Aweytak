@@ -1,0 +1,45 @@
+{
+  "id": "puncture_wound",
+  "categoryId": "bleeding",
+  "titleEn": "Puncture Wounds",
+  "titleAr": "الجروح النافذة",
+  "steps": [
+    {
+      "en": "Call EMS if the wound is deep, bleeding heavily, caused by a contaminated object, or if an object is still embedded.",
+      "ar": "اتصل بخدمات الطوارئ إذا كان الجرح عميقاً، أو ينزف بغزارة، أو ناتجاً عن جسم ملوث، أو إذا كان هناك جسم لا يزال مغروساً."
+    },
+    {
+      "en": "Do NOT remove any embedded objects. Stabilize the object in place with bulky dressings around it.",
+      "ar": "لا تزيل أي أجسام مغروسة. ثبت الجسم في مكانه بضمادات ضخمة حوله."
+    },
+    {
+      "en": "For wounds without an embedded object: Wash the wound thoroughly with soap and water.",
+      "ar": "للجروح التي لا يوجد بها جسم مغروس: اغسل الجرح جيداً بالماء والصابون."
+    },
+    {
+      "en": "Apply gentle pressure around the wound to encourage bleeding, which can help clean it.",
+      "ar": "طبق ضغطاً لطيفاً حول الجرح لتشجيع النزيف، مما قد يساعد في تنظيفه."
+    },
+    {
+      "en": "Cover the wound with a sterile dressing.",
+      "ar": "غطِ الجرح بضمادة معقمة."
+    },
+    {
+      "en": "Seek medical attention for tetanus shot updates, especially if the object was dirty or rusty.",
+      "ar": "اطلب العناية الطبية لتحديثات لقاح الكزاز، خاصة إذا كان الجسم متسخاً أو صدئاً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Puncture wounds carry a high risk of infection, including tetanus, as they can trap bacteria deep inside.",
+      "ar": "تحمل الجروح النافذة خطراً كبيراً للعدوى، بما في ذلك الكزاز، حيث يمكنها حبس البكتيريا في الداخل."
+    },
+    {
+      "type": "do_not",
+      "en": "Do NOT probe the wound or try to clean it too aggressively.",
+      "ar": "لا تستكشف الجرح أو تحاول تنظيفه بقوة مفرطة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bleeding"
+}

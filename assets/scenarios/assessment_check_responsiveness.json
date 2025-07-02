@@ -1,0 +1,37 @@
+{
+  "id": "check_responsiveness",
+  "categoryId": "assessment",
+  "titleEn": "Check Responsiveness",
+  "titleAr": "تحقق من الاستجابة",
+  "steps": [
+    {
+      "en": "Once the scene is safe, gently tap the victim on the shoulder and loudly ask, 'Are you alright?' or 'Can you hear me?'",
+      "ar": "بمجرد أن يصبح المكان آمناً، انقر بلطف على كتف المصاب واسأل بصوت عالٍ، 'هل أنت بخير؟' أو 'هل تسمعني؟'"
+    },
+    {
+      "en": "For infants, gently tap the bottom of their foot.",
+      "ar": "للرضع، انقر بلطف على باطن قدمهم."
+    },
+    {
+      "en": "Observe for any movement, sounds, or attempts to speak.",
+      "ar": "راقب أي حركة، أو أصوات، أو محاولات للتحدث."
+    },
+    {
+      "en": "If there is no response, the victim is considered unresponsive.",
+      "ar": "إذا لم يكن هناك استجابة، يعتبر المصاب غير مستجيب."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do not shake the victim, especially if a head or spinal injury is suspected.",
+      "ar": "لا تهز المصاب، خاصة إذا اشتبه في إصابة في الرأس أو العمود الفقري."
+    },
+    {
+      "type": "info",
+      "en": "This step helps determine if the victim is conscious and can communicate.",
+      "ar": "تساعد هذه الخطوة في تحديد ما إذا كان المصاب واعياً ويمكنه التواصل."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "head_spinal_eye_injuries",
+  "categoryId": "other_first_aid",
+  "titleEn": "Head, Spinal & Eye Injuries",
+  "titleAr": "إصابات الرأس والعمود الفقري والعين",
+  "steps": [
+    {
+      "en": "For head injuries: Call EMS if there is any altered level of consciousness (even brief), vomiting, or unequal/unreactive pupils.",
+      "ar": "لإصابات الرأس: اتصل بخدمات الطوارئ إذا كان هناك أي تغير في مستوى الوعي (حتى لو كان قصيراً)، أو قيء، أو بؤبؤين غير متساويين/غير متفاعلين."
+    },
+    {
+      "en": "For suspected spinal injuries: Assume a spinal injury if head trauma is sufficient to cause unconsciousness or if there's a fall from over 2 meters. Do NOT move the victim unless absolutely necessary (e.g., for CPR).",
+      "ar": "لإصابات العمود الفقري المشتبه بها: افترض وجود إصابة في العمود الفقري إذا كانت صدمة الرأس كافية للتسبب في فقدان الوعي أو إذا كان هناك سقوط من ارتفاع يزيد عن مترين. لا تحرك المصاب إلا إذا كان ذلك ضرورياً للغاية (على سبيل المثال، للإنعاش القلبي الرئوي)."
+    },
+    {
+      "en": "Immobilize the head, neck, and spine in the position found using towels, clothing, or sandbags. If alone and CPR is needed, roll carefully minimizing spinal movement.",
+      "ar": "ثبت الرأس والرقبة والعمود الفقري في الوضع الذي وجدته فيه باستخدام المناشف أو الملابس أو أكياس الرمل. إذا كنت بمفردك وتحتاج إلى إجراء الإنعاش القلبي الرئوي، اقلب المصاب بحذر مع تقليل حركة العمود الفقري."
+    },
+    {
+      "en": "For eye injuries: Do NOT allow the victim to rub the eye. Do NOT press against the eye. Do NOT use sharp objects to remove foreign objects.",
+      "ar": "لإصابات العين: لا تسمح للمصاب بفرك العين. لا تضغط على العين. لا تستخدم أجساماً حادة لإزالة الأجسام الغريبة."
+    },
+    {
+      "en": "For superficial eye objects: Try to wash the eye gently with lukewarm, sterile water, directing flow from inside to outside corner. Or gently remove with a moist cotton swab/clean handkerchief corner.",
+      "ar": "للأجسام السطحية في العين: حاول غسل العين بلطف بماء معقم فاتر، موجهًا التدفق من الزاوية الداخلية إلى الزاوية الخارجية. أو أزل بلطف بقطعة قطن مبللة/زاوية منديل نظيف."
+    },
+    {
+      "en": "For embedded eye objects: DO NOT attempt to remove. Apply a dry, sterile compress to cover BOTH eyes and hold with a loose bandage to limit movement. Seek immediate medical help.",
+      "ar": "للأجسام المدمجة في العين: لا تحاول إزالتها. ضع ضغطاً جافاً ومعقماً لتغطية كلتا العينين وثبته بضمادة فضفاضة للحد من الحركة. اطلب المساعدة الطبية الفورية."
+    },
+    {
+      "en": "For all: Treat for shock and monitor ABCs. Call EMS immediately for serious injuries.",
+      "ar": "للجميع: عالج من الصدمة وراقب مجاري الهواء والتنفس والدورة الدموية. اتصل بخدمات الطوارئ فوراً للإصابات الخطيرة."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Life over limb: Airway, Breathing, and Circulation always take priority, even with suspected spinal injury.",
+      "ar": "الحياة فوق الأطراف: مجرى الهواء، والتنفس، والدورة الدموية لها الأولوية دائماً، حتى مع الاشتباه في إصابة العمود الفقري."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not apply direct pressure to control bleeding if a skull fracture is suspected, as this could compress the brain.",
+      "ar": "لا تطبق ضغطاً مباشراً للسيطرة على النزيف إذا اشتبه في كسر في الجمجمة، فقد يؤدي ذلك إلى ضغط الدماغ."
+    },
+    {
+      "type": "info",
+      "en": "Any head injury causing decreased consciousness requires physician assessment.",
+      "ar": "أي إصابة في الرأس تسبب انخفاضاً في الوعي تتطلب تقييماً من قبل طبيب."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Head_%26_Facial_Injuries"
+}

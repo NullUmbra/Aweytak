@@ -1,0 +1,49 @@
+{
+  "id": "env_heat_exhaustion",
+  "categoryId": "environmental",
+  "titleEn": "Heat Exhaustion",
+  "titleAr": "الإرهاق الحراري",
+  "steps": [
+    {
+      "en": "Move the victim to a cool or air-conditioned area, or a shady spot.",
+      "ar": "انقل المصاب إلى منطقة باردة أو مكيفة، أو مكان مظلل."
+    },
+    {
+      "en": "Loosen the victim's clothing.",
+      "ar": "قم بتخفيف ملابس المصاب."
+    },
+    {
+      "en": "Apply cool, wet cloths to the victim's body.",
+      "ar": "ضع أقمشة باردة ومبللة على جسم المصاب."
+    },
+    {
+      "en": "Fan the victim to promote cooling.",
+      "ar": "قم بتهوية المصاب لتعزيز التبريد."
+    },
+    {
+      "en": "If conscious, hydrate the victim with cool water, possibly with a small concentration of salt (e.g., saltine cracker).",
+      "ar": "إذا كان واعياً، قم بترطيب المصاب بماء بارد، ربما مع تركيز قليل من الملح (مثل بسكويت مالح)."
+    },
+    {
+      "en": "Have the victim rest.",
+      "ar": "اجعل المصاب يرتاح."
+    },
+    {
+      "en": "Seek further medical advice if cramping continues or condition worsens.",
+      "ar": "اطلب المزيد من المشورة الطبية إذا استمرت التشنجات أو ساءت الحالة."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Heat exhaustion is a milder form of heat-related illness and is not life-threatening, unlike heatstroke.",
+      "ar": "الإرهاق الحراري هو شكل أخف من الأمراض المرتبطة بالحرارة وليس مهدداً للحياة، على عكس ضربة الشمس."
+    },
+    {
+      "type": "warning",
+      "en": "If the victim's level of consciousness is affected, it indicates heatstroke, which is a medical emergency requiring EMS.",
+      "ar": "إذا تأثر مستوى وعي المصاب، فهذا يشير إلى ضربة شمس، وهي حالة طبية طارئة تتطلب خدمات الطوارئ."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Heat-Related_Illness_%26_Injury"
+}

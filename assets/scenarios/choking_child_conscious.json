@@ -1,0 +1,45 @@
+{
+  "id": "choking_child_conscious",
+  "categoryId": "choking",
+  "titleEn": "Conscious Child Choking",
+  "titleAr": "اختناق طفل واعٍ",
+  "steps": [
+    {
+      "en": "Ask 'Are you choking?' If the child can cough, speak, or breathe, encourage them to cough.",
+      "ar": "اسأل 'هل تختنق؟' إذا كان الطفل يستطيع السعال أو التحدث أو التنفس، شجعه على السعال."
+    },
+    {
+      "en": "If the child cannot cough, speak, or breathe, perform 5 back blows followed by 5 abdominal thrusts.",
+      "ar": "إذا لم يتمكن الطفل من السعال أو التحدث أو التنفس، قم بإجراء 5 ضربات خلفية تليها 5 دفعات بطنية."
+    },
+    {
+      "en": "For back blows: Stand or kneel behind the child. Support the chest with one hand and lean the child forward. Deliver 5 sharp blows between the shoulder blades with the heel of your other hand.",
+      "ar": "للضربات الخلفية: قف أو اركع خلف الطفل. ادعم الصدر بيد واحدة وأمل الطفل إلى الأمام. وجه 5 ضربات حادة بين لوحي الكتف بكعب يدك الأخرى."
+    },
+    {
+      "en": "For abdominal thrusts: Stand or kneel behind the child. Place your fist just above the navel. Grasp your fist with your other hand and deliver 5 quick, upward thrusts.",
+      "ar": "لدفعات البطن: قف أو اركع خلف الطفل. ضع قبضتك فوق السرة مباشرة. امسك قبضتك باليد الأخرى ووجه 5 دفعات سريعة ومتجهة للأعلى."
+    },
+    {
+      "en": "Repeat cycles of 5 back blows and 5 abdominal thrusts until the object is dislodged or the child becomes unconscious.",
+      "ar": "كرر دورات من 5 ضربات خلفية و 5 دفعات بطنية حتى يتم إزاحة الجسم أو يفقد الطفل الوعي."
+    },
+    {
+      "en": "If the child becomes unconscious, call EMS immediately and begin CPR (refer to CPR for Children scenario).",
+      "ar": "إذا فقد الطفل الوعي، اتصل بخدمات الطوارئ فوراً وابدأ الإنعاش القلبي الرئوي (ارجع إلى سيناريو الإنعاش القلبي الرئوي للأطفال)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Adjust the force of back blows and abdominal thrusts to the size of the child to avoid injury.",
+      "ar": "اضبط قوة الضربات الخلفية والدفعات البطنية لتناسب حجم الطفل لتجنب الإصابة."
+    },
+    {
+      "type": "info",
+      "en": "For very small children, you may need to kneel or sit to perform these maneuvers effectively.",
+      "ar": "للأطفال الصغار جداً، قد تحتاج إلى الركوع أو الجلوس لأداء هذه المناورات بفعالية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Obstructed_Airway"
+}

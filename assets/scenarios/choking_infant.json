@@ -1,0 +1,45 @@
+{
+  "id": "choking_infant",
+  "categoryId": "choking",
+  "titleEn": "Infant Choking",
+  "titleAr": "اختناق رضيع",
+  "steps": [
+    {
+      "en": "If the infant can cough or cry, do not interfere; encourage them to cough.",
+      "ar": "إذا كان الرضيع يستطيع السعال أو البكاء، فلا تتدخل؛ شجعه على السعال."
+    },
+    {
+      "en": "If the infant cannot cough or cry, perform 5 back blows and 5 chest thrusts.",
+      "ar": "إذا لم يستطع الرضيع السعال أو البكاء، قم بإجراء 5 ضربات خلفية و 5 دفعات صدرية."
+    },
+    {
+      "en": "For back blows: Support the infant face down on your forearm, with their head lower than their chest. Deliver 5 firm back blows between the shoulder blades with the heel of your hand.",
+      "ar": "للضربات الخلفية: ادعم الرضيع ووجهه للأسفل على ساعدك، بحيث يكون رأسه أدنى من صدره. وجه 5 ضربات خلفية قوية بين لوحي الكتف بكعب يدك."
+    },
+    {
+      "en": "For chest thrusts: Turn the infant face up on your forearm, supporting their head. Place two fingers on the breastbone just below the nipple line. Deliver 5 quick chest thrusts.",
+      "ar": "لدفعات الصدر: اقلب الرضيع ووجهه للأعلى على ساعدك، مع دعم رأسه. ضع إصبعين على عظم القص أسفل خط الحلمة مباشرة. وجه 5 دفعات صدرية سريعة."
+    },
+    {
+      "en": "Repeat cycles of 5 back blows and 5 chest thrusts until the object is dislodged or the infant becomes unconscious.",
+      "ar": "كرر دورات من 5 ضربات خلفية و 5 دفعات صدرية حتى يتم إزاحة الجسم أو يفقد الرضيع الوعي."
+    },
+    {
+      "en": "If the infant becomes unconscious, call EMS immediately and begin CPR (refer to CPR for Infants scenario), looking for the object before rescue breaths.",
+      "ar": "إذا فقد الرضيع الوعي، اتصل بخدمات الطوارئ فوراً وابدأ الإنعاش القلبي الرئوي (ارجع إلى سيناريو الإنعاش القلبي الرئوي للرضع)، وابحث عن الجسم قبل أنفاس الإنقاذ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do NOT perform abdominal thrusts on infants.",
+      "ar": "لا تقم بإجراء دفعات بطنية على الرضع."
+    },
+    {
+      "type": "info",
+      "en": "The combination of back blows and chest thrusts is effective for infants.",
+      "ar": "مزيج الضربات الخلفية والدفعات الصدرية فعال للرضع."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Obstructed_Airway"
+}

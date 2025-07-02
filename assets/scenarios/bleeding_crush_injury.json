@@ -1,0 +1,45 @@
+{
+  "id": "crush_injury",
+  "categoryId": "bleeding",
+  "titleEn": "Crush Injury",
+  "titleAr": "إصابة السحق",
+  "steps": [
+    {
+      "en": "Call EMS immediately. Crush injuries can be very serious and lead to internal damage.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. إصابات السحق يمكن أن تكون خطيرة جداً وتؤدي إلى أضرار داخلية."
+    },
+    {
+      "en": "If the object causing the crush is still present, do NOT remove it unless it's safe to do so and the victim's life is in immediate danger (e.g., blocking airway).",
+      "ar": "إذا كان الجسم الذي تسبب في السحق لا يزال موجوداً، لا تزله إلا إذا كان ذلك آمناً وكان حياة المصاب في خطر مباشر (مثل إعاقة مجرى الهواء)."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار."
+    },
+    {
+      "en": "Treat any external bleeding with direct pressure.",
+      "ar": "عالج أي نزيف خارجي بضغط مباشر."
+    },
+    {
+      "en": "Treat for shock by lying the victim flat and elevating their legs, if possible and not contraindicated by the injury.",
+      "ar": "عالج من الصدمة عن طريق إراحة المصاب على ظهره ورفع ساقيه، إذا أمكن ولم يكن ذلك ممنوعاً بسبب الإصابة."
+    },
+    {
+      "en": "Keep the victim warm with blankets.",
+      "ar": "اجعل المصاب دافئاً بالبطانيات."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Crush injuries can cause 'crush syndrome' when the crushing force is released, leading to toxins entering the bloodstream. This is a medical emergency.",
+      "ar": "يمكن أن تسبب إصابات السحق 'متلازمة السحق' عند إطلاق قوة السحق، مما يؤدي إلى دخول السموم إلى مجرى الدم. هذه حالة طبية طارئة."
+    },
+    {
+      "type": "info",
+      "en": "Even if the external injury seems minor, significant internal damage can occur from crushing forces.",
+      "ar": "حتى لو بدت الإصابة الخارجية طفيفة، يمكن أن يحدث ضرر داخلي كبير من قوى السحق."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bleeding"
+}

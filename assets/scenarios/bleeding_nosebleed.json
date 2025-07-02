@@ -1,0 +1,45 @@
+{
+  "id": "nosebleed",
+  "categoryId": "bleeding",
+  "titleEn": "Nosebleed",
+  "titleAr": "نزيف الأنف",
+  "steps": [
+    {
+      "en": "Have the victim sit upright and lean slightly forward. This prevents blood from running down the throat.",
+      "ar": "اجعل المصاب يجلس منتصباً ويميل قليلاً إلى الأمام. هذا يمنع الدم من النزول إلى الحلق."
+    },
+    {
+      "en": "Pinch the soft part of the nose (just below the bony bridge) firmly for 10-15 minutes.",
+      "ar": "اضغط على الجزء اللين من الأنف (أسفل جسر العظم مباشرة) بقوة لمدة 10-15 دقيقة."
+    },
+    {
+      "en": "Encourage the victim to breathe through their mouth.",
+      "ar": "شجع المصاب على التنفس من فمه."
+    },
+    {
+      "en": "Apply a cold compress to the bridge of the nose or the back of the neck.",
+      "ar": "ضع كمادة باردة على جسر الأنف أو مؤخرة الرقبة."
+    },
+    {
+      "en": "If bleeding continues after 15-20 minutes of continuous pressure, seek medical attention.",
+      "ar": "إذا استمر النزيف بعد 15-20 دقيقة من الضغط المستمر، اطلب العناية الطبية."
+    },
+    {
+      "en": "Avoid blowing the nose or picking at it for several hours after the bleeding stops.",
+      "ar": "تجنب نفخ الأنف أو العبث به لعدة ساعات بعد توقف النزيف."
+    }
+  ],
+  "notes": [
+    {
+      "type": "do_not",
+      "en": "Do NOT tilt the head backward, as this can cause blood to run down the throat and lead to choking or vomiting.",
+      "ar": "لا تميل الرأس إلى الخلف، فقد يتسبب ذلك في نزول الدم إلى الحلق ويؤدي إلى الاختناق أو القيء."
+    },
+    {
+      "type": "info",
+      "en": "Most nosebleeds are not serious and can be managed with simple first aid.",
+      "ar": "معظم نزيف الأنف ليس خطيراً ويمكن التحكم فيه بالإسعافات الأولية البسيطة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bleeding"
+}

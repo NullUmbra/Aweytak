@@ -1,0 +1,45 @@
+{
+  "id": "illness_stroke",
+  "categoryId": "illnesses",
+  "titleEn": "Stroke",
+  "titleAr": "السكتة الدماغية",
+  "steps": [
+    {
+      "en": "Call for an ambulance immediately. Time is critical for stroke treatment.",
+      "ar": "اتصل بسيارة الإسعاف فوراً. الوقت حاسم لعلاج السكتة الدماغية."
+    },
+    {
+      "en": "Recognize signs using FAST: Facial Weakness (can they smile?), Arm Weakness (can they raise both arms?), Speech problems (can they speak clearly?), Time (note the time symptoms began).",
+      "ar": "تعرف على العلامات باستخدام FAST: ضعف الوجه (هل يمكنهم الابتسام؟)، ضعف الذراع (هل يمكنهم رفع كلا الذراعين؟)، مشاكل الكلام (هل يمكنهم التحدث بوضوح؟)، الوقت (لاحظ وقت بدء الأعراض)."
+    },
+    {
+      "en": "For conscious victims: Reassure them and encourage them to move into a position of comfort. If they have paralysis, make them as comfortable as possible where they are.",
+      "ar": "للضحايا الواعين: طمئنهم وشجعهم على اتخاذ وضع مريح إن أمكن. إذا كان لديهم شلل، اجعلهم مرتاحين قدر الإمكان في مكانهم."
+    },
+    {
+      "en": "For unconscious victims: Assess ABCs (Airway, Breathing, Circulation). Be prepared to start CPR if not breathing.",
+      "ar": "للضحايا الفاقدين للوعي: قم بتقييم مجاري الهواء والتنفس والدورة الدموية. كن مستعداً لبدء الإنعاش القلبي الرئوي إذا لم يكن يتنفس."
+    },
+    {
+      "en": "For unconscious victims: Assist them into the recovery position on their unaffected side to help blood reach the injured side of the brain and allow drainage.",
+      "ar": "للضحايا الفاقدين للوعي: ساعدهم على اتخاذ وضع الإفاقة على جانبهم غير المصاب للمساعدة في وصول الدم إلى الجانب المصاب من الدماغ والسماح بالتصريف."
+    },
+    {
+      "en": "Monitor vitals, take history if possible, and make regular observations until EMS arrives.",
+      "ar": "راقب العلامات الحيوية، وخذ التاريخ إن أمكن، وقم بإجراء ملاحظات منتظمة حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "best_practice",
+      "en": "To test for affected side, have victim squeeze your hands simultaneously; note any difference in pressure.",
+      "ar": "لاختبار الجانب المتأثر، اطلب من المصاب أن يضغط على يديك في نفس الوقت؛ لاحظ أي فرق في الضغط."
+    },
+    {
+      "type": "info",
+      "en": "A Transient Ischaemic Attack (TIA) or 'mini-stroke' has similar symptoms but they pass quickly.",
+      "ar": "النوبة الإقفارية العابرة (TIA) أو 'السكتة الدماغية المصغرة' لها أعراض مماثلة ولكنها تزول بسرعة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Stroke_%26_TIA"
+}

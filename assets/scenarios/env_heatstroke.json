@@ -1,0 +1,53 @@
+{
+  "id": "env_heatstroke",
+  "categoryId": "environmental",
+  "titleEn": "Heatstroke",
+  "titleAr": "ضربة الشمس",
+  "steps": [
+    {
+      "en": "Notify EMS immediately; heatstroke is a life-and-death emergency.",
+      "ar": "أبلغ خدمات الطوارئ فوراً؛ ضربة الشمس هي حالة طارئة تهدد الحياة."
+    },
+    {
+      "en": "Cool the victim's body immediately: douse with cold water, apply wet, cold towels to the whole body.",
+      "ar": "برد جسم المصاب فوراً: اسكب الماء البارد، وضع مناشف مبللة وباردة على كامل الجسم."
+    },
+    {
+      "en": "Pack ice into heat-loss areas (underarms, groin, neck). Do NOT let ice contact bare skin to avoid frostbite.",
+      "ar": "ضع الثلج في مناطق فقدان الحرارة (تحت الإبطين، الفخذ، الرقبة). لا تدع الثلج يلامس الجلد مباشرة لتجنب قضمة الصقيع."
+    },
+    {
+      "en": "Move the victim to the coolest possible place and remove as much clothing as possible (ensure privacy).",
+      "ar": "انقل المصاب إلى أبرد مكان ممكن وأزل أكبر قدر ممكن من الملابس (مع ضمان الخصوصية)."
+    },
+    {
+      "en": "Maintain an open airway. Expose the victim to a fan or air-conditioner.",
+      "ar": "حافظ على مجرى هواء مفتوح. عرض المصاب لمروحة أو مكيف هواء."
+    },
+    {
+      "en": "If conscious, give the victim cool water to drink. Do NOT give hot drinks or stimulants. Never give an unconscious victim anything to drink.",
+      "ar": "إذا كان واعياً، أعطِ المصاب ماءً بارداً للشرب. لا تعطِ أي مشروبات ساخنة أو منبهات. لا تعطِ أبداً أي شيء للشرب لمصاب فاقد الوعي."
+    },
+    {
+      "en": "Continue cooling measures while transporting the victim to a medical facility.",
+      "ar": "استمر في إجراءات التبريد أثناء نقل المصاب إلى منشأة طبية."
+    },
+    {
+      "en": "Monitor vital signs frequently. Be prepared to begin CPR if the victim becomes unconscious and not breathing.",
+      "ar": "راقب العلامات الحيوية بشكل متكرر. كن مستعداً لبدء الإنعاش القلبي الرئوي إذا فقد المصاب الوعي ولم يكن يتنفس."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Heatstroke is a true life-and-death emergency; rapid cooling is crucial to prevent irreversible body damage or death.",
+      "ar": "ضربة الشمس هي حالة طارئة حقيقية تهدد الحياة؛ التبريد السريع أمر بالغ الأهمية لمنع تلف الجسم الذي لا يمكن إصلاحه أو الوفاة."
+    },
+    {
+      "type": "info",
+      "en": "Skin may be hot and dry, but can also be moist initially from previous sweating or cooling attempts.",
+      "ar": "قد يكون الجلد ساخناً وجافاً، ولكنه قد يكون رطباً في البداية بسبب التعرق السابق أو محاولات التبريد."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Heat-Related_Illness_%26_Injury"
+}

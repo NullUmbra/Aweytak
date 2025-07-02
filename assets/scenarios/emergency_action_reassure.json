@@ -1,0 +1,45 @@
+{
+  "id": "reassure",
+  "categoryId": "emergency_action",
+  "titleEn": "Reassure and Calm the Victim",
+  "titleAr": "طمئن وهدئ المصاب",
+  "steps": [
+    {
+      "en": "Speak to the victim in a calm, clear, and reassuring voice.",
+      "ar": "تحدث إلى المصاب بصوت هادئ وواضح ومطمئن."
+    },
+    {
+      "en": "Explain what you are doing and why, even if they appear unresponsive, as they may still be able to hear.",
+      "ar": "اشرح ما تفعله ولماذا، حتى لو بدوا غير مستجيبين، فقد يكونون لا يزالون قادرين على السمع."
+    },
+    {
+      "en": "Maintain eye contact if they are conscious and able to do so.",
+      "ar": "حافظ على التواصل البصري إذا كانوا واعين وقادرين على ذلك."
+    },
+    {
+      "en": "Encourage them to breathe deeply and slowly if they are anxious or hyperventilating.",
+      "ar": "شجعهم على التنفس بعمق وببطء إذا كانوا قلقين أو يعانون من فرط التنفس."
+    },
+    {
+      "en": "Cover them with a blanket to provide comfort and warmth.",
+      "ar": "غطهم ببطانية لتوفير الراحة والدفء."
+    },
+    {
+      "en": "Avoid giving false reassurances, but maintain a positive and hopeful demeanor.",
+      "ar": "تجنب تقديم تطمينات كاذبة، ولكن حافظ على سلوك إيجابي ومفعم بالأمل."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Psychological first aid is an important component of overall first aid. A calm rescuer can help prevent or reduce shock.",
+      "ar": "الإسعافات الأولية النفسية هي مكون مهم من الإسعافات الأولية الشاملة. يمكن للمنقذ الهادئ أن يساعد في منع أو تقليل الصدمة."
+    },
+    {
+      "type": "best_practice",
+      "en": "Your calm presence can be as important as the physical first aid you provide.",
+      "ar": "وجودك الهادئ يمكن أن يكون بنفس أهمية الإسعافات الأولية الجسدية التي تقدمها."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Emergency_action_steps"
+}

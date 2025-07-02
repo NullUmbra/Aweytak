@@ -1,0 +1,57 @@
+{
+  "id": "immobilization_slings",
+  "categoryId": "fractures",
+  "titleEn": "Immobilization: Slings (Arm Injuries)",
+  "titleAr": "التثبيت: الحمالات (إصابات الذراع)",
+  "steps": [
+    {
+      "en": "For forearm injuries (Arm Sling): Support the injured forearm parallel to the ground, wrist slightly higher than elbow.",
+      "ar": "لإصابات الساعد (حمالة الذراع): ادعم الساعد المصاب بشكل موازٍ للأرض، بحيث يكون الرسغ أعلى قليلاً من الكوع."
+    },
+    {
+      "en": "Place an open triangular bandage between body and arm, apex towards elbow. Extend upper point over uninjured shoulder, bring lower point up over arm to injured shoulder, tie firmly.",
+      "ar": "ضع ضمادة مثلثة مفتوحة بين الجسم والذراع، بحيث يكون الرأس نحو الكوع. مد النقطة العلوية فوق الكتف غير المصاب، ارفع النقطة السفلية فوق الذراع إلى الكتف المصاب، واربط بإحكام."
+    },
+    {
+      "en": "Secure the elbow by folding excess bandage and using a safety pin.",
+      "ar": "ثبت الكوع عن طريق طي الضمادة الزائدة واستخدام دبوس أمان."
+    },
+    {
+      "en": "For shoulder injuries (Elevated Sling): Support arm with elbow beside body, hand towards uninjured shoulder.",
+      "ar": "لإصابات الكتف (حمالة مرتفعة): ادعم الذراع بحيث يكون الكوع بجانب الجسم، واليد نحو الكتف غير المصاب."
+    },
+    {
+      "en": "Place open triangular bandage over forearm and hand, apex towards elbow. Extend upper point over uninjured shoulder. Tuck lower part under injured arm, bring under elbow and around back, extend to meet upper point at shoulder, tie firmly.",
+      "ar": "ضع ضمادة مثلثة مفتوحة فوق الساعد واليد، بحيث يكون الرأس نحو الكوع. مد النقطة العلوية فوق الكتف غير المصاب. ادخل الجزء السفلي تحت الذراع المصابة، ثم مرره تحت الكوع وحول الظهر، ثم مده ليلتقي بالنقطة العلوية عند الكتف، واربط بإحكام."
+    },
+    {
+      "en": "Secure the elbow by folding excess material and applying a safety pin.",
+      "ar": "ثبت الكوع عن طريق طي المادة الزائدة وتطبيق دبوس أمان."
+    },
+    {
+      "en": "For upper arm or rib injuries (Collar and Cuff): Allow elbow to hang naturally, hand extended towards uninjured shoulder.",
+      "ar": "لإصابات الجزء العلوي من الذراع أو الأضلاع (الرباط والعصابة): اسمح للكوع بالتدلي بشكل طبيعي، واليد ممتدة نحو الكتف غير المصاب."
+    },
+    {
+      "en": "Form a clove hitch with a bandage, slide over hand, gently pull to secure wrist. Extend points to either side of neck, tie firmly.",
+      "ar": "شكل عقدة قرنفلية بضمادة، مررها فوق اليد، واسحبها بلطف لتثبيت الرسغ. مد الأطراف إلى جانبي الرقبة، واربط بإحكام."
+    },
+    {
+      "en": "Ensure circulation is not compromised after applying any sling by doing a distal circulation check (e.g., capillary refill).",
+      "ar": "تأكد من عدم تعرض الدورة الدموية للخطر بعد وضع أي حمالة عن طريق إجراء فحص الدورة الدموية البعيدة (مثل إعادة تعبئة الشعيرات الدموية)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Moving an arm into position for a sling may be painful. If so, immobilize in the position found.",
+      "ar": "قد يكون تحريك الذراع إلى وضع الحمالة مؤلماً. إذا كان الأمر كذلك، ثبتها في الوضع الذي وجدتها فيه."
+    },
+    {
+      "type": "info",
+      "en": "You can improvise a sling using the victim's shirt by pinning the bottom hem to their chest.",
+      "ar": "يمكنك ارتجال حمالة باستخدام قميص المصاب عن طريق تثبيت الحافة السفلية على صدره."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Immobilization"
+}

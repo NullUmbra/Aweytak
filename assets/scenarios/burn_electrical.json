@@ -1,0 +1,45 @@
+{
+  "id": "burn_electrical",
+  "categoryId": "burns",
+  "titleEn": "Electrical Burns",
+  "titleAr": "الحروق الكهربائية",
+  "steps": [
+    {
+      "en": "Ensure scene safety: Do NOT touch the victim if they are still in contact with the electrical source. Turn off the power source if possible, or use a non-conductive object to separate the victim from the source.",
+      "ar": "تأكد من سلامة المكان: لا تلمس المصاب إذا كان لا يزال على اتصال بمصدر الكهرباء. أوقف مصدر الطاقة إذا أمكن، أو استخدم جسماً غير موصل لفصل المصاب عن المصدر."
+    },
+    {
+      "en": "Call EMS immediately. Electrical burns can cause severe internal damage not visible on the surface.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. يمكن أن تسبب الحروق الكهربائية أضراراً داخلية شديدة غير مرئية على السطح."
+    },
+    {
+      "en": "Assess ABCs. Electrical shock can stop the heart or breathing. Be prepared to perform CPR immediately.",
+      "ar": "تحقق من مجاري الهواء والتنفس والدورة الدموية. يمكن أن توقف الصدمة الكهربائية القلب أو التنفس. كن مستعداً لإجراء الإنعاش القلبي الرئوي فوراً."
+    },
+    {
+      "en": "Look for entry and exit wounds. These may appear as small, charred areas but indicate extensive internal damage.",
+      "ar": "ابحث عن جروح الدخول والخروج. قد تظهر هذه الجروح كمناطق صغيرة متفحمة ولكنها تشير إلى ضرر داخلي واسع النطاق."
+    },
+    {
+      "en": "Cover the burns loosely with dry, sterile dressings.",
+      "ar": "غطِ الحروق بشكل فضفاض بضمادات جافة ومعقمة."
+    },
+    {
+      "en": "Treat for shock and monitor vital signs continuously until EMS arrives.",
+      "ar": "عالج من الصدمة وراقب العلامات الحيوية باستمرار حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "The most serious danger from electrical shock is often to the heart and nervous system, not just the visible burn.",
+      "ar": "الخطر الأكبر من الصدمة الكهربائية غالباً ما يكون على القلب والجهاز العصبي، وليس فقط الحرق المرئي."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not touch the victim until you are absolutely certain the power source is off.",
+      "ar": "لا تلمس المصاب حتى تتأكد تماماً من إيقاف مصدر الطاقة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

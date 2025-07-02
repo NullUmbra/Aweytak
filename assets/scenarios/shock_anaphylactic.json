@@ -1,0 +1,45 @@
+{
+  "id": "anaphylactic_shock",
+  "categoryId": "shock",
+  "titleEn": "Anaphylactic Shock",
+  "titleAr": "الصدمة التحسسية",
+  "steps": [
+    {
+      "en": "Call EMS immediately. Anaphylaxis is a severe, life-threatening allergic reaction.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. الحساسية المفرطة هي رد فعل تحسسي شديد يهدد الحياة."
+    },
+    {
+      "en": "Assist the victim with their prescribed epinephrine auto-injector (Epi-pen) if they have one and are unable to self-administer.",
+      "ar": "ساعد المصاب في استخدام حقنة الإيبينيفرين الذاتية (Epi-pen) الموصوفة له إذا كان لديه واحدة وكان غير قادر على إدارتها بنفسه."
+    },
+    {
+      "en": "Inject epinephrine into the outer thigh, hold for 10 seconds, then remove. Note the time of injection.",
+      "ar": "احقن الإيبينيفرين في الفخذ الخارجي، امسك لمدة 10 ثوانٍ، ثم أزل الحقنة. لاحظ وقت الحقن."
+    },
+    {
+      "en": "Lay the victim flat. If they are having difficulty breathing, assist them into a comfortable sitting position. If unconscious, place in recovery position.",
+      "ar": "اجعل المصاب يستلقي على ظهره. إذا كان يعاني من صعوبة في التنفس، ساعده على اتخاذ وضع الجلوس المريح. إذا كان فاقداً للوعي، ضعه في وضع الإفاقة."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously. Be prepared to perform CPR if the victim stops breathing or has no pulse.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار. كن مستعداً لإجراء الإنعاش القلبي الرئوي إذا توقف المصاب عن التنفس أو لم يكن لديه نبض."
+    },
+    {
+      "en": "If symptoms do not improve after 5-15 minutes, a second dose of epinephrine may be administered if available and advised by EMS.",
+      "ar": "إذا لم تتحسن الأعراض بعد 5-15 دقيقة، يمكن إعطاء جرعة ثانية من الإيبينيفرين إذا كانت متاحة ونصح بها خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Anaphylaxis can rapidly worsen. Early administration of epinephrine is crucial.",
+      "ar": "يمكن أن تتدهور الحساسية المفرطة بسرعة. الإدارة المبكرة للإيبينيفرين أمر بالغ الأهمية."
+    },
+    {
+      "type": "info",
+      "en": "Symptoms include hives, swelling of face/throat/tongue, difficulty breathing, wheezing, dizziness, rapid pulse, and a feeling of impending doom.",
+      "ar": "تشمل الأعراض: الشرى، تورم الوجه/الحلق/اللسان، صعوبة التنفس، أزيز، دوخة، نبض سريع، وشعور بالهلاك الوشيك."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Anaphylaxis"
+}

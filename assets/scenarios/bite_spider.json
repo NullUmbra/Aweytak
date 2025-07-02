@@ -1,0 +1,41 @@
+{
+  "id": "bite_spider",
+  "categoryId": "bites_stings",
+  "titleEn": "Spider Bite",
+  "titleAr": "لدغة عنكبوت",
+  "steps": [
+    {
+      "en": "Clean the bite area gently with soap and water.",
+      "ar": "نظف منطقة اللدغة بلطف بالماء والصابون."
+    },
+    {
+      "en": "Apply a cold pack or ice wrapped in a cloth to the bite to reduce swelling and pain.",
+      "ar": "ضع كمادة باردة أو ثلجاً ملفوفاً بقطعة قماش على اللدغة لتقليل التورم والألم."
+    },
+    {
+      "en": "Elevate the bitten limb if possible to reduce swelling.",
+      "ar": "ارفع الطرف الملدوغ إن أمكن لتقليل التورم."
+    },
+    {
+      "en": "Monitor the victim for signs of a severe reaction, such as spreading redness, increasing pain, muscle cramps, fever, or difficulty breathing.",
+      "ar": "راقب المصاب بحثاً عن علامات رد فعل شديد، مثل انتشار الاحمرار، أو زيادة الألم، أو تشنجات العضلات، أو الحمى، أو صعوبة التنفس."
+    },
+    {
+      "en": "Seek medical attention for all suspected poisonous spider bites (e.g., black widow, brown recluse) or if symptoms worsen.",
+      "ar": "اطلب العناية الطبية لجميع لدغات العناكب السامة المشتبه بها (مثل الأرملة السوداء، العنكبوت البني الناسك) أو إذا ساءت الأعراض."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Most spider bites are harmless, but some can be dangerous. Try to identify the spider if safe to do so, but do not risk another bite.",
+      "ar": "معظم لدغات العناكب غير ضارة، ولكن بعضها يمكن أن يكون خطيراً. حاول التعرف على العنكبوت إذا كان آمناً القيام بذلك، ولكن لا تخاطر بلدغة أخرى."
+    },
+    {
+      "type": "warning",
+      "en": "Symptoms of a poisonous spider bite can develop over several hours.",
+      "ar": "يمكن أن تتطور أعراض لدغة العنكبوت السامة على مدار عدة ساعات."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bites_%26_Stings"
+}

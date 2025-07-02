@@ -1,0 +1,37 @@
+{
+  "id": "fracture_femoral",
+  "categoryId": "fractures",
+  "titleEn": "Femoral Fracture",
+  "titleAr": "كسر عظم الفخذ",
+  "steps": [
+    {
+      "en": "Call EMS immediately. Femoral fractures are major emergencies due to the risk of massive internal bleeding.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. كسور عظم الفخذ هي حالات طارئة كبرى بسبب خطر النزيف الداخلي الهائل."
+    },
+    {
+      "en": "Maintain as much immobilization as possible of the injured leg. Do not attempt to move or straighten the leg.",
+      "ar": "حافظ على تثبيت الساق المصابة قدر الإمكان. لا تحاول تحريك الساق أو تقويمها."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously until EMS arrives.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار حتى وصول خدمات الطوارئ."
+    },
+    {
+      "en": "Treat for shock by lying the victim flat and raising their legs (if not contraindicated by the injury).",
+      "ar": "عالج من الصدمة عن طريق إراحة المصاب على ظهره ورفع ساقيه (إذا لم يكن ذلك ممنوعاً بسبب الإصابة)."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "The femoral artery runs beside the femur; a fracture can damage it, leading to life-threatening internal bleeding.",
+      "ar": "يمر الشريان الفخذي بجانب عظم الفخذ؛ يمكن أن يتسبب الكسر في تلفه، مما يؤدي إلى نزيف داخلي يهدد الحياة."
+    },
+    {
+      "type": "info",
+      "en": "Immobilization is crucial to prevent further displacement of the fracture and potential damage to the femoral artery.",
+      "ar": "التثبيت أمر بالغ الأهمية لمنع المزيد من تحرك الكسر والتلف المحتمل للشريان الفخذي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Immobilization"
+}

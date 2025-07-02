@@ -1,0 +1,49 @@
+{
+  "id": "amputation",
+  "categoryId": "bleeding",
+  "titleEn": "Amputation Wounds",
+  "titleAr": "بتر الأطراف",
+  "steps": [
+    {
+      "en": "Call EMS immediately. This is a severe, life-threatening emergency.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. هذه حالة طارئة شديدة ومهددة للحياة."
+    },
+    {
+      "en": "Control bleeding from the stump using direct pressure with a sterile dressing. If bleeding is severe, apply a tourniquet above the injury as a last resort.",
+      "ar": "تحكم في النزيف من الجذع باستخدام ضغط مباشر بضمادة معقمة. إذا كان النزيف شديداً، ضع رباطاً ضاغطاً فوق الإصابة كحل أخير."
+    },
+    {
+      "en": "Treat for shock by laying the victim flat and elevating their legs, if possible.",
+      "ar": "عالج من الصدمة عن طريق إراحة المصاب على ظهره ورفع ساقيه، إذا أمكن."
+    },
+    {
+      "en": "Locate the amputated part. Clean it gently with sterile water or saline, but do not scrub.",
+      "ar": "حدد الجزء المبتور. نظفه بلطف بماء معقم أو محلول ملحي، ولكن لا تفركه."
+    },
+    {
+      "en": "Wrap the amputated part in a sterile gauze or clean cloth.",
+      "ar": "لف الجزء المبتور بشاش معقم أو قطعة قماش نظيفة."
+    },
+    {
+      "en": "Place the wrapped part in a plastic bag, then place that bag into another bag or container with ice water. Do NOT let the part touch ice directly.",
+      "ar": "ضع الجزء الملفوف في كيس بلاستيكي، ثم ضع هذا الكيس في كيس أو وعاء آخر به ماء مثلج. لا تدع الجزء يلامس الثلج مباشرة."
+    },
+    {
+      "en": "Transport the victim and the amputated part with EMS to the hospital.",
+      "ar": "انقل المصاب والجزء المبتور مع خدمات الطوارئ إلى المستشفى."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Time is critical for reattachment. Keep the amputated part cool but not frozen.",
+      "ar": "الوقت حاسم لإعادة التوصيل. حافظ على الجزء المبتور بارداً ولكن ليس مجمداً."
+    },
+    {
+      "type": "info",
+      "en": "The goal is to control bleeding and preserve the amputated part for potential reattachment.",
+      "ar": "الهدف هو التحكم في النزيف والحفاظ على الجزء المبتور لإعادة توصيله المحتملة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bleeding"
+}

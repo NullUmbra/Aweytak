@@ -1,0 +1,49 @@
+{
+  "id": "burn_chemical",
+  "categoryId": "burns",
+  "titleEn": "Chemical Burns",
+  "titleAr": "الحروق الكيميائية",
+  "steps": [
+    {
+      "en": "Call EMS immediately.",
+      "ar": "اتصل بخدمات الطوارئ فوراً."
+    },
+    {
+      "en": "Ensure scene safety: protect yourself from the chemical. Wear gloves if available.",
+      "ar": "تأكد من سلامة المكان: احمِ نفسك من المادة الكيميائية. ارتدِ قفازات إذا كانت متاحة."
+    },
+    {
+      "en": "For dry chemicals: Brush off as much of the chemical as possible with a gloved hand or cloth. Do NOT use water until all dry chemical is removed.",
+      "ar": "للمواد الكيميائية الجافة: امسح أكبر قدر ممكن من المادة الكيميائية بيد مرتدية قفازاً أو بقطعة قماش. لا تستخدم الماء حتى تتم إزالة جميع المواد الكيميائية الجافة."
+    },
+    {
+      "en": "For all chemical burns (after brushing off dry chemicals): Flush the affected area with large amounts of cool running water for at least 15-20 minutes.",
+      "ar": "لجميع الحروق الكيميائية (بعد مسح المواد الكيميائية الجافة): اغسل المنطقة المصابة بكميات كبيرة من الماء البارد الجاري لمدة 15-20 دقيقة على الأقل."
+    },
+    {
+      "en": "While flushing, carefully remove any contaminated clothing or jewelry.",
+      "ar": "أثناء الغسل، أزل بعناية أي ملابس أو مجوهرات ملوثة."
+    },
+    {
+      "en": "Cover the burn loosely with a dry, sterile dressing.",
+      "ar": "غطِ الحرق بشكل فضفاض بضمادة جافة ومعقمة."
+    },
+    {
+      "en": "If the chemical entered the eye, flush the eye with water for at least 20 minutes, holding the eyelid open.",
+      "ar": "إذا دخلت المادة الكيميائية إلى العين، اغسل العين بالماء لمدة 20 دقيقة على الأقل، مع إبقاء الجفن مفتوحاً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Some dry chemicals react violently with water. Always brush off dry chemicals first before flushing, unless specifically known to be safe with water.",
+      "ar": "تتفاعل بعض المواد الكيميائية الجافة بعنف مع الماء. قم دائماً بمسح المواد الكيميائية الجافة أولاً قبل الغسل، ما لم يكن معروفاً على وجه التحديد أنها آمنة مع الماء."
+    },
+    {
+      "type": "info",
+      "en": "Identify the chemical if possible and provide this information to EMS.",
+      "ar": "حدد المادة الكيميائية إن أمكن وقدم هذه المعلومات لخدمات الطوارئ."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "illness_heart_attack",
+  "categoryId": "illnesses",
+  "titleEn": "Heart Attack",
+  "titleAr": "النوبة القلبية",
+  "steps": [
+    {
+      "en": "Call for an ambulance immediately. Heart attack is a medical emergency.",
+      "ar": "اتصل بسيارة الإسعاف فوراً. النوبة القلبية هي حالة طبية طارئة."
+    },
+    {
+      "en": "Assist the victim with their prescribed medication (e.g., nitroglycerin spray/pills for angina) if they have it and are able to self-administer. Do not touch pills with bare skin.",
+      "ar": "ساعد المصاب في تناول دوائه الموصوف (مثل بخاخ/حبوب النيتروجليسرين للذبحة الصدرية) إذا كان لديه وكان قادراً على تناوله بنفسه. لا تلمس الحبوب بيدين عاريتين."
+    },
+    {
+      "en": "Loosen any tight clothing, especially around the neck.",
+      "ar": "قم بتخفيف أي ملابس ضيقة، خاصة حول الرقبة."
+    },
+    {
+      "en": "Assist the victim into a comfortable position, typically a 'W' position (recumbent at 45 degrees, feet on floor, knees raised).",
+      "ar": "ساعد المصاب على اتخاذ وضع مريح، عادة ما يكون وضع 'W' (مستلقياً بزاوية 45 درجة، القدمين على الأرض، الركبتين مرفوعتين)."
+    },
+    {
+      "en": "If the patient is not on anti-coagulant medicine, assist them in taking one dose of aspirin (if they decide to do so).",
+      "ar": "إذا لم يكن المصاب يتناول أدوية مضادة للتخثر، فساعده في تناول جرعة واحدة من الأسبرين (إذا قرر القيام بذلك)."
+    },
+    {
+      "en": "Monitor vitals continuously and be prepared to perform CPR if the victim goes into cardiac arrest.",
+      "ar": "راقب العلامات الحيوية باستمرار وكن مستعداً لإجراء الإنعاش القلبي الرئوي إذا دخل المصاب في سكتة قلبية."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Heart attack symptoms include chest pain (tightness, radiating to left arm/jaw), nausea/indigestion (especially in women), pale/clammy/ashen skin, sense of doom, and denial.",
+      "ar": "تشمل أعراض النوبة القلبية: ألم في الصدر (ضيق، ينتشر إلى الذراع اليسرى/الفك)، غثيان/عسر هضم (خاصة عند النساء)، جلد شاحب/رطب/رمادي، شعور بالهلاك، وإنكار."
+    },
+    {
+      "type": "warning",
+      "en": "Angina pain usually relieves with rest within minutes, whereas heart attack pain does not.",
+      "ar": "عادة ما يزول ألم الذبحة الصدرية بالراحة في غضون دقائق، بينما لا يزول ألم النوبة القلبية بالراحة."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Heart_Attack_%26_Angina"
+}

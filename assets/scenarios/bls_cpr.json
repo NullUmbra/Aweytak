@@ -1,0 +1,54 @@
+{
+  "id": "bls_cpr",
+  "categoryId": "other_first_aid",
+  "titleEn": "Basic Life Support & CPR",
+  "titleAr": "دعم الحياة الأساسي والإنعاش القلبي الرئوي",
+  "steps": [
+    {
+      "en": "Ensure scene safety before approaching the victim.",
+      "ar": "تأكد من سلامة المكان قبل الاقتراب من المصاب."
+    },
+    {
+      "en": "Check for responsiveness: gently tap and shout 'Are you alright?'",
+      "ar": "تحقق من الاستجابة: انقر بلطف واصرخ 'هل أنت بخير؟'"
+    },
+    {
+      "en": "If no response, call for emergency medical services (EMS) immediately.",
+      "ar": "إذا لم يكن هناك استجابة، اتصل بخدمات الطوارئ الطبية فوراً."
+    },
+    {
+      "en": "Open the airway using the head-tilt chin-lift maneuver.",
+      "ar": "افتح مجرى الهواء باستخدام مناورة إمالة الرأس ورفع الذقن."
+    },
+    {
+      "en": "Check for breathing for no more than 10 seconds (Look, Listen, Feel).",
+      "ar": "تحقق من التنفس لمدة لا تزيد عن 10 ثوانٍ (انظر، استمع، اشعر)."
+    },
+    {
+      "en": "If not breathing or only gasping, begin chest compressions and rescue breaths (CPR) immediately.",
+      "ar": "إذا لم يكن يتنفس أو كان يلهث فقط، ابدأ ضغطات الصدر وأنفاس الإنقاذ (CPR) فوراً."
+    },
+    {
+      "en": "Continue CPR until qualified help arrives, the victim starts breathing, or you are too exhausted to continue.",
+      "ar": "استمر في الإنعاش القلبي الرئوي حتى تصل المساعدة المؤهلة، أو يبدأ المصاب في التنفس، أو تصبح مرهقاً جداً للاستمرار."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "BLS emphasizes early recognition, early access to EMS, early CPR, and early defibrillation.",
+      "ar": "يركز دعم الحياة الأساسي على التعرف المبكر، والوصول المبكر لخدمات الطوارئ، والإنعاش القلبي الرئوي المبكر، وإزالة الرجفان المبكرة."
+    },
+    {
+      "type": "best_practice",
+      "en": "For detailed CPR techniques for adults, children, and infants, refer to their specific scenarios.",
+      "ar": "للحصول على تقنيات الإنعاش القلبي الرئوي المفصلة للبالغين والأطفال والرضع، ارجع إلى سيناريوهاتهم المحددة."
+    },
+    {
+      "type": "warning",
+      "en": "Do not delay calling EMS or starting CPR if the victim is unresponsive and not breathing normally.",
+      "ar": "لا تؤخر الاتصال بخدمات الطوارئ أو بدء الإنعاش القلبي الرئوي إذا كان المصاب غير مستجيب ولا يتنفس بشكل طبيعي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

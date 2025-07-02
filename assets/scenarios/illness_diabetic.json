@@ -1,0 +1,50 @@
+{
+  "id": "illness_diabetic",
+  "categoryId": "illnesses",
+  "titleEn": "Diabetic Emergency",
+  "titleAr": "طوارئ السكري",
+  "steps": [
+    {
+      "en": "If victim is conscious and able to swallow, and you suspect low blood sugar (hypoglycemia - sudden onset, pale, clammy, confused): Give them sugar immediately.",
+      "ar": "إذا كان المصاب واعياً وقادراً على البلع، وتشتبه في انخفاض سكر الدم (نقص السكر في الدم - بداية مفاجئة، شاحب، رطب، مشوش): أعطه السكر فوراً."
+    },
+    {
+      "en": "Sources of sugar include: fruit juice, regular soda, candy, glucose tablets/gel (e.g., Monogel).",
+      "ar": "تشمل مصادر السكر: عصير الفاكهة، الصودا العادية، الحلوى، أقراص/جل الجلوكوز (مثل مونوجيل)."
+    },
+    {
+      "en": "If victim is unconscious or unable to swallow, or if you are unsure if it's high or low blood sugar: Call EMS immediately.",
+      "ar": "إذا كان المصاب فاقداً للوعي أو غير قادر على البلع، أو إذا كنت غير متأكد مما إذا كان ارتفاعاً أو انخفاضاً في سكر الدم: اتصل بخدمات الطوارئ فوراً."
+    },
+    {
+      "en": "If the victim has a glucagon injection kit for severe low blood sugar and is unable to administer it, assist them if permitted by law and training.",
+      "ar": "إذا كان المصاب لديه مجموعة حقن الجلوكاجون لانخفاض سكر الدم الشديد وغير قادر على إدارتها، ساعده إذا سمح القانون والتدريب بذلك."
+    },
+    {
+      "en": "If victim is conscious and you suspect high blood sugar (hyperglycemia - slow onset, flushed, rapid breathing, thirsty): Encourage them to use their insulin if they have it and are able.",
+      "ar": "إذا كان المصاب واعياً وتشتبه في ارتفاع سكر الدم (ارتفاع السكر في الدم - بداية بطيئة، احمرار، تنفس سريع، عطش): شجعه على استخدام الأنسولين إذا كان لديه وكان قادراً على ذلك."
+    },
+    {
+      "en": "Monitor ABCs and treat for shock in all diabetic emergencies.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية وعالج من الصدمة في جميع حالات الطوارئ السكرية."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Never give anything by mouth to an unconscious victim, as it can cause choking.",
+      "ar": "لا تعطِ أبداً أي شيء عن طريق الفم لمصاب فاقد الوعي، فقد يسبب ذلك الاختناق."
+    },
+    {
+      "type": "info",
+      "en": "If unsure whether blood sugar is high or low, always assume it's low and give sugar, as low blood sugar is more immediately life-threatening.",
+      "ar": "إذا كنت غير متأكد مما إذا كان سكر الدم مرتفعاً أو منخفضاً، افترض دائماً أنه منخفض وأعطِ السكر، لأن انخفاض سكر الدم يهدد الحياة بشكل فوري أكثر."
+    },
+    {
+      "type": "best_practice",
+      "en": "Encourage the victim to use their own test kit if available to confirm blood glucose levels.",
+      "ar": "شجع المصاب على استخدام مجموعة الفحص الخاصة به إذا كانت متاحة لتأكيد مستويات الجلوكوز في الدم."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Diabetes"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "do_not_leave",
+  "categoryId": "emergency_action",
+  "titleEn": "Do Not Leave Victim Alone",
+  "titleAr": "لا تترك المصاب وحده",
+  "steps": [
+    {
+      "en": "Once you have started providing first aid, do not leave the victim alone unless you are in immediate danger or need to call for help and no one else is available.",
+      "ar": "بمجرد أن تبدأ في تقديم الإسعافات الأولية، لا تترك المصاب وحده إلا إذا كنت في خطر مباشر أو كنت بحاجة إلى طلب المساعدة ولم يكن هناك أحد آخر متاحاً."
+    },
+    {
+      "en": "If you must leave to call for help, do so quickly and return to the victim as soon as possible.",
+      "ar": "إذا كان يجب عليك المغادرة لطلب المساعدة، فافعل ذلك بسرعة وعد إلى المصاب في أقرب وقت ممكن."
+    },
+    {
+      "en": "Your presence provides reassurance and allows for continuous monitoring of their condition.",
+      "ar": "وجودك يوفر الطمأنينة ويسمح بالمراقبة المستمرة لحالتهم."
+    },
+    {
+      "en": "Stay with the victim until qualified medical personnel arrive and take over care.",
+      "ar": "ابقَ مع المصاب حتى وصول الأفراد الطبيين المؤهلين وتوليهم الرعاية."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Leaving an unconscious victim alone can be dangerous, as their condition may worsen rapidly.",
+      "ar": "قد يكون ترك المصاب فاقد الوعي وحده خطيراً، حيث قد تسوء حالته بسرعة."
+    },
+    {
+      "type": "info",
+      "en": "If you are the only rescuer and need to call EMS for an adult, call first. For a child/infant, provide 2 minutes of care before calling.",
+      "ar": "إذا كنت المنقذ الوحيد وتحتاج إلى الاتصال بخدمات الطوارئ لبالغ، اتصل أولاً. لطفل/رضيع، قدم دقيقتين من الرعاية قبل الاتصال."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Emergency_action_steps"
+}

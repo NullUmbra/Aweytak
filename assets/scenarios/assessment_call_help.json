@@ -1,0 +1,41 @@
+{
+  "id": "call_help",
+  "categoryId": "assessment",
+  "titleEn": "Call for Help",
+  "titleAr": "اتصل للحصول على المساعدة",
+  "steps": [
+    {
+      "en": "If the victim is unresponsive or has a life-threatening condition, immediately call your local emergency number (e.g., 911, 112, 999).",
+      "ar": "إذا كان المصاب غير مستجيب أو يعاني من حالة تهدد الحياة، اتصل فوراً برقم الطوارئ المحلي (مثل 911، 112، 999)."
+    },
+    {
+      "en": "If there are bystanders, point to a specific person and tell them clearly to 'Call [Emergency Number] and come back to tell me you've called.'",
+      "ar": "إذا كان هناك مارة، أشر إلى شخص معين وقل له بوضوح 'اتصل بـ [رقم الطوارئ] وعد لتخبرني أنك اتصلت'."
+    },
+    {
+      "en": "Provide clear and concise information to the dispatcher: your location, the nature of the emergency, and the number of victims.",
+      "ar": "قدم معلومات واضحة وموجزة للمرسل: موقعك، طبيعة الطوارئ، وعدد المصابين."
+    },
+    {
+      "en": "Do not hang up until the dispatcher tells you to.",
+      "ar": "لا تغلق الخط حتى يطلب منك المرسل ذلك."
+    },
+    {
+      "en": "If you are alone with a child or infant, perform 2 minutes of CPR before calling for help, then call EMS.",
+      "ar": "إذا كنت بمفردك مع طفل أو رضيع، قم بإجراء دقيقتين من الإنعاش القلبي الرئوي قبل الاتصال بالمساعدة، ثم اتصل بخدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "best_practice",
+      "en": "Activating the emergency medical services (EMS) system early is critical for patient outcomes.",
+      "ar": "تفعيل نظام خدمات الطوارئ الطبية (EMS) مبكراً أمر بالغ الأهمية لنتائج المرضى."
+    },
+    {
+      "type": "info",
+      "en": "Knowing your local emergency number is vital.",
+      "ar": "معرفة رقم الطوارئ المحلي الخاص بك أمر حيوي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}

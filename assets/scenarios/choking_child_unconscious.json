@@ -1,0 +1,41 @@
+{
+  "id": "choking_child_unconscious",
+  "categoryId": "choking",
+  "titleEn": "Unconscious Child Choking",
+  "titleAr": "اختناق طفل فاقد الوعي",
+  "steps": [
+    {
+      "en": "Call EMS immediately. If you are alone, perform 5 cycles of CPR before calling.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. إذا كنت بمفردك، قم بإجراء 5 دورات من الإنعاش القلبي الرئوي قبل الاتصال."
+    },
+    {
+      "en": "Lower the child to the floor. Begin CPR immediately, starting with chest compressions.",
+      "ar": "اخفض الطفل إلى الأرض. ابدأ الإنعاش القلبي الرئوي فوراً، بدءاً بضغطات الصدر."
+    },
+    {
+      "en": "Before attempting rescue breaths, open the child's mouth and look for the object. If you see it and can easily reach it, remove it.",
+      "ar": "قبل محاولة أنفاس الإنقاذ، افتح فم الطفل وابحث عن الجسم. إذا رأيته ويمكنك الوصول إليه بسهولة، فأزله."
+    },
+    {
+      "en": "If you cannot see or reach the object, give 2 rescue breaths. If the breaths do not go in, reposition the airway and try again.",
+      "ar": "إذا لم تتمكن من رؤية الجسم أو الوصول إليه، أعطِ نفسين إنقاذيين. إذا لم تدخل الأنفاس، أعد وضع مجرى الهواء وحاول مرة أخرى."
+    },
+    {
+      "en": "Continue cycles of 30 chest compressions and 2 rescue breaths, looking for the object before each set of breaths, until the object is dislodged, the child starts breathing, or EMS arrives.",
+      "ar": "استمر في دورات من 30 ضغطة صدر ونفسين إنقاذيين، وابحث عن الجسم قبل كل مجموعة من الأنفاس، حتى يتم إزاحة الجسم، أو يبدأ الطفل في التنفس، أو تصل خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do NOT perform blind finger sweeps. Only remove an object if you can clearly see it.",
+      "ar": "لا تقم بإدخال أصابعك بشكل أعمى. أزل الجسم فقط إذا كنت تستطيع رؤيته بوضوح."
+    },
+    {
+      "type": "info",
+      "en": "CPR compressions can help dislodge the object in an unconscious choking victim.",
+      "ar": "يمكن أن تساعد ضغطات الإنعاش القلبي الرئوي في إزاحة الجسم في حالة اختناق المصاب الفاقد للوعي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Obstructed_Airway"
+}

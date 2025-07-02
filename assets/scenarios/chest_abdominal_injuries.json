@@ -1,0 +1,58 @@
+{
+  "id": "chest_abdominal_injuries",
+  "categoryId": "other_first_aid",
+  "titleEn": "Chest & Abdominal Injuries",
+  "titleAr": "إصابات الصدر والبطن",
+  "steps": [
+    {
+      "en": "For all serious chest/abdominal injuries: Call for an ambulance immediately.",
+      "ar": "لجميع إصابات الصدر/البطن الخطيرة: اتصل بسيارة الإسعاف فوراً."
+    },
+    {
+      "en": "Assess ABCs and intervene as necessary (e.g., CPR if not breathing).",
+      "ar": "تحقق من مجاري الهواء والتنفس والدورة الدموية وتدخل حسب الضرورة (مثل الإنعاش القلبي الرئوي إذا لم يكن يتنفس)."
+    },
+    {
+      "en": "For **Closed Chest Wounds** (e.g., broken ribs): Assist the victim into a position of comfort. Monitor vitals carefully.",
+      "ar": "لإصابات الصدر المغلقة (مثل كسور الأضلاع): ساعد المصاب على اتخاذ وضع مريح. راقب العلامات الحيوية بعناية."
+    },
+    {
+      "en": "For **Open Chest Wounds** (sucking chest wound): Do NOT remove any embedded objects. Create a flutter valve over the wound using plastic (e.g., credit card, Ziploc bag) taped on 3 sides, leaving the 4th side open at the bottom.",
+      "ar": "لإصابات الصدر المفتوحة (جرح الصدر الماص): لا تزيل أي أجسام مدمجة. أنشئ صماماً رفرفياً فوق الجرح باستخدام البلاستيك (مثل بطاقة ائتمان، كيس بسحاب) مثبت من 3 جوانب، مع ترك الجانب الرابع مفتوحاً من الأسفل."
+    },
+    {
+      "en": "For open chest wounds: Position the victim with their injured side down (lateral positioning) to help healthy lung function.",
+      "ar": "لإصابات الصدر المفتوحة: ضع المصاب على جانبه المصاب (وضع جانبي) للمساعدة في وظيفة الرئة السليمة."
+    },
+    {
+      "en": "For **Abdominal Injuries** with protruding organs: Do NOT push organs back in. Have the person lie flat with knees bent. Cover organs with a moist, sterile dressing (not paper products).",
+      "ar": "لإصابات البطن مع بروز الأعضاء: لا تدفع الأعضاء إلى الداخل. اجعل الشخص يستلقي على ظهره مع ثني الركبتين. غطِ الأعضاء بضمادة رطبة ومعقمة (ليست منتجات ورقية)."
+    },
+    {
+      "en": "For abdominal injuries: Do NOT allow the victim to eat or drink. Treat for shock.",
+      "ar": "لإصابات البطن: لا تسمح للمصاب بالأكل أو الشرب. عالج من الصدمة."
+    },
+    {
+      "en": "Conduct a secondary survey and monitor vitals carefully until EMS arrives for all chest and abdominal injuries.",
+      "ar": "قم بإجراء مسح ثانوي وراقب العلامات الحيوية بعناية حتى وصول خدمات الطوارئ لجميع إصابات الصدر والبطن."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Chest wounds are serious as they protect vital organs. Any serious chest injury warrants professional medical attention.",
+      "ar": "إصابات الصدر خطيرة لأنها تحمي الأعضاء الحيوية. أي إصابة خطيرة في الصدر تستدعي عناية طبية مهنية."
+    },
+    {
+      "type": "info",
+      "en": "A 'flail chest' (2+ rib fractures along same rib) or 'stove chest' (all ribs fractured) can severely impair breathing.",
+      "ar": "يمكن أن يؤدي 'الصدر المرتجف' (كسر ضلعين أو أكثر على نفس الضلع) أو 'الصدر المتهدم' (كسر جميع الأضلاع) إلى إعاقة شديدة في التنفس."
+    },
+    {
+      "type": "do_not",
+      "en": "Never remove embedded objects from any wound.",
+      "ar": "لا تزيل أبداً الأجسام المدمجة من أي جرح."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Chest_%26_Abdominal_Injuries"
+}

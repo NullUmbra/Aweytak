@@ -1,0 +1,45 @@
+{
+  "id": "burn_third_degree",
+  "categoryId": "burns",
+  "titleEn": "Third-Degree Burns",
+  "titleAr": "الحروق من الدرجة الثالثة",
+  "steps": [
+    {
+      "en": "Call EMS immediately. Third-degree burns are severe medical emergencies.",
+      "ar": "اتصل بخدمات الطوارئ فوراً. حروق الدرجة الثالثة هي حالات طبية طارئة خطيرة."
+    },
+    {
+      "en": "Ensure the burning process has stopped. Do NOT apply water to extensive third-degree burns, as this can cause hypothermia.",
+      "ar": "تأكد من توقف عملية الحرق. لا تضع الماء على حروق الدرجة الثالثة الواسعة، فقد يسبب ذلك انخفاض حرارة الجسم."
+    },
+    {
+      "en": "Do NOT remove clothing that is stuck to the burn.",
+      "ar": "لا تزيل الملابس الملتصقة بالحرق."
+    },
+    {
+      "en": "Cover the burn loosely with a dry, sterile dressing or a clean sheet.",
+      "ar": "غطِ الحرق بشكل فضفاض بضمادة جافة ومعقمة أو بقطعة قماش نظيفة."
+    },
+    {
+      "en": "Treat the victim for shock: Lay them flat and elevate their legs if no spinal injury is suspected.",
+      "ar": "عالج المصاب من الصدمة: اجعله يستلقي على ظهره وارفع ساقيه إذا لم يشتبه في إصابة في العمود الفقري."
+    },
+    {
+      "en": "Monitor ABCs and vital signs continuously until EMS arrives.",
+      "ar": "راقب مجاري الهواء والتنفس والدورة الدموية والعلامات الحيوية باستمرار حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Third-degree burns destroy all layers of the skin and may extend to fat, muscle, or bone. The skin may appear white, leathery, charred, or black, and there may be little or no pain due to nerve damage.",
+      "ar": "حروق الدرجة الثالثة تدمر جميع طبقات الجلد وقد تمتد إلى الدهون أو العضلات أو العظام. قد يبدو الجلد أبيض، جلدياً، متفحماً، أو أسود، وقد يكون هناك ألم قليل أو لا يوجد ألم بسبب تلف الأعصاب."
+    },
+    {
+      "type": "warning",
+      "en": "Large third-degree burns are critical and require immediate professional medical attention.",
+      "ar": "حروق الدرجة الثالثة الكبيرة حرجة وتتطلب عناية طبية مهنية فورية."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Burns"
+}

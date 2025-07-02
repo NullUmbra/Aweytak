@@ -1,0 +1,50 @@
+{
+  "id": "env_frostbite",
+  "categoryId": "environmental",
+  "titleEn": "Frostbite",
+  "titleAr": "قضمة الصقيع",
+  "steps": [
+    {
+      "en": "Notify EMS as soon as possible or be prepared to transport victim to a medical facility.",
+      "ar": "أبلغ خدمات الطوارئ في أقرب وقت ممكن أو كن مستعداً لنقل المصاب إلى منشأة طبية."
+    },
+    {
+      "en": "Remove the victim from the cold environment and ensure there is no risk of re-freezing after thawing.",
+      "ar": "انقل المصاب من البيئة الباردة وتأكد من عدم وجود خطر إعادة التجميد بعد الذوبان."
+    },
+    {
+      "en": "Fill a shallow container with room temperature water to cover the frostbitten part. The water should not be too warm.",
+      "ar": "املأ وعاءً ضحلاً بماء بدرجة حرارة الغرفة لتغطية الجزء المصاب بقضمة الصقيع. يجب ألا يكون الماء دافئاً جداً."
+    },
+    {
+      "en": "Immerse the injured area, ensuring the skin does not come into contact with anything else.",
+      "ar": "اغمر المنطقة المصابة، مع التأكد من أن الجلد لا يلامس أي شيء آخر."
+    },
+    {
+      "en": "Refresh the water as it cools until the skin returns to a normal color and texture (may take several hours).",
+      "ar": "جدد الماء عندما يبرد حتى يعود الجلد إلى لونه وملمسه الطبيعي (قد يستغرق عدة ساعات)."
+    },
+    {
+      "en": "Transport the victim to medical assistance for further assessment after rewarming.",
+      "ar": "انقل المصاب إلى المساعدة الطبية لتقييم إضافي بعد إعادة التدفئة."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Skin that re-freezes after thawing will have more damage.",
+      "ar": "الجلد الذي يتجمد مرة أخرى بعد الذوبان سيتعرض لمزيد من الضرر."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not rub the frostbitten area or use dry heat (e.g., fire, radiator) to rewarm.",
+      "ar": "لا تفرك المنطقة المصابة بقضمة الصقيع أو تستخدم الحرارة الجافة (مثل النار، المدفأة) لإعادة التدفئة."
+    },
+    {
+      "type": "info",
+      "en": "If there is a possibility of hypothermia, treat for hypothermia first.",
+      "ar": "إذا كان هناك احتمال لانخفاض حرارة الجسم، عالج انخفاض حرارة الجسم أولاً."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Cold-Related_Illness_%26_Injury"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "external_bleeding",
+  "categoryId": "bleeding",
+  "titleEn": "External Bleeding",
+  "titleAr": "النزيف الخارجي",
+  "steps": [
+    {
+      "en": "Ensure scene safety and put on protective gloves.",
+      "ar": "تأكد من سلامة المكان وارتدِ قفازات واقية."
+    },
+    {
+      "en": "Apply firm, direct pressure to the wound using a sterile gauze or clean cloth. Do not remove saturated dressings; add more on top.",
+      "ar": "طبق ضغطاً مباشراً وثابتاً على الجرح باستخدام شاش معقم أو قطعة قماش نظيفة. لا تزيل الضمادات المشبعة؛ أضف المزيد فوقها."
+    },
+    {
+      "en": "If possible, elevate the injured part above the level of the heart (unless a fracture is suspected or it causes severe pain).",
+      "ar": "إذا أمكن، ارفع الجزء المصاب فوق مستوى القلب (ما لم يشتبه في كسر أو يسبب ألماً شديداً)."
+    },
+    {
+      "en": "Maintain direct pressure and elevation. If bleeding continues, consider applying pressure to a pressure point (artery between heart and wound).",
+      "ar": "حافظ على الضغط المباشر والرفع. إذا استمر النزيف، فكر في تطبيق الضغط على نقطة ضغط (شريان بين القلب والجرح)."
+    },
+    {
+      "en": "Once bleeding is controlled, secure the dressing firmly with a bandage, but not so tight as to cut off circulation.",
+      "ar": "بمجرد السيطرة على النزيف، ثبت الضمادة بإحكام بضمادة، ولكن ليس بإحكام شديد لقطع الدورة الدموية."
+    },
+    {
+      "en": "Treat the victim for shock and monitor their ABCs until EMS arrives.",
+      "ar": "عالج المصاب من الصدمة وراقب مجاري الهواء والتنفس والدورة الدموية حتى وصول خدمات الطوارئ."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Do not remove embedded objects from wounds; apply pressure around them.",
+      "ar": "لا تزيل الأجسام المدمجة من الجروح؛ طبق الضغط حولها."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not use a tourniquet unless it is a last resort for massive, life-threatening bleeding that cannot be controlled by direct pressure.",
+      "ar": "لا تستخدم الرباط الضاغط إلا كحل أخير للنزيف الهائل والمهدد للحياة الذي لا يمكن السيطرة عليه بالضغط المباشر."
+    },
+    {
+      "type": "best_practice",
+      "en": "The 'RED' mnemonic (Rest, Elevation, Direct pressure) is key for external bleeding control.",
+      "ar": "مبدأ 'RED' (الراحة، الرفع، الضغط المباشر) هو المفتاح للسيطرة على النزيف الخارجي."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/External_Bleeding"
+}

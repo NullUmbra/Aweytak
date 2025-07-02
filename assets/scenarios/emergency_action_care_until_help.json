@@ -1,0 +1,45 @@
+{
+  "id": "care_until_help",
+  "categoryId": "emergency_action",
+  "titleEn": "Care Until Help Arrives",
+  "titleAr": "قدم الرعاية حتى وصول المساعدة",
+  "steps": [
+    {
+      "en": "Continue to monitor the victim's ABCs (Airway, Breathing, Circulation) and be prepared to perform CPR if needed.",
+      "ar": "استمر في مراقبة مجاري الهواء والتنفس والدورة الدموية للمصاب وكن مستعداً لإجراء الإنعاش القلبي الرئوي إذا لزم الأمر."
+    },
+    {
+      "en": "Keep the victim comfortable and warm. Use blankets or coats to prevent hypothermia, even in warm environments.",
+      "ar": "اجعل المصاب مرتاحاً ودافئاً. استخدم البطانيات أو المعاطف لمنع انخفاض حرارة الجسم، حتى في البيئات الدافئة."
+    },
+    {
+      "en": "Control any bleeding, manage shock, and provide first aid for specific injuries as per relevant scenarios.",
+      "ar": "تحكم في أي نزيف، عالج الصدمة، وقدم الإسعافات الأولية للإصابات المحددة وفقاً للسيناريوهات ذات الصلة."
+    },
+    {
+      "en": "Reassure the victim and keep them calm. Explain what you are doing.",
+      "ar": "طمئن المصاب واجعله هادئاً. اشرح ما تفعله."
+    },
+    {
+      "en": "Gather information from the victim or bystanders about medical history, allergies, medications, and the events leading to the injury/illness.",
+      "ar": "اجمع معلومات من المصاب أو المارة حول التاريخ الطبي، الحساسية، الأدوية، والأحداث التي أدت إلى الإصابة/المرض."
+    },
+    {
+      "en": "Do not give the victim anything to eat or drink unless specifically instructed by EMS or poison control.",
+      "ar": "لا تعطِ المصاب أي شيء للأكل أو الشرب إلا إذا طلب منك خدمات الطوارئ أو مركز مكافحة السموم ذلك تحديداً."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "Your continuous care can significantly impact the victim's outcome.",
+      "ar": "يمكن أن تؤثر رعايتك المستمرة بشكل كبير على نتيجة المصاب."
+    },
+    {
+      "type": "best_practice",
+      "en": "Stay calm and confident; your demeanor can help calm the victim.",
+      "ar": "ابقَ هادئاً وواثقاً؛ يمكن أن يساعد سلوكك في تهدئة المصاب."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Emergency_action_steps"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sting_insect",
+  "categoryId": "bites_stings",
+  "titleEn": "Insect Sting",
+  "titleAr": "لسعة حشرة",
+  "steps": [
+    {
+      "en": "If the stinger is visible (e.g., from a bee), remove it quickly by scraping it off with a fingernail or a credit card edge. Do not squeeze it.",
+      "ar": "إذا كانت اللدغة مرئية (على سبيل المثال، من نحلة)، أزلها بسرعة عن طريق كشطها بظفر الإصبع أو حافة بطاقة ائتمان. لا تضغط عليها."
+    },
+    {
+      "en": "Wash the affected area gently with soap and water.",
+      "ar": "اغسل المنطقة المصابة بلطف بالماء والصابون."
+    },
+    {
+      "en": "Apply a cold pack or ice wrapped in a cloth to reduce swelling and pain.",
+      "ar": "ضع كمادة باردة أو ثلجاً ملفوفاً بقطعة قماش لتقليل التورم والألم."
+    },
+    {
+      "en": "Consider applying a paste of baking soda and water to the sting site to help with discomfort.",
+      "ar": "فكر في وضع عجينة من صودا الخبز والماء على مكان اللسعة للمساعدة في تخفيف الانزعاج."
+    },
+    {
+      "en": "Monitor the victim for signs of a severe allergic reaction (anaphylaxis), such as difficulty breathing, swelling of the face/throat, hives, or dizziness.",
+      "ar": "راقب المصاب بحثاً عن علامات رد فعل تحسسي شديد (صدمة تأقية)، مثل صعوبة التنفس، أو تورم الوجه/الحلق، أو الشرى، أو الدوخة."
+    },
+    {
+      "en": "If signs of anaphylaxis appear, call EMS immediately and assist the victim with their Epi-pen if they have one and are unable to self-administer.",
+      "ar": "إذا ظهرت علامات الصدمة التأقية، اتصل بخدمات الطوارئ فوراً وساعد المصاب في استخدام قلم الإيبينفرين الخاص به إذا كان لديه وكان غير قادر على إدارته بنفسه."
+    }
+  ],
+  "notes": [
+    {
+      "type": "warning",
+      "en": "Some individuals have severe allergic reactions (anaphylaxis) to insect stings, which can be life-threatening. Be prepared to act quickly.",
+      "ar": "يعاني بعض الأفراد من ردود فعل تحسسية شديدة (صدمة تأقية) تجاه لدغات الحشرات، والتي يمكن أن تكون مهددة للحياة. كن مستعداً للتصرف بسرعة."
+    },
+    {
+      "type": "do_not",
+      "en": "Do not squeeze the stinger, as this can release more venom.",
+      "ar": "لا تضغط على اللدغة، فقد يؤدي ذلك إلى إطلاق المزيد من السم."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Bites_%26_Stings"
+}

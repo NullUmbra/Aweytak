@@ -1,0 +1,41 @@
+{
+  "id": "check_victim",
+  "categoryId": "emergency_action",
+  "titleEn": "Check the Victim",
+  "titleAr": "افحص المصاب",
+  "steps": [
+    {
+      "en": "After ensuring scene safety, quickly check the victim for responsiveness.",
+      "ar": "بعد التأكد من سلامة المكان، تحقق بسرعة من استجابة المصاب."
+    },
+    {
+      "en": "Gently tap and shout 'Are you alright?' or 'Can you hear me?'",
+      "ar": "انقر بلطف واصرخ 'هل أنت بخير؟' أو 'هل تسمعني؟'"
+    },
+    {
+      "en": "If unresponsive, proceed to call for help and assess ABCs.",
+      "ar": "إذا كان غير مستجيب، انتقل إلى طلب المساعدة وتقييم مجاري الهواء والتنفس والدورة الدموية."
+    },
+    {
+      "en": "If responsive, ask what happened and if they have any pain or discomfort.",
+      "ar": "إذا كان مستجيباً، اسأل عما حدث وما إذا كان لديه أي ألم أو انزعاج."
+    },
+    {
+      "en": "Look for obvious signs of injury, such as severe bleeding, deformity, or burns.",
+      "ar": "ابحث عن علامات واضحة للإصابة، مثل النزيف الشديد، أو التشوه، أو الحروق."
+    }
+  ],
+  "notes": [
+    {
+      "type": "info",
+      "en": "This initial check helps prioritize immediate life threats.",
+      "ar": "يساعد هذا الفحص الأولي في تحديد الأولويات للتهديدات الفورية للحياة."
+    },
+    {
+      "type": "best_practice",
+      "en": "Always assume a spinal injury if there's significant trauma and avoid moving the victim unnecessarily.",
+      "ar": "افترض دائماً وجود إصابة في العمود الفقري إذا كانت هناك صدمة كبيرة وتجنب تحريك المصاب دون داع."
+    }
+  ],
+  "sourceUrl": "https://en.wikibooks.org/wiki/First_Aid/Primary_assessment_%26_basic_life_support"
+}
