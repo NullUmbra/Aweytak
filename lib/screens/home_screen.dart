@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:hive/hive.dart';
-// No need for shared_preferences here anymore
+import 'package:shared_preferences/shared_preferences.dart'; // New import for SharedPreferences
+import 'package:flutter/services.dart'; // New import for SystemNavigator.pop()
 
 import '../models/scenario.dart';
 import '../providers/language_provider.dart';
 import '../providers/theme_provider.dart';
+import 'disclaimer_screen.dart'; // Import the DisclaimerScreenContent (your dialog content)
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,6 +23,9 @@ class _HomeScreenState extends State<HomeScreen>
   List<Scenario> _filteredScenarios = [];
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
+
+  // Key for SharedPreferences to store disclaimer acceptance status
+  static const String _disclaimerAcceptedKey = 'disclaimerAccepted';
 
   @override
   void initState() {
@@ -37,6 +42,43 @@ class _HomeScreenState extends State<HomeScreen>
     ).animate(_fadeController);
 
     _fadeController.forward();
+
+    // Use addPostFrameCallback to show the dialog after the first frame is rendered
+    // and after a 1-second delay.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(const Duration(seconds: 1), () {
+        _showDisclaimerIfNeeded();
+      });
+    });
+  }
+
+  Future<void> _showDisclaimerIfNeeded() async {
+    final prefs = await SharedPreferences.getInstance();
+    final bool disclaimerAccepted = prefs.getBool(_disclaimerAcceptedKey) ?? false;
+
+    if (!disclaimerAccepted) {
+      // Ensure the dialog is shown only once and cannot be dismissed without action
+      await showDialog<void>(
+        context: context,
+        barrierDismissible: false, // User must make a choice
+        builder: (BuildContext dialogContext) { // Use dialogContext to avoid using context after async gap
+          return DisclaimerScreenContent(
+            onAccept: () async {
+              await prefs.setBool(_disclaimerAcceptedKey, true);
+              if (dialogContext.mounted) {
+                Navigator.of(dialogContext).pop(); // Dismiss the dialog
+              }
+            },
+            onReject: () {
+              if (dialogContext.mounted) {
+                Navigator.of(dialogContext).pop(); // Dismiss the dialog
+              }
+              SystemNavigator.pop(); // Exit the app
+            },
+          );
+        },
+      );
+    }
   }
 
   @override
@@ -189,25 +231,21 @@ class _HomeScreenState extends State<HomeScreen>
           child: Directionality(
             textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
             child: Scaffold(
-              // The Scaffold will use the theme's background color for overall page design
               appBar: AppBar(
-                // Removed explicit backgroundColor to revert to theme default
                 title: Text(
                   isArabic ? 'أويتك' : 'Aweytak',
-                  // Removed explicit color to revert to theme default for AppBar title
                   style: const TextStyle(
-                    fontSize: 22, // Fancier: slightly larger font size
-                    fontWeight: FontWeight.bold, // Fancier: bold font weight
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                centerTitle: true, // Center the title
-                leading: IconButton( // Language toggle on the left
+                centerTitle: true,
+                leading: IconButton(
                   onPressed: () => languageProvider.toggleLanguage(),
                   icon: const Icon(Icons.language),
                   tooltip: 'Toggle Language',
-                  // Removed explicit color to revert to theme default for AppBar icons
                 ),
-                actions: [ // Theme and Settings on the right
+                actions: [
                   IconButton(
                     onPressed: () => themeProvider.toggleTheme(),
                     icon: Icon(
@@ -216,13 +254,11 @@ class _HomeScreenState extends State<HomeScreen>
                           : Icons.dark_mode,
                     ),
                     tooltip: isArabic ? 'الوضع الليلي' : 'Toggle Theme',
-                    // Removed explicit color to revert to theme default for AppBar icons
                   ),
                   IconButton(
                     onPressed: () => GoRouter.of(context).push('/settings'),
                     icon: const Icon(Icons.settings),
                     tooltip: isArabic ? 'الإعدادات' : 'Settings',
-                    // Removed explicit color to revert to theme default for AppBar icons
                   ),
                 ],
               ),
@@ -231,16 +267,16 @@ class _HomeScreenState extends State<HomeScreen>
                 child: Column(
                   children: [
                     Align(
-                      alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align based on language
+                      alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft,
                       child: Text(
                         isArabic
                             ? 'ما هي حالة الطوارئ؟'
                             : 'What is the emergency?',
                         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Theme.of(context).textTheme.bodyLarge?.color, // Dynamic color based on theme
-                        ),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).textTheme.bodyLarge?.color,
+                            ),
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -253,19 +289,18 @@ class _HomeScreenState extends State<HomeScreen>
                             : 'Search for a condition',
                         prefixIcon: Icon(
                           Icons.search,
-                          color: Theme.of(context).iconTheme.color, // Icon color from theme
+                          color: Theme.of(context).iconTheme.color,
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        // Ensure hint text color also adapts
                         hintStyle: TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color?.withOpacity(0.7)),
                       ),
-                      style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color), // Input text color from theme
+                      style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color),
                     ),
                     const SizedBox(height: 16),
                     if (_searchController.text.isEmpty)
-                      _buildCategoryList(isArabic) // Call the new list builder
+                      _buildCategoryList(isArabic)
                     else if (_filteredScenarios.isNotEmpty)
                       Expanded(
                         child: ListView.builder(
@@ -273,7 +308,7 @@ class _HomeScreenState extends State<HomeScreen>
                           itemBuilder: (context, index) {
                             final scenario = _filteredScenarios[index];
                             return ListTile(
-                              leading: Icon(Icons.medical_services, color: Theme.of(context).iconTheme.color), // Icon color from theme
+                              leading: Icon(Icons.medical_services, color: Theme.of(context).iconTheme.color),
                               title: Text.rich(
                                 TextSpan(
                                   children: _highlightMatch(
@@ -289,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 isArabic
                                     ? 'ضمن: ${_getCategoryTitle(scenario.categoryId, isArabic)}'
                                     : 'In: ${_getCategoryTitle(scenario.categoryId, isArabic)}',
-                                style: TextStyle(color: Theme.of(context).textTheme.bodySmall?.color), // Subtitle color from theme
+                                style: TextStyle(color: Theme.of(context).textTheme.bodySmall?.color),
                               ),
                               onTap: () => GoRouter.of(
                                 context,
@@ -301,7 +336,7 @@ class _HomeScreenState extends State<HomeScreen>
                     else
                       Text(
                         isArabic ? 'لم يتم العثور على سيناريوهات مطابقة.' : 'No matching scenarios found.',
-                        style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color), // Text color from theme
+                        style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color),
                       ),
                   ],
                 ),
@@ -321,35 +356,34 @@ class _HomeScreenState extends State<HomeScreen>
         itemBuilder: (context, index) {
           final category = categories[index];
           return Container(
-            margin: const EdgeInsets.symmetric(vertical: 7.0), // Increased vertical distance
+            margin: const EdgeInsets.symmetric(vertical: 7.0),
             decoration: BoxDecoration(
-              color: Theme.of(context).cardColor, // Shaded background color from theme
-              borderRadius: BorderRadius.circular(12.0), // Rounder corners
+              color: Theme.of(context).cardColor,
+              borderRadius: BorderRadius.circular(12.0),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.green.withOpacity(0.7), // Green glow color
+                  color: Colors.green.withOpacity(0.7),
                   spreadRadius: 0,
                   blurRadius: 5,
-                  offset: const Offset(0, 3), // Shadow at the bottom
+                  offset: const Offset(0, 3),
                 ),
               ],
             ),
             child: ListTile(
-              dense: true, // Makes the ListTile more compact vertically
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0), // Adjust padding
+              dense: true,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
               title: Align(
-                alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align text based on language
+                alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft,
                 child: Text(
                   isArabic ? category['ar']! : category['en']!,
                   style: TextStyle(
-                    fontSize: 15, // Font size 12 as requested
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    color: Theme.of(context).textTheme.bodyLarge?.color, // Inherit comfy color from theme
+                    color: Theme.of(context).textTheme.bodyLarge?.color,
                   ),
                 ),
               ),
               onTap: () => GoRouter.of(context).push('/category/${category['id']}'),
-              // Trailing/Leading arrow icons for direction, using theme's icon color
               trailing: isArabic ? null : Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color),
               leading: isArabic ? Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color) : null,
             ),

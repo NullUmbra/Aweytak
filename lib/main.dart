@@ -13,6 +13,7 @@ import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/splash_screen.dart';
+// Note: disclaimer_screen.dart is now imported in home_screen.dart for the dialog
 import 'services/scenario_importer.dart'; // Import your new service
 
 void main() async {
@@ -28,20 +29,20 @@ void main() async {
 
   // Initialize and run the scenario importer
   final scenarioImporter = ScenarioImporter();
-  // TEMPORARY: Force re-import by resetting the flag for one run
   final prefs = await SharedPreferences.getInstance();
-  await prefs.setBool(
-    'hasInitialDataLoaded',
-    false,
-  ); // UNCOMMENT FOR ONE RUN, THEN REMOVE!
 
-  await scenarioImporter
-      .importInitialData(); // This will now handle the one-time import
+  // TEMPORARY: Force disclaimer to show for testing. REMOVE THIS LINE AFTER TESTING!
+  //await prefs.setBool('disclaimerAccepted', false);
+
+  // TEMPORARY: Force re-import by resetting the flag for one run
+  // await prefs.setBool('hasInitialDataLoaded', false); // UNCOMMENT FOR ONE RUN, THEN REMOVE!
+
+  await scenarioImporter.importInitialData(); // This will now handle the one-time import
 
   // The SharedPreferences instance for isDarkMode should be obtained AFTER
   // the scenarioImporter.importInitialData() if you uncommented the temporary line above,
   // to avoid conflicts with the temporary flag reset.
-  //final prefs = await SharedPreferences.getInstance();
+  // The 'prefs' variable is already declared above, no need to redeclare.
   final isDarkMode = prefs.getBool('isDarkMode') ?? false;
 
   runApp(
