@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:hive/hive.dart';
+// No need for shared_preferences here anymore
 
 import '../models/scenario.dart';
 import '../providers/language_provider.dart';
@@ -75,87 +76,76 @@ class _HomeScreenState extends State<HomeScreen>
     ];
   }
 
+  // Updated categories list - removed 'icon' field
   final List<Map<String, dynamic>> categories = [
     {
       'id': 'assessment',
-      'icon': '🧠',
       'en': 'Initial Assessment',
       'ar': 'التقييم الأولي',
       'urgency': 'high',
     },
     {
       'id': 'emergency_action',
-      'icon': '🚨',
       'en': 'Emergency Action Steps',
       'ar': 'خطوات الطوارئ',
       'urgency': 'high',
     },
     {
       'id': 'cpr',
-      'icon': '❤️',
       'en': 'CPR & Rescue Breathing',
       'ar': 'الإنعاش القلبي والتنفس الإنقاذي',
       'urgency': 'high',
     },
     {
       'id': 'bleeding',
-      'icon': '🩸',
       'en': 'Bleeding & Wounds',
       'ar': 'النزيف والجروح',
       'urgency': 'high',
     },
     {
       'id': 'shock',
-      'icon': '😵',
       'en': 'Shock',
       'ar': 'الصدمة',
       'urgency': 'medium',
     },
     {
       'id': 'burns',
-      'icon': '🔥',
       'en': 'Burns',
       'ar': 'الحروق',
       'urgency': 'medium',
     },
     {
       'id': 'choking',
-      'icon': '😮‍💨',
       'en': 'Choking',
       'ar': 'الاختناق',
       'urgency': 'high',
     },
     {
       'id': 'fractures',
-      'icon': '🦴',
       'en': 'Fractures & Sprains',
       'ar': 'الكسور والالتواءات',
       'urgency': 'medium',
     },
     {
       'id': 'bites_stings',
-      'icon': '🐍',
       'en': 'Bites & Stings',
       'ar': 'اللدغات واللسعات',
       'urgency': 'medium',
     },
     {
       'id': 'illnesses',
-      'icon': '🦠',
       'en': 'Sudden Illnesses',
       'ar': 'الأمراض المفاجئة',
       'urgency': 'low',
     },
     {
       'id': 'environmental',
-      'icon': '❄️',
       'en': 'Environmental Injuries',
       'ar': 'إصابات بيئية',
       'urgency': 'medium',
     },
     {
       'id': 'other_first_aid',
-      'icon': '📚',
       'en': 'Other First Aid Topics',
       'ar': 'مواضيع إسعافية أخرى',
       'urgency': 'low',
@@ -201,12 +191,13 @@ class _HomeScreenState extends State<HomeScreen>
             child: Scaffold(
               appBar: AppBar(
                 title: Text(isArabic ? 'أويتك' : 'Aweytak'),
-                actions: [
-                  IconButton(
-                    onPressed: () => languageProvider.toggleLanguage(),
-                    icon: const Icon(Icons.language),
-                    tooltip: 'Toggle Language',
-                  ),
+                centerTitle: true, // Center the title
+                leading: IconButton( // Language toggle on the left
+                  onPressed: () => languageProvider.toggleLanguage(),
+                  icon: const Icon(Icons.language),
+                  tooltip: 'Toggle Language',
+                ),
+                actions: [ // Theme and Settings on the right
                   IconButton(
                     onPressed: () => themeProvider.toggleTheme(),
                     icon: Icon(
@@ -228,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen>
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment.centerRight,
+                      alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align based on language
                       child: Text(
                         isArabic
                             ? 'ما هي حالة الطوارئ؟'
@@ -255,7 +246,7 @@ class _HomeScreenState extends State<HomeScreen>
                     ),
                     const SizedBox(height: 16),
                     if (_searchController.text.isEmpty)
-                      _buildCategoryGrid(isArabic)
+                      _buildCategoryList(isArabic) // Call the new list builder
                     else if (_filteredScenarios.isNotEmpty)
                       Expanded(
                         child: ListView.builder(
@@ -299,41 +290,38 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  Widget _buildCategoryGrid(bool isArabic) {
+  // New method to build the compact category list
+  Widget _buildCategoryList(bool isArabic) {
     return Expanded(
-      child: GridView.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 16,
-        crossAxisSpacing: 16,
-        childAspectRatio: 1.2,
-        children: categories.map((category) {
-          return GestureDetector(
-            onTap: () =>
-                GoRouter.of(context).push('/category/${category['id']}'),
-            child: Container(
-              decoration: BoxDecoration(
-                color: urgencyColor(category['urgency']),
-                borderRadius: BorderRadius.circular(16),
-              ),
-              padding: const EdgeInsets.all(12),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(category['icon'], style: const TextStyle(fontSize: 40)),
-                  const SizedBox(height: 10),
-                  Text(
-                    category[isArabic ? 'ar' : 'en'],
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
+      child: ListView.builder(
+        itemCount: categories.length,
+        itemBuilder: (context, index) {
+          final category = categories[index];
+          return Card(
+            margin: const EdgeInsets.symmetric(vertical: 4.0), // Compact spacing
+            elevation: 2, // Subtle elevation for list items
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8.0),
+            ),
+            child: ListTile(
+              // No leading icon as per request
+              title: Align(
+                alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align text based on language
+                child: Text(
+                  isArabic ? category['ar']! : category['en']!,
+                  style: const TextStyle(
+                    fontSize: 12, // Font size 12 as requested
+                    fontWeight: FontWeight.bold,
                   ),
-                ],
+                ),
               ),
+              onTap: () => GoRouter.of(context).push('/category/${category['id']}'),
+              // You can add a trailing icon if desired, e.g., Icons.arrow_forward_ios
+              trailing: isArabic ? null : const Icon(Icons.arrow_forward_ios, size: 16), // Arrow for LTR
+              leading: isArabic ? const Icon(Icons.arrow_forward_ios, size: 16) : null, // Arrow for RTL
             ),
           );
-        }).toList(),
+        },
       ),
     );
   }
