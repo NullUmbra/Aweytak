@@ -53,27 +53,37 @@ class CategoryDetailScreen extends StatelessWidget {
               itemCount: scenarios.length,
               itemBuilder: (context, index) {
                 final scenario = scenarios[index];
-                return Card(
-                  elevation: 2,
-                  margin: const EdgeInsets.symmetric(vertical: 8.0),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12.0),
+                return Container( // Changed from Card to Container for custom styling
+                  margin: const EdgeInsets.symmetric(vertical: 7.0), // Matched HomeScreen's vertical margin
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).cardColor, // Use theme's card color for shaded background
+                    borderRadius: BorderRadius.circular(12.0), // Matched HomeScreen's rounded corners
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.green.withOpacity(0.7), // Matched HomeScreen's green glow color
+                        spreadRadius: 0, // Matched HomeScreen's spread radius
+                        blurRadius: 5, // Matched HomeScreen's blur radius
+                        offset: const Offset(0, 3), // Matched HomeScreen's shadow offset
+                      ),
+                    ],
                   ),
                   child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(
-                      horizontal: 16.0,
-                      vertical: 8.0,
-                    ),
-                    title: Text(
-                      isArabic ? scenario.titleAr : scenario.titleEn,
-                      style: const TextStyle(
-                        fontSize: 15,
+                    dense: true, // Makes the ListTile more compact vertically
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0), // Adjust padding
+                    tileColor: Colors.transparent, // Ensure ListTile background is also transparent
+                    title: Align(
+                      alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align text based on language
+                      child: Text(
+                        isArabic ? scenario.titleAr : scenario.titleEn,
+                        style: TextStyle(
+                          fontSize: 15, // Matched HomeScreen's font size
+                          fontWeight: FontWeight.bold,
+                          color: Theme.of(context).textTheme.bodyLarge?.color, // Inherit comfy color from theme
+                        ),
                       ),
                     ),
-                    trailing: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.green,
-                    ),
+                    trailing: isArabic ? null : Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color),
+                    leading: isArabic ? Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color) : null,
                     onTap: () {
                       GoRouter.of(context).push('/scenario/${scenario.id}');
                     },
