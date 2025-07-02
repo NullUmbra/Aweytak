@@ -67,8 +67,7 @@ class CategoryDetailScreen extends StatelessWidget {
                     title: Text(
                       isArabic ? scenario.titleAr : scenario.titleEn,
                       style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
                       ),
                     ),
                     trailing: const Icon(

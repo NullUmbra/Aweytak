@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen>
     ];
   }
 
-  // Updated categories list - removed 'icon' field
+  // Updated categories list - 'icon' field removed as per request
   final List<Map<String, dynamic>> categories = [
     {
       'id': 'assessment',
@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen>
     {
       'id': 'cpr',
       'en': 'CPR & Rescue Breathing',
-      'ar': 'الإنعاش القلبي والتنفس الإنقاذي',
+      'ar': 'الإنعاش القلبي الرئوي والتنفس الإنقاذي',
       'urgency': 'high',
     },
     {
@@ -189,13 +189,23 @@ class _HomeScreenState extends State<HomeScreen>
           child: Directionality(
             textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
             child: Scaffold(
+              // The Scaffold will use the theme's background color for overall page design
               appBar: AppBar(
-                title: Text(isArabic ? 'أويتك' : 'Aweytak'),
+                // Removed explicit backgroundColor to revert to theme default
+                title: Text(
+                  isArabic ? 'أويتك' : 'Aweytak',
+                  // Removed explicit color to revert to theme default for AppBar title
+                  style: const TextStyle(
+                    fontSize: 22, // Fancier: slightly larger font size
+                    fontWeight: FontWeight.bold, // Fancier: bold font weight
+                  ),
+                ),
                 centerTitle: true, // Center the title
                 leading: IconButton( // Language toggle on the left
                   onPressed: () => languageProvider.toggleLanguage(),
                   icon: const Icon(Icons.language),
                   tooltip: 'Toggle Language',
+                  // Removed explicit color to revert to theme default for AppBar icons
                 ),
                 actions: [ // Theme and Settings on the right
                   IconButton(
@@ -206,11 +216,13 @@ class _HomeScreenState extends State<HomeScreen>
                           : Icons.dark_mode,
                     ),
                     tooltip: isArabic ? 'الوضع الليلي' : 'Toggle Theme',
+                    // Removed explicit color to revert to theme default for AppBar icons
                   ),
                   IconButton(
                     onPressed: () => GoRouter.of(context).push('/settings'),
                     icon: const Icon(Icons.settings),
                     tooltip: isArabic ? 'الإعدادات' : 'Settings',
+                    // Removed explicit color to revert to theme default for AppBar icons
                   ),
                 ],
               ),
@@ -224,9 +236,10 @@ class _HomeScreenState extends State<HomeScreen>
                         isArabic
                             ? 'ما هي حالة الطوارئ؟'
                             : 'What is the emergency?',
-                        style: const TextStyle(
+                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
+                          color: Theme.of(context).textTheme.bodyLarge?.color, // Dynamic color based on theme
                         ),
                       ),
                     ),
@@ -238,11 +251,17 @@ class _HomeScreenState extends State<HomeScreen>
                         hintText: isArabic
                             ? 'ابحث عن حالة'
                             : 'Search for a condition',
-                        prefixIcon: const Icon(Icons.search),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Theme.of(context).iconTheme.color, // Icon color from theme
+                        ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        // Ensure hint text color also adapts
+                        hintStyle: TextStyle(color: Theme.of(context).textTheme.bodyMedium?.color?.withOpacity(0.7)),
                       ),
+                      style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color), // Input text color from theme
                     ),
                     const SizedBox(height: 16),
                     if (_searchController.text.isEmpty)
@@ -254,7 +273,7 @@ class _HomeScreenState extends State<HomeScreen>
                           itemBuilder: (context, index) {
                             final scenario = _filteredScenarios[index];
                             return ListTile(
-                              leading: const Icon(Icons.medical_services),
+                              leading: Icon(Icons.medical_services, color: Theme.of(context).iconTheme.color), // Icon color from theme
                               title: Text.rich(
                                 TextSpan(
                                   children: _highlightMatch(
@@ -270,6 +289,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 isArabic
                                     ? 'ضمن: ${_getCategoryTitle(scenario.categoryId, isArabic)}'
                                     : 'In: ${_getCategoryTitle(scenario.categoryId, isArabic)}',
+                                style: TextStyle(color: Theme.of(context).textTheme.bodySmall?.color), // Subtitle color from theme
                               ),
                               onTap: () => GoRouter.of(
                                 context,
@@ -279,7 +299,10 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       )
                     else
-                      const Text("No matching scenarios found."),
+                      Text(
+                        isArabic ? 'لم يتم العثور على سيناريوهات مطابقة.' : 'No matching scenarios found.',
+                        style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color), // Text color from theme
+                      ),
                   ],
                 ),
               ),
@@ -290,35 +313,45 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  // New method to build the compact category list
+  // New method to build the compact category list with glowing underline and shaded background
   Widget _buildCategoryList(bool isArabic) {
     return Expanded(
       child: ListView.builder(
         itemCount: categories.length,
         itemBuilder: (context, index) {
           final category = categories[index];
-          return Card(
-            margin: const EdgeInsets.symmetric(vertical: 4.0), // Compact spacing
-            elevation: 2, // Subtle elevation for list items
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8.0),
+          return Container(
+            margin: const EdgeInsets.symmetric(vertical: 7.0), // Increased vertical distance
+            decoration: BoxDecoration(
+              color: Theme.of(context).cardColor, // Shaded background color from theme
+              borderRadius: BorderRadius.circular(12.0), // Rounder corners
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.green.withOpacity(0.7), // Green glow color
+                  spreadRadius: 0,
+                  blurRadius: 5,
+                  offset: const Offset(0, 3), // Shadow at the bottom
+                ),
+              ],
             ),
             child: ListTile(
-              // No leading icon as per request
+              dense: true, // Makes the ListTile more compact vertically
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0), // Adjust padding
               title: Align(
                 alignment: isArabic ? Alignment.centerRight : Alignment.centerLeft, // Align text based on language
                 child: Text(
                   isArabic ? category['ar']! : category['en']!,
-                  style: const TextStyle(
-                    fontSize: 12, // Font size 12 as requested
+                  style: TextStyle(
+                    fontSize: 15, // Font size 12 as requested
                     fontWeight: FontWeight.bold,
+                    color: Theme.of(context).textTheme.bodyLarge?.color, // Inherit comfy color from theme
                   ),
                 ),
               ),
               onTap: () => GoRouter.of(context).push('/category/${category['id']}'),
-              // You can add a trailing icon if desired, e.g., Icons.arrow_forward_ios
-              trailing: isArabic ? null : const Icon(Icons.arrow_forward_ios, size: 16), // Arrow for LTR
-              leading: isArabic ? const Icon(Icons.arrow_forward_ios, size: 16) : null, // Arrow for RTL
+              // Trailing/Leading arrow icons for direction, using theme's icon color
+              trailing: isArabic ? null : Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color),
+              leading: isArabic ? Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).iconTheme.color) : null,
             ),
           );
         },
