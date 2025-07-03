@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/language_provider.dart';
 
-class DisclaimerScreenContent extends StatelessWidget { // Renamed class
+class DisclaimerScreenContent extends StatelessWidget {
+  // Renamed class
   final VoidCallback onAccept;
   final VoidCallback onReject;
 
-  const DisclaimerScreenContent({ // Renamed constructor
+  const DisclaimerScreenContent({
+    // Renamed constructor
     super.key,
     required this.onAccept,
     required this.onReject,
@@ -16,9 +18,11 @@ class DisclaimerScreenContent extends StatelessWidget { // Renamed class
   Widget build(BuildContext context) {
     final isArabic = Provider.of<LanguageProvider>(context).isArabic;
 
-    return AlertDialog( // Changed from Scaffold to AlertDialog
-      title: Text(isArabic ? 'إخلاء المسؤولية الهام' : 'Important Disclaimer'),
-      content: SingleChildScrollView( // Use SingleChildScrollView for the content
+    return AlertDialog(
+      // Changed from Scaffold to AlertDialog
+      title: Text(isArabic ? 'هام: إخلاء المسؤولية' : 'Important Disclaimer'),
+      content: SingleChildScrollView(
+        // Use SingleChildScrollView for the content
         child: Text(
           isArabic
               ? '''
