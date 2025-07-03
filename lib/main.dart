@@ -8,6 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'models/scenario.dart';
 import 'providers/language_provider.dart';
 import 'providers/theme_provider.dart';
+import 'providers/font_size_provider.dart'; // NEW: Import the font size provider
 import 'screens/home_screen.dart';
 import 'screens/category_detail_screen.dart';
 import 'screens/scenario_detail_screen.dart';
@@ -37,7 +38,8 @@ void main() async {
   // TEMPORARY: Force re-import by resetting the flag for one run
   // await prefs.setBool('hasInitialDataLoaded', false); // UNCOMMENT FOR ONE RUN, THEN REMOVE!
 
-  await scenarioImporter.importInitialData(); // This will now handle the one-time import
+  await scenarioImporter
+      .importInitialData(); // This will now handle the one-time import
 
   // The SharedPreferences instance for isDarkMode should be obtained AFTER
   // the scenarioImporter.importInitialData() if you uncommented the temporary line above,
@@ -52,6 +54,8 @@ void main() async {
         ChangeNotifierProvider(
           create: (_) => ThemeProvider()..setTheme(isDarkMode),
         ),
+        ChangeNotifierProvider(
+            create: (_) => FontSizeProvider()), // NEW: Add FontSizeProvider
       ],
       child: const MyApp(),
     ),
@@ -91,8 +95,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer2<LanguageProvider, ThemeProvider>(
-      builder: (context, languageProvider, themeProvider, _) {
+    // Consumer3 to listen to Language, Theme, and NEW: FontSize providers
+    return Consumer3<LanguageProvider, ThemeProvider, FontSizeProvider>(
+      builder: (context, languageProvider, themeProvider, fontSizeProvider, _) {
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
           routerConfig: _router,
@@ -119,16 +124,21 @@ class MyApp extends StatelessWidget {
             ),
             highlightColor: Colors.orange.withAlpha(77),
           ),
-          themeMode: themeProvider.isDarkMode
-              ? ThemeMode.dark
-              : ThemeMode.light,
+          themeMode:
+              themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
           locale: Locale(languageProvider.language.toLowerCase()),
           builder: (context, child) {
-            return Directionality(
-              textDirection: languageProvider.isArabic
-                  ? TextDirection.rtl
-                  : TextDirection.ltr,
-              child: child!,
+            // NEW: Apply text scaling globally using MediaQuery
+            return MediaQuery(
+              data: MediaQuery.of(context).copyWith(
+                  textScaler:
+                      TextScaler.linear(fontSizeProvider.textScaleFactor)),
+              child: Directionality(
+                textDirection: languageProvider.isArabic
+                    ? TextDirection.rtl
+                    : TextDirection.ltr,
+                child: child!,
+              ),
             );
           },
         );

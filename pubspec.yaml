@@ -18,6 +18,8 @@ dependencies:
   path_provider: ^2.0.11
   shared_preferences: ^2.0.0 # Ensure this is present and updated
   url_launcher: ^6.1.10 
+  package_info_plus: ^8.0.0 # Make sure this is present
+  share_plus: ^9.0.0 #
 
 dev_dependencies:
   flutter_test:
