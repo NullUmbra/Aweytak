@@ -2,6 +2,11 @@
 
 **Aweytak** (أويتك) is a mobile application designed to provide quick and reliable first-aid instructions, especially in areas where professional medical help may be delayed or unavailable. Built with an offline-first approach, it ensures that essential emergency guidance is always accessible, even without an internet connection.
 
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![License](https://img.shields.io/badge/Content%20License-CC%20BY--SA%204.0-lightgrey)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+
 ## About the Project
 
 The goal of Aweytak is to empower individuals in remote or underserved communities with life-saving knowledge. Inspired by open-access medical resources, the app presents first-aid procedures in a simplified, bilingual format suitable for non-medical users.
@@ -25,6 +30,9 @@ The goal of Aweytak is to empower individuals in remote or underserved communiti
 
 * **Critical Warnings and Tips**
   Each scenario includes safety warnings, do's and don'ts, and helpful context.
+
+## Screenshots
+> Screenshots coming soon.
 
 ## Getting Started
 
@@ -76,7 +84,9 @@ Aweytak is **not a substitute for professional medical care**. In life-threateni
 
 For inquiries, suggestions, or feedback:
 
-**Email:** [kei.softcraft@gmail.com](mailto:kei.softcraft@gmail.com)
+**Email:** khalidgurashi77@gmail.com
+
+**LinkedIn:** https://www.linkedin.com/in/khalid-gt/
 
 ## Contributing
 
